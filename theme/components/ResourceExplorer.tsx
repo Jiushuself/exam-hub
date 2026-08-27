@@ -1,4 +1,11 @@
-import { useEffect, useMemo, useState } from 'react';
+import {
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+  type KeyboardEvent as ReactKeyboardEvent,
+} from 'react';
 import {
   resources,
   type ExamKey,
@@ -49,6 +56,172 @@ const examLabels: Record<ExamKey, string> = {
   cet: '英语四六级',
   other: '其他考试资料',
 };
+
+interface FilterOption<T extends string> {
+  value: T;
+  label: string;
+}
+
+interface FilterSelectProps<T extends string> {
+  label: string;
+  value: T;
+  options: ReadonlyArray<FilterOption<T>>;
+  onChange: (value: T) => void;
+}
+
+function FilterSelect<T extends string>({
+  label,
+  value,
+  options,
+  onChange,
+}: FilterSelectProps<T>) {
+  const [isOpen, setIsOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const optionRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const baseId = useId();
+  const labelId = `${baseId}-label`;
+  const valueId = `${baseId}-value`;
+  const listId = `${baseId}-list`;
+  const selectedIndex = Math.max(
+    0,
+    options.findIndex((option) => option.value === value),
+  );
+  const selectedOption = options[selectedIndex];
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const closeOnOutsideClick = (event: PointerEvent) => {
+      if (!rootRef.current?.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('pointerdown', closeOnOutsideClick);
+    return () =>
+      document.removeEventListener('pointerdown', closeOnOutsideClick);
+  }, [isOpen]);
+
+  const focusOption = (index: number) => {
+    window.requestAnimationFrame(() => optionRefs.current[index]?.focus());
+  };
+
+  const openAndFocus = (index: number) => {
+    setIsOpen(true);
+    focusOption(index);
+  };
+
+  const handleTriggerKeyDown = (
+    event: ReactKeyboardEvent<HTMLButtonElement>,
+  ) => {
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      openAndFocus(selectedIndex);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      openAndFocus(options.length - 1);
+    } else if (event.key === 'Escape') {
+      setIsOpen(false);
+    }
+  };
+
+  const handleOptionKeyDown = (
+    event: ReactKeyboardEvent<HTMLButtonElement>,
+    index: number,
+  ) => {
+    const lastIndex = options.length - 1;
+
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      focusOption(index === lastIndex ? 0 : index + 1);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      focusOption(index === 0 ? lastIndex : index - 1);
+    } else if (event.key === 'Home') {
+      event.preventDefault();
+      focusOption(0);
+    } else if (event.key === 'End') {
+      event.preventDefault();
+      focusOption(lastIndex);
+    } else if (event.key === 'Escape') {
+      event.preventDefault();
+      setIsOpen(false);
+      triggerRef.current?.focus();
+    } else if (event.key === 'Tab') {
+      setIsOpen(false);
+    }
+  };
+
+  const selectOption = (option: FilterOption<T>) => {
+    onChange(option.value);
+    setIsOpen(false);
+    triggerRef.current?.focus();
+  };
+
+  return (
+    <div
+      className={`resource-field resource-select${isOpen ? ' resource-select--open' : ''}`}
+      ref={rootRef}
+    >
+      <span id={labelId}>{label}</span>
+      <button
+        ref={triggerRef}
+        type="button"
+        className="resource-select__trigger"
+        aria-labelledby={`${labelId} ${valueId}`}
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        aria-controls={listId}
+        onClick={() => setIsOpen((open) => !open)}
+        onKeyDown={handleTriggerKeyDown}
+      >
+        <span id={valueId}>{selectedOption.label}</span>
+        <svg
+          className="resource-select__chevron"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+        >
+          <path d="m5.75 7.75 4.25 4.5 4.25-4.5" />
+        </svg>
+      </button>
+
+      {isOpen ? (
+        <ul
+          id={listId}
+          className="resource-select__menu"
+          role="listbox"
+          aria-labelledby={labelId}
+        >
+          {options.map((option, index) => {
+            const isSelected = option.value === value;
+
+            return (
+              <li key={option.value} role="presentation">
+                <button
+                  ref={(element) => {
+                    optionRefs.current[index] = element;
+                  }}
+                  type="button"
+                  className="resource-select__option"
+                  role="option"
+                  aria-selected={isSelected}
+                  onClick={() => selectOption(option)}
+                  onKeyDown={(event) => handleOptionKeyDown(event, index)}
+                >
+                  <span>{option.label}</span>
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m5.2 10.2 3 3.1 6.7-7" />
+                  </svg>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      ) : null}
+    </div>
+  );
+}
 
 function includesKeyword(resource: ResourceItem, keyword: string) {
   const searchableText = [
@@ -181,33 +354,19 @@ export function ResourceExplorer() {
           />
         </label>
 
-        <label className="resource-field">
-          <span>考试类型</span>
-          <select
-            value={exam}
-            onChange={(event) => setExam(event.target.value as ExamFilter)}
-          >
-            {examOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <FilterSelect
+          label="考试类型"
+          value={exam}
+          options={examOptions}
+          onChange={setExam}
+        />
 
-        <label className="resource-field">
-          <span>链接状态</span>
-          <select
-            value={status}
-            onChange={(event) => setStatus(event.target.value as StatusFilter)}
-          >
-            {statusOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <FilterSelect
+          label="链接状态"
+          value={status}
+          options={statusOptions}
+          onChange={setStatus}
+        />
       </div>
 
       <div className="resource-explorer__summary" aria-live="polite">
