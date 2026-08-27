@@ -32,6 +32,24 @@ const statusLabels: Record<ResourceStatus, string> = {
   expired: '已失效',
 };
 
+const examKeys: ExamKey[] = [
+  'kaoyan',
+  'gongkao',
+  'kaobian',
+  'teacher',
+  'cet',
+  'other',
+];
+
+const examLabels: Record<ExamKey, string> = {
+  kaoyan: '考研资料',
+  gongkao: '考公资料',
+  kaobian: '考编资料',
+  teacher: '教师类资料',
+  cet: '英语四六级',
+  other: '其他考试资料',
+};
+
 function includesKeyword(resource: ResourceItem, keyword: string) {
   const searchableText = [
     resource.title,
@@ -45,6 +63,63 @@ function includesKeyword(resource: ResourceItem, keyword: string) {
     .toLocaleLowerCase();
 
   return searchableText.includes(keyword.toLocaleLowerCase());
+}
+
+interface ResourceRowProps {
+  resource: ResourceItem;
+  copiedId: string | null;
+  onCopyCode: (resource: ResourceItem) => void;
+}
+
+function ResourceRow({ resource, copiedId, onCopyCode }: ResourceRowProps) {
+  return (
+    <article className="resource-row">
+      <div className="resource-row__main">
+        <div className="resource-row__meta">
+          <span>{resource.subject}</span>
+          {resource.year ? <span>{resource.year}</span> : null}
+          <span>{resource.provider}</span>
+        </div>
+        <h2>{resource.title}</h2>
+        <p>{resource.description}</p>
+        <div className="resource-row__tags">
+          {resource.types.map((type) => (
+            <span key={type}>{type}</span>
+          ))}
+        </div>
+      </div>
+
+      <div className="resource-row__aside">
+        <span className={`resource-status resource-status--${resource.status}`}>
+          {statusLabels[resource.status]}
+        </span>
+        <dl>
+          <div>
+            <dt>来源</dt>
+            <dd>{resource.source}</dd>
+          </div>
+          <div>
+            <dt>授权</dt>
+            <dd>{resource.rights}</dd>
+          </div>
+          <div>
+            <dt>最后验证</dt>
+            <dd>{resource.verifiedAt}</dd>
+          </div>
+        </dl>
+        <div className="resource-row__actions">
+          {resource.code ? (
+            <button type="button" onClick={() => onCopyCode(resource)}>
+              {copiedId === resource.id ? '已复制' : '复制提取码'}
+            </button>
+          ) : null}
+          <a href={resource.url} target="_blank" rel="noreferrer">
+            打开网盘
+          </a>
+        </div>
+      </div>
+    </article>
+  );
 }
 
 export function ResourceExplorer() {
@@ -70,6 +145,20 @@ export function ResourceExplorer() {
         .filter((resource) => !keyword || includesKeyword(resource, keyword))
         .sort((left, right) => right.verifiedAt.localeCompare(left.verifiedAt)),
     [exam, keyword, status],
+  );
+
+  const resourceGroups = useMemo(
+    () =>
+      examKeys
+        .map((examKey) => ({
+          key: examKey,
+          label: examLabels[examKey],
+          items: filteredResources.filter(
+            (resource) => resource.exam === examKey,
+          ),
+        }))
+        .filter((group) => group.items.length > 0),
+    [filteredResources],
   );
 
   const copyCode = async (resource: ResourceItem) => {
@@ -128,55 +217,26 @@ export function ResourceExplorer() {
 
       {filteredResources.length > 0 ? (
         <div className="resource-list">
-          {filteredResources.map((resource) => (
-            <article className="resource-row" key={resource.id}>
-              <div className="resource-row__main">
-                <div className="resource-row__meta">
-                  <span>{resource.subject}</span>
-                  {resource.year ? <span>{resource.year}</span> : null}
-                  <span>{resource.provider}</span>
+          {resourceGroups.map((group, index) => (
+            <section className="resource-group" key={group.key}>
+              <header className="resource-group__header">
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <div>
+                  <h2>{group.label}</h2>
+                  <p>{group.items.length} 份资料</p>
                 </div>
-                <h2>{resource.title}</h2>
-                <p>{resource.description}</p>
-                <div className="resource-row__tags">
-                  {resource.types.map((type) => (
-                    <span key={type}>{type}</span>
-                  ))}
-                </div>
+              </header>
+              <div className="resource-group__items">
+                {group.items.map((resource) => (
+                  <ResourceRow
+                    key={resource.id}
+                    resource={resource}
+                    copiedId={copiedId}
+                    onCopyCode={copyCode}
+                  />
+                ))}
               </div>
-
-              <div className="resource-row__aside">
-                <span
-                  className={`resource-status resource-status--${resource.status}`}
-                >
-                  {statusLabels[resource.status]}
-                </span>
-                <dl>
-                  <div>
-                    <dt>来源</dt>
-                    <dd>{resource.source}</dd>
-                  </div>
-                  <div>
-                    <dt>授权</dt>
-                    <dd>{resource.rights}</dd>
-                  </div>
-                  <div>
-                    <dt>最后验证</dt>
-                    <dd>{resource.verifiedAt}</dd>
-                  </div>
-                </dl>
-                <div className="resource-row__actions">
-                  {resource.code ? (
-                    <button type="button" onClick={() => copyCode(resource)}>
-                      {copiedId === resource.id ? '已复制' : '复制提取码'}
-                    </button>
-                  ) : null}
-                  <a href={resource.url} target="_blank" rel="noreferrer">
-                    打开网盘
-                  </a>
-                </div>
-              </div>
-            </article>
+            </section>
           ))}
         </div>
       ) : (

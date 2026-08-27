@@ -400,8 +400,8 @@ select:focus-visible {
   grid-template-columns: minmax(460px, 0.92fr) minmax(520px, 1.08fr);
   gap: clamp(30px, 4vw, 72px);
   align-items: center;
-  min-height: min(800px, calc(100vh - var(--rp-nav-height)));
-  padding-block: 76px 82px;
+  min-height: auto;
+  padding-block: clamp(20px, 1.8vw, 28px) clamp(46px, 4vw, 62px);
 }
 
 .landing-hero__copy {
@@ -542,7 +542,7 @@ select:focus-visible {
 
 .exam-orbit {
   position: relative;
-  min-height: 610px;
+  min-height: 570px;
   perspective: 1600px;
   isolation: isolate;
 }
@@ -764,7 +764,7 @@ select:focus-visible {
   --drift-x: 6px;
   --drift-y: -8px;
   --float-duration: 6.7s;
-  bottom: 44px;
+  bottom: 24px;
   left: 58px;
   width: 212px;
 }
@@ -777,7 +777,7 @@ select:focus-visible {
   --drift-y: -7px;
   --float-duration: 5.5s;
   right: 38px;
-  bottom: 55px;
+  bottom: 35px;
   width: 183px;
 }
 
@@ -863,7 +863,7 @@ html.dark .floating-exam-card::after {
 }
 
 .landing-section {
-  padding-block: 120px;
+  padding-block: clamp(88px, 8vw, 108px);
 }
 
 .landing-section + .landing-section {
@@ -914,13 +914,13 @@ html.dark .floating-exam-card::after {
 .path-card {
   position: relative;
   display: flex;
-  min-height: 520px;
+  min-height: 490px;
   flex-direction: column;
   overflow: hidden;
   padding: clamp(28px, 4vw, 48px);
   border: 1px solid var(--archive-line);
-  border-radius: 26px;
-  box-shadow: var(--archive-shadow-card);
+  border-radius: 20px;
+  box-shadow: 0 24px 58px -44px rgba(14, 65, 53, 0.34);
 }
 
 .path-card__topline {
@@ -981,7 +981,7 @@ html.dark .floating-exam-card::after {
   min-height: 124px;
   padding: 19px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 16px;
+  border-radius: 13px;
   background: rgba(255, 255, 255, 0.08);
   transition:
     transform 180ms ease,
@@ -1030,7 +1030,7 @@ html.dark .floating-exam-card::after {
   justify-content: space-between;
   padding: 0 14px;
   border: 1px solid var(--archive-line);
-  border-radius: 12px;
+  border-radius: 10px;
   color: var(--archive-muted);
   font-size: 0.76rem;
   font-weight: 700;
@@ -1066,7 +1066,7 @@ html.dark .floating-exam-card::after {
 }
 
 .landing-section--focus {
-  padding-top: 110px;
+  padding-top: clamp(84px, 7vw, 98px);
 }
 
 .focus-board {
@@ -1082,11 +1082,11 @@ html.dark .floating-exam-card::after {
 .focus-board__gongkao {
   position: relative;
   display: flex;
-  min-height: 470px;
+  min-height: 440px;
   flex-direction: column;
   overflow: hidden;
   padding: 34px;
-  border-radius: 24px;
+  border-radius: 20px;
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
@@ -1156,7 +1156,7 @@ html.dark .floating-exam-card::after {
   align-items: center;
   padding: 18px 20px;
   border: 1px solid var(--archive-line);
-  border-radius: 16px;
+  border-radius: 13px;
   background: var(--archive-surface-raised);
   transition:
     background 160ms ease,
@@ -1185,7 +1185,7 @@ html.dark .floating-exam-card::after {
 }
 
 .focus-board__gongkao {
-  min-height: 470px;
+  min-height: 440px;
   background: #ffe9df;
   color: #522a21 !important;
 }
@@ -1216,7 +1216,7 @@ html.dark .floating-exam-card::after {
   grid-template-columns: minmax(0, 1fr) minmax(270px, 0.42fr);
   gap: clamp(60px, 10vw, 150px);
   align-items: end;
-  padding-block: 105px;
+  padding-block: clamp(78px, 7vw, 94px);
   border-top: 1px solid var(--archive-line-strong);
 }
 
@@ -1269,8 +1269,43 @@ html.dark .floating-exam-card::after {
 }
 
 /* Resource explorer */
+.resource-notice {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 86px);
+  align-items: center;
+  margin-top: 30px;
+  padding: 22px 0;
+  border-block: 1px solid var(--archive-line-strong);
+}
+
+.resource-notice > div {
+  display: grid;
+  gap: 5px;
+}
+
+.resource-notice span,
+.resource-group__header > span {
+  color: var(--archive-green-bright);
+  font-family: var(--archive-mono);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.resource-notice strong {
+  font-size: 1rem;
+}
+
+.resource-notice p {
+  margin: 0;
+  color: var(--archive-muted);
+  font-size: 0.84rem;
+  line-height: 1.75;
+}
+
 .resource-explorer {
-  margin-top: 42px;
+  margin-top: 34px;
   color: var(--archive-ink);
 }
 
@@ -1338,6 +1373,40 @@ html.dark .floating-exam-card::after {
 
 .resource-list {
   border-bottom: 1px solid var(--archive-line-strong);
+}
+
+.resource-group + .resource-group {
+  margin-top: 34px;
+}
+
+.resource-group__header {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 26px 0 16px;
+  border-bottom: 1px solid var(--archive-line-strong);
+}
+
+.resource-group__header > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.resource-group__header h2 {
+  margin: 0;
+  font-family: var(--archive-sans);
+  font-size: 1.1rem;
+  font-weight: 850;
+  letter-spacing: -0.025em;
+}
+
+.resource-group__header p {
+  margin: 0;
+  color: var(--archive-faint);
+  font-size: 0.72rem;
 }
 
 .resource-row {
@@ -1506,7 +1575,8 @@ html.dark .floating-exam-card::after {
   .landing-hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 82px;
+    gap: 48px;
+    padding-top: 38px;
   }
 
   .landing-hero__copy {
@@ -1549,7 +1619,7 @@ html.dark .floating-exam-card::after {
   .landing-section,
   .landing-final-cta,
   .landing-footer {
-    width: min(100% - 32px, 1260px);
+    width: min(100% - 28px, 1260px);
   }
 
   .site-wordmark__symbol {
@@ -1572,8 +1642,8 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-hero {
-    gap: 42px;
-    padding-block: 62px 74px;
+    gap: 34px;
+    padding-block: 28px 46px;
   }
 
   .landing-eyebrow {
@@ -1583,11 +1653,12 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-hero h1 {
-    font-size: clamp(3rem, 15vw, 4.45rem);
+    font-size: clamp(3.1rem, 14.2vw, 4.15rem);
     letter-spacing: -0.07em;
   }
 
   .landing-hero__summary {
+    margin-top: 22px;
     font-size: 1rem;
     line-height: 1.78;
   }
@@ -1595,6 +1666,8 @@ html.dark .floating-exam-card::after {
   .landing-actions {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 27px;
   }
 
   .landing-button {
@@ -1604,9 +1677,10 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-shortcuts {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 9px;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px 16px;
+    margin-top: 23px;
   }
 
   .exam-orbit {
@@ -1647,7 +1721,7 @@ html.dark .floating-exam-card::after {
     grid-column: 1 / -1;
     width: auto;
     height: auto;
-    min-height: 106px;
+    min-height: 96px;
     grid-template-columns: auto 1fr;
     gap: 2px 14px;
     align-content: center;
@@ -1671,9 +1745,9 @@ html.dark .floating-exam-card::after {
   }
 
   .floating-exam-card {
-    min-height: 150px;
-    padding: 16px;
-    border-radius: 17px;
+    min-height: 136px;
+    padding: 15px;
+    border-radius: 15px;
   }
 
   .floating-exam-card:hover,
@@ -1710,7 +1784,7 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-section {
-    padding-block: 82px;
+    padding-block: 68px;
   }
 
   .landing-section__header,
@@ -1720,28 +1794,42 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-section__header {
-    gap: 19px;
-    margin-bottom: 34px;
+    gap: 16px;
+    margin-bottom: 30px;
   }
 
   .landing-section__header h2,
   .landing-final-cta h2 {
-    font-size: clamp(2.4rem, 12vw, 3.5rem);
+    font-size: clamp(2.15rem, 10.8vw, 3.25rem);
   }
 
   .path-card {
-    min-height: 500px;
-    padding: 27px;
-    border-radius: 21px;
+    min-height: 0;
+    padding: 24px;
+    border-radius: 17px;
   }
 
   .path-card__links,
   .resource-category-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .path-card h3 {
+    margin-top: 60px;
+  }
+
+  .path-card > p {
+    margin: 16px 0 24px;
   }
 
   .path-card__links a {
-    min-height: 110px;
+    min-height: 108px;
+    padding: 16px;
+  }
+
+  .resource-category-list a {
+    min-height: 44px;
+    padding-inline: 12px;
   }
 
   .focus-board {
@@ -1750,13 +1838,14 @@ html.dark .floating-exam-card::after {
 
   .focus-board__main,
   .focus-board__gongkao {
-    min-height: 360px;
-    padding: 28px;
+    min-height: 300px;
+    padding: 24px;
+    border-radius: 17px;
   }
 
   .focus-board__gongkao {
     grid-column: auto;
-    min-height: 280px;
+    min-height: 230px;
   }
 
   .focus-board__subjects a {
@@ -1769,7 +1858,7 @@ html.dark .floating-exam-card::after {
 
   .landing-final-cta {
     gap: 34px;
-    padding-block: 78px;
+    padding-block: 66px;
   }
 
   .landing-footer {
@@ -1779,6 +1868,22 @@ html.dark .floating-exam-card::after {
 
   .resource-explorer__toolbar {
     grid-template-columns: 1fr;
+  }
+
+  .resource-notice {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-block: 19px;
+  }
+
+  .resource-group + .resource-group {
+    margin-top: 24px;
+  }
+
+  .resource-group__header {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 10px;
+    padding-top: 22px;
   }
 
   .resource-field--search {
