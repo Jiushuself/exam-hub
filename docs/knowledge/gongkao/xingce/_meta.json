@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "行测知识地图"
+  },
+  {
+    "type": "dir",
+    "name": "ziliao-fenxi",
+    "label": "资料分析"
+  },
+  {
+    "type": "dir",
+    "name": "yanyu-lijie",
+    "label": "言语理解"
+  },
+  {
+    "type": "dir",
+    "name": "panduan-tuili",
+    "label": "判断推理"
+  },
+  {
+    "type": "dir",
+    "name": "shuliang-guanxi",
+    "label": "数量关系"
+  },
+  {
+    "type": "dir",
+    "name": "zhengzhi-lilun",
+    "label": "政治理论"
+  },
+  {
+    "type": "dir",
+    "name": "gongji-changshi",
+    "label": "公基常识"
+  }
+]

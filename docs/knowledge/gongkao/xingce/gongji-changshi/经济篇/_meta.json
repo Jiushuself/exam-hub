@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "国际经济",
+    "label": "国际经济"
+  },
+  {
+    "type": "file",
+    "name": "宏观经济",
+    "label": "宏观经济"
+  },
+  {
+    "type": "file",
+    "name": "马克思政治经济学",
+    "label": "马克思政治经济学"
+  },
+  {
+    "type": "file",
+    "name": "市场经济理论",
+    "label": "市场经济理论"
+  },
+  {
+    "type": "file",
+    "name": "收入分配",
+    "label": "收入分配"
+  },
+  {
+    "type": "file",
+    "name": "微观经济",
+    "label": "微观经济"
+  }
+]

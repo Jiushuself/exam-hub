@@ -1,0 +1,20 @@
+# Local
+.DS_Store
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+doc_build/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Local agent metadata (not part of the website)
+.agents/
+
+# Temporary source checkouts used during content import verification
+.tmp-cs-408-source*/

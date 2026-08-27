@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "计算机网络章节索引"
+  },
+  {
+    "type": "file",
+    "name": "第1章 计算机网络体系结构",
+    "label": "第1章 计算机网络体系结构"
+  },
+  {
+    "type": "file",
+    "name": "第2章 物理层",
+    "label": "第2章 物理层"
+  },
+  {
+    "type": "file",
+    "name": "第3章 数据链路层",
+    "label": "第3章 数据链路层"
+  },
+  {
+    "type": "file",
+    "name": "第4章 网络层",
+    "label": "第4章 网络层"
+  },
+  {
+    "type": "file",
+    "name": "第5章 传输层",
+    "label": "第5章 传输层"
+  },
+  {
+    "type": "file",
+    "name": "第6章 应用层",
+    "label": "第6章 应用层"
+  }
+]

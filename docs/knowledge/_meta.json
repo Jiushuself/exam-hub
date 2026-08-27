@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "index", "label": "知识库首页" },
+  { "type": "dir", "name": "kaoyan", "label": "考研" },
+  { "type": "dir", "name": "gongkao", "label": "考公" }
+]

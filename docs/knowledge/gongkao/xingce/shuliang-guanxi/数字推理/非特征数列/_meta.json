@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "递推数列",
+    "label": "递推数列"
+  },
+  {
+    "type": "file",
+    "name": "多级数列",
+    "label": "多级数列"
+  },
+  {
+    "type": "file",
+    "name": "特殊数列",
+    "label": "特殊数列"
+  },
+  {
+    "type": "file",
+    "name": "图形数列",
+    "label": "图形数列"
+  }
+]

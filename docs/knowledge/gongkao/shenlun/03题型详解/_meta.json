@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "公文写作",
+    "label": "公文写作"
+  },
+  {
+    "type": "file",
+    "name": "归纳概括",
+    "label": "归纳概括"
+  },
+  {
+    "type": "file",
+    "name": "提出对策",
+    "label": "提出对策"
+  },
+  {
+    "type": "file",
+    "name": "文章写作",
+    "label": "文章写作"
+  },
+  {
+    "type": "file",
+    "name": "综合分析",
+    "label": "综合分析"
+  },
+  {
+    "type": "file",
+    "name": "作文写作模板",
+    "label": "作文写作模板"
+  }
+]

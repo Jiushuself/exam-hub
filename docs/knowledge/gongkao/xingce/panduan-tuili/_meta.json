@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "判断推理总览"
+  },
+  {
+    "type": "file",
+    "name": "01定义判断",
+    "label": "01 定义判断"
+  },
+  {
+    "type": "file",
+    "name": "02思维导图",
+    "label": "02 思维导图"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "科学推理",
+    "label": "科学推理"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "类比推理",
+    "label": "类比推理"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "逻辑判断",
+    "label": "逻辑判断"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "图形推理",
+    "label": "图形推理"
+  }
+]

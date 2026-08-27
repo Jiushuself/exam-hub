@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "408 知识库总览"
+  },
+  {
+    "type": "dir",
+    "name": "data-structure",
+    "label": "数据结构"
+  },
+  {
+    "type": "dir",
+    "name": "computer-organization",
+    "label": "计算机组成原理"
+  },
+  {
+    "type": "dir",
+    "name": "operating-system",
+    "label": "操作系统"
+  },
+  {
+    "type": "dir",
+    "name": "computer-network",
+    "label": "计算机网络"
+  },
+  {
+    "type": "dir",
+    "name": "experience",
+    "label": "考研经验分享"
+  }
+]

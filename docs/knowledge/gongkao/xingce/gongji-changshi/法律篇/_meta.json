@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "法理学",
+    "label": "法理学"
+  },
+  {
+    "type": "file",
+    "name": "民法",
+    "label": "民法"
+  },
+  {
+    "type": "file",
+    "name": "其他法律法规",
+    "label": "其他法律法规"
+  },
+  {
+    "type": "file",
+    "name": "宪法",
+    "label": "宪法"
+  },
+  {
+    "type": "file",
+    "name": "刑法",
+    "label": "刑法"
+  },
+  {
+    "type": "file",
+    "name": "行政法",
+    "label": "行政法"
+  }
+]

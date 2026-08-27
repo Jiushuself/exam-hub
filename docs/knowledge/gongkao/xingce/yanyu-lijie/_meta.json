@@ -1,0 +1,52 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "言语理解总览"
+  },
+  {
+    "type": "file",
+    "name": "标题填入",
+    "label": "标题填入"
+  },
+  {
+    "type": "file",
+    "name": "病句辨析",
+    "label": "病句辨析"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "逻辑填空",
+    "label": "逻辑填空"
+  },
+  {
+    "type": "file",
+    "name": "歧义句辨析",
+    "label": "歧义句辨析"
+  },
+  {
+    "type": "file",
+    "name": "推断下文",
+    "label": "推断下文"
+  },
+  {
+    "type": "file",
+    "name": "细节判断",
+    "label": "细节判断"
+  },
+  {
+    "type": "file",
+    "name": "语句排序",
+    "label": "语句排序"
+  },
+  {
+    "type": "file",
+    "name": "语句填空",
+    "label": "语句填空"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "中心理解",
+    "label": "中心理解"
+  }
+]

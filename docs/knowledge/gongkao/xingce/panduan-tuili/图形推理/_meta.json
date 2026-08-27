@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "01位置规律",
+    "label": "01 位置规律"
+  },
+  {
+    "type": "file",
+    "name": "02样式规律",
+    "label": "02 样式规律"
+  },
+  {
+    "type": "file",
+    "name": "03属性规律",
+    "label": "03 属性规律"
+  },
+  {
+    "type": "file",
+    "name": "04数量规律",
+    "label": "04 数量规律"
+  },
+  {
+    "type": "file",
+    "name": "05特殊规律",
+    "label": "05 特殊规律"
+  },
+  {
+    "type": "file",
+    "name": "06空间类",
+    "label": "06 空间类"
+  }
+]

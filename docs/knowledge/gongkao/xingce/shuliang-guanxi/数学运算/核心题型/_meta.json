@@ -1,0 +1,57 @@
+[
+  {
+    "type": "file",
+    "name": "方阵问题",
+    "label": "方阵问题"
+  },
+  {
+    "type": "file",
+    "name": "工程问题",
+    "label": "工程问题"
+  },
+  {
+    "type": "file",
+    "name": "几何问题",
+    "label": "几何问题"
+  },
+  {
+    "type": "file",
+    "name": "计算问题",
+    "label": "计算问题"
+  },
+  {
+    "type": "file",
+    "name": "经济利润问题",
+    "label": "经济利润问题"
+  },
+  {
+    "type": "file",
+    "name": "牛吃草问题",
+    "label": "牛吃草问题"
+  },
+  {
+    "type": "file",
+    "name": "排列组合及概率",
+    "label": "排列组合及概率"
+  },
+  {
+    "type": "file",
+    "name": "容斥问题",
+    "label": "容斥问题"
+  },
+  {
+    "type": "file",
+    "name": "溶液问题",
+    "label": "溶液问题"
+  },
+  {
+    "type": "file",
+    "name": "行程问题",
+    "label": "行程问题"
+  },
+  {
+    "type": "file",
+    "name": "最值问题",
+    "label": "最值问题"
+  }
+]

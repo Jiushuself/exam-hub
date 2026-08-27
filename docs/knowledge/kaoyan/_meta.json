@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "index", "label": "考研概览" },
+  { "type": "dir", "name": "408", "label": "计算机 408" }
+]

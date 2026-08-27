@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "地理",
+    "label": "地理"
+  },
+  {
+    "type": "file",
+    "name": "化学",
+    "label": "化学"
+  },
+  {
+    "type": "file",
+    "name": "生物",
+    "label": "生物"
+  },
+  {
+    "type": "file",
+    "name": "物理",
+    "label": "物理"
+  }
+]

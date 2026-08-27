@@ -1,0 +1,69 @@
+[
+  {
+    "text": "首页",
+    "link": "/"
+  },
+  {
+    "text": "知识库",
+    "items": [
+      {
+        "text": "知识库总览",
+        "link": "/knowledge/"
+      },
+      {
+        "text": "考研 · 计算机 408",
+        "link": "/knowledge/kaoyan/408/"
+      },
+      {
+        "text": "考公 · 行测与申论",
+        "link": "/knowledge/gongkao/"
+      }
+    ]
+  },
+  {
+    "text": "资料库",
+    "items": [
+      {
+        "text": "全部资料",
+        "link": "/resources/"
+      },
+      {
+        "text": "考研资料",
+        "link": "/resources/?exam=kaoyan"
+      },
+      {
+        "text": "考公资料",
+        "link": "/resources/?exam=gongkao"
+      },
+      {
+        "text": "考编资料",
+        "link": "/resources/?exam=kaobian"
+      },
+      {
+        "text": "教师资格证资料",
+        "link": "/resources/?exam=teacher"
+      },
+      {
+        "text": "英语四六级资料",
+        "link": "/resources/?exam=cet"
+      },
+      {
+        "text": "其他考试资料",
+        "link": "/resources/?exam=other"
+      }
+    ]
+  },
+  {
+    "text": "更多",
+    "items": [
+      {
+        "text": "最近更新",
+        "link": "/updates"
+      },
+      {
+        "text": "关于与收录原则",
+        "link": "/about"
+      }
+    ]
+  }
+]

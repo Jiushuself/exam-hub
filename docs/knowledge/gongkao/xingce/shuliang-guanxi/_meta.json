@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "数量关系总览"
+  },
+  {
+    "type": "file",
+    "name": "数学常识",
+    "label": "数学常识"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "数学运算",
+    "label": "数学运算"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "数字推理",
+    "label": "数字推理"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir-section-header",
+    "name": "核心题型",
+    "label": "核心题型"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "解题思想",
+    "label": "解题思想"
+  }
+]

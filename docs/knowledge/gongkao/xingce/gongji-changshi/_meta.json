@@ -1,0 +1,62 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "公基常识总览"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "法律篇",
+    "label": "法律篇"
+  },
+  {
+    "type": "file",
+    "name": "公文篇",
+    "label": "公文篇"
+  },
+  {
+    "type": "file",
+    "name": "管理篇",
+    "label": "管理篇"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "国情省情",
+    "label": "国情省情"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "经济篇",
+    "label": "经济篇"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "历史篇",
+    "label": "历史篇"
+  },
+  {
+    "type": "file",
+    "name": "马克思主义哲学",
+    "label": "马克思主义哲学"
+  },
+  {
+    "type": "file",
+    "name": "毛泽东思想",
+    "label": "毛泽东思想"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "人文篇",
+    "label": "人文篇"
+  },
+  {
+    "type": "file",
+    "name": "荣誉成就",
+    "label": "荣誉成就"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "自然科技篇",
+    "label": "自然科技篇"
+  }
+]

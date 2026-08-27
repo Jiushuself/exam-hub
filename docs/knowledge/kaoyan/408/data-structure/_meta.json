@@ -1,0 +1,62 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "数据结构章节索引"
+  },
+  {
+    "type": "file",
+    "name": "1.数据结构",
+    "label": "1.数据结构"
+  },
+  {
+    "type": "file",
+    "name": "2.线性表",
+    "label": "2.线性表"
+  },
+  {
+    "type": "file",
+    "name": "3.1特殊矩阵的压缩存储",
+    "label": "3.1特殊矩阵的压缩存储"
+  },
+  {
+    "type": "file",
+    "name": "3.栈、队列",
+    "label": "3.栈、队列"
+  },
+  {
+    "type": "file",
+    "name": "4.串",
+    "label": "4.串"
+  },
+  {
+    "type": "file",
+    "name": "5.树",
+    "label": "5.树"
+  },
+  {
+    "type": "file",
+    "name": "6.图",
+    "label": "6.图"
+  },
+  {
+    "type": "file",
+    "name": "7.查找",
+    "label": "7.查找"
+  },
+  {
+    "type": "file",
+    "name": "8.排序",
+    "label": "8.排序"
+  },
+  {
+    "type": "file",
+    "name": "树的遍历java",
+    "label": "树的遍历java"
+  },
+  {
+    "type": "file",
+    "name": "DS代码",
+    "label": "DS代码"
+  }
+]

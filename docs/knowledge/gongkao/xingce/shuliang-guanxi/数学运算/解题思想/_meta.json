@@ -1,0 +1,42 @@
+[
+  {
+    "type": "file",
+    "name": "倍数特性",
+    "label": "倍数特性"
+  },
+  {
+    "type": "file",
+    "name": "代入排除思想",
+    "label": "代入排除思想"
+  },
+  {
+    "type": "file",
+    "name": "方程思想",
+    "label": "方程思想"
+  },
+  {
+    "type": "file",
+    "name": "赋值思想",
+    "label": "赋值思想"
+  },
+  {
+    "type": "file",
+    "name": "逆向推理",
+    "label": "逆向推理"
+  },
+  {
+    "type": "file",
+    "name": "奇偶特性",
+    "label": "奇偶特性"
+  },
+  {
+    "type": "file",
+    "name": "十字交叉",
+    "label": "十字交叉"
+  },
+  {
+    "type": "file",
+    "name": "余数特性",
+    "label": "余数特性"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "name": "rspress-doc-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rspress build",
+    "dev": "rspress dev",
+    "format": "prettier --write .",
+    "import:cs408-data-structure": "node scripts/import-cs408-data-structure.mjs",
+    "import:kaoyan408": "node scripts/import-kaoyan-408.mjs",
+    "import:gongkao": "node scripts/import-sakib.mjs",
+    "lint": "rslint",
+    "preview": "rspress preview",
+    "verify:cs408-data-structure": "node scripts/verify-cs408-data-structure.mjs",
+    "verify:gongkao": "node scripts/verify-gongkao.mjs",
+    "verify:kaoyan408": "node scripts/verify-kaoyan-408.mjs"
+  },
+  "dependencies": {
+    "@rspress/core": "^2.0.18"
+  },
+  "devDependencies": {
+    "@rslint/core": "^0.5.3",
+    "@types/node": "^22.8.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "katex": "^0.18.4",
+    "prettier": "^3.8.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remark-math": "^6.0.0",
+    "typescript": "^6.0.3",
+    "unist-util-visit": "^5.1.0"
+  }
+}

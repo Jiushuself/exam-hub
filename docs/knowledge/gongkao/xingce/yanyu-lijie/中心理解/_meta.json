@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "并列关系",
+    "label": "并列关系"
+  },
+  {
+    "type": "file",
+    "name": "递进关系",
+    "label": "递进关系"
+  },
+  {
+    "type": "file",
+    "name": "反面论证",
+    "label": "反面论证"
+  },
+  {
+    "type": "file",
+    "name": "条件关系",
+    "label": "条件关系"
+  },
+  {
+    "type": "file",
+    "name": "行为脉络",
+    "label": "行为脉络"
+  },
+  {
+    "type": "file",
+    "name": "因果关系",
+    "label": "因果关系"
+  },
+  {
+    "type": "file",
+    "name": "转折关系",
+    "label": "转折关系"
+  }
+]

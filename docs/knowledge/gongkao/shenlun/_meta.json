@@ -1,0 +1,42 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "申论总览"
+  },
+  {
+    "type": "file",
+    "name": "01什么是申论",
+    "label": "01 什么是申论"
+  },
+  {
+    "type": "file",
+    "name": "02材料阅读技巧",
+    "label": "02 材料阅读技巧"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "03题型详解",
+    "label": "03题型详解"
+  },
+  {
+    "type": "file",
+    "name": "04申论规范词",
+    "label": "04 申论规范词"
+  },
+  {
+    "type": "file",
+    "name": "05必备名言",
+    "label": "05 必备名言"
+  },
+  {
+    "type": "file",
+    "name": "06人物素材",
+    "label": "06 人物素材"
+  },
+  {
+    "type": "file",
+    "name": "07范文欣赏",
+    "label": "07 范文欣赏"
+  }
+]

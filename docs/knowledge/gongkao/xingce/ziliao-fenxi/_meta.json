@@ -1,0 +1,62 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "资料分析总览"
+  },
+  {
+    "type": "file",
+    "name": "01开篇",
+    "label": "01 开篇"
+  },
+  {
+    "type": "file",
+    "name": "02结构阅读法",
+    "label": "02 结构阅读法"
+  },
+  {
+    "type": "file",
+    "name": "03速算技巧",
+    "label": "03 速算技巧"
+  },
+  {
+    "type": "file",
+    "name": "04比重专题",
+    "label": "04 比重专题"
+  },
+  {
+    "type": "file",
+    "name": "05平均数专题",
+    "label": "05 平均数专题"
+  },
+  {
+    "type": "file",
+    "name": "06增长量专题",
+    "label": "06 增长量专题"
+  },
+  {
+    "type": "file",
+    "name": "07增长率专题",
+    "label": "07 增长率专题"
+  },
+  {
+    "type": "file",
+    "name": "08倍数专题",
+    "label": "08 倍数专题"
+  },
+  {
+    "type": "file",
+    "name": "09真题演练",
+    "label": "09 真题演练"
+  },
+  {
+    "type": "file",
+    "name": "10秒杀技巧",
+    "label": "10 秒杀技巧"
+  },
+  {
+    "type": "file",
+    "name": "11思维导图",
+    "label": "11 思维导图"
+  }
+]

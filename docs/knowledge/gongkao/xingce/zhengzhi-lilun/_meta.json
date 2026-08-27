@@ -1,0 +1,57 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "政治理论总览"
+  },
+  {
+    "type": "file",
+    "name": "党的创新理论",
+    "label": "党的创新理论"
+  },
+  {
+    "type": "file",
+    "name": "马克思主义哲学",
+    "label": "马克思主义哲学"
+  },
+  {
+    "type": "file",
+    "name": "马克思主义政治经济学",
+    "label": "马克思主义政治经济学"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "其他热点",
+    "label": "其他热点"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "求是文章",
+    "label": "求是文章"
+  },
+  {
+    "type": "file",
+    "name": "中国特色社会主义理论体系",
+    "label": "中国特色社会主义理论体系"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "重要会议",
+    "label": "重要会议"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "重要讲话",
+    "label": "重要讲话"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "重要考察",
+    "label": "重要考察"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "重要文件",
+    "label": "重要文件"
+  }
+]

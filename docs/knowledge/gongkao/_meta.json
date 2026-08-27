@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "index", "label": "考公知识库" },
+  { "type": "dir", "name": "xingce", "label": "行测" },
+  { "type": "dir", "name": "shenlun", "label": "申论" }
+]

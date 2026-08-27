@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "地理知识",
+    "label": "地理知识"
+  },
+  {
+    "type": "file",
+    "name": "高新技术",
+    "label": "高新技术"
+  },
+  {
+    "type": "file",
+    "name": "化学知识",
+    "label": "化学知识"
+  },
+  {
+    "type": "file",
+    "name": "科技史",
+    "label": "科技史"
+  },
+  {
+    "type": "file",
+    "name": "生活常识",
+    "label": "生活常识"
+  },
+  {
+    "type": "file",
+    "name": "生物知识",
+    "label": "生物知识"
+  },
+  {
+    "type": "file",
+    "name": "物理知识",
+    "label": "物理知识"
+  }
+]

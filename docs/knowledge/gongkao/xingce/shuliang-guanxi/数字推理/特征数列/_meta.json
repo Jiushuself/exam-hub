@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "多重数列",
+    "label": "多重数列"
+  },
+  {
+    "type": "file",
+    "name": "分数数列",
+    "label": "分数数列"
+  },
+  {
+    "type": "file",
+    "name": "基础数列",
+    "label": "基础数列"
+  },
+  {
+    "type": "file",
+    "name": "幂次数列",
+    "label": "幂次数列"
+  }
+]

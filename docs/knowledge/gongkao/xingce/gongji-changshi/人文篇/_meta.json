@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "古代文化",
+    "label": "古代文化"
+  },
+  {
+    "type": "file",
+    "name": "古代文学",
+    "label": "古代文学"
+  },
+  {
+    "type": "file",
+    "name": "现代文化",
+    "label": "现代文化"
+  },
+  {
+    "type": "file",
+    "name": "现代文学",
+    "label": "现代文学"
+  }
+]

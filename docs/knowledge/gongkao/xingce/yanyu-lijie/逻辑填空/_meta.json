@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "词义辨析",
+    "label": "词义辨析"
+  },
+  {
+    "type": "file",
+    "name": "词语辨析",
+    "label": "词语辨析"
+  },
+  {
+    "type": "file",
+    "name": "语境分析",
+    "label": "语境分析"
+  }
+]

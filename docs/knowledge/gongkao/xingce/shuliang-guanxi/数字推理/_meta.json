@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir-section-header",
+    "name": "非特征数列",
+    "label": "非特征数列"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "特征数列",
+    "label": "特征数列"
+  }
+]

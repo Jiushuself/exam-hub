@@ -1,0 +1,2067 @@
+{
+  "repository": "https://github.com/vsakib/sakib",
+  "commit": "0634f718a75f13b135cb849bd821734a762cc2fc",
+  "markdownFiles": 146,
+  "embeddedImages": 19,
+  "remoteImageAssets": 325,
+  "remoteImageReferences": 345,
+  "remoteImageSourceUrls": 343,
+  "unresolvedRemoteImages": 17,
+  "unresolvedRemoteImageUrls": [
+    "https://sakib.hidns.co/sl/fzwt.png",
+    "https://sakib.hidns.co/assets/1721974487325.CQVYuGRd.png",
+    "https://sakib.hidns.co/sl/tssjx.png",
+    "https://sakib.hidns.co/sl/2021gkjhsl.png",
+    "https://sakib.hidns.co/sl/1721973636240.png",
+    "https://sakib.hidns.co/sl/2020xjjh.png",
+    "https://sakib.hidns.co/sl/2015jsjh.png",
+    "https://sakib.hidns.co/sl/2021gkjhsljx.jpg",
+    "https://sakib.hidns.co/sl/1721973874630.png",
+    "https://sakib.hidns.co/sl/2025jsjh.png",
+    "https://sakib.hidns.co/sl/img_6.png",
+    "https://sakib.hidns.co/sl/img_7.png",
+    "https://sakib.hidns.co/assets/1721893528664.s9WSeyXy.png",
+    "https://sakib.hidns.co/sl/xdf.png",
+    "https://sakib.hidns.co/assets/1721894279028.BqfGlM7W.png",
+    "https://sakib.hidns.co/sl/2022scszjj.png",
+    "https://sakib.hidns.co/assets/img_1.DITjAB3g.png"
+  ],
+  "remoteImages": [
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986722592_img.2151Xffr.png",
+      "localUrl": "/gongkao-assets/remote/3a4169bfa4e3fd127475.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986730538_u_1640949266_161062309_fm_30_app_106_f_PNG.BTAZiy34.png",
+      "localUrl": "/gongkao-assets/remote/1f2d067f40c18437a080.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986734108_v2-f2dcd80fc02ea21823ba11a2383d1b3e_r.DqsBX4cv.jpg",
+      "localUrl": "/gongkao-assets/remote/f8bcfc00064a1ef11ed2.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986749684_dxs.DBrGlCjT.jpg",
+      "localUrl": "/gongkao-assets/remote/4c97cf229cc8fd6f6f0c.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986745259_kst.C05fkQah.jpg",
+      "localUrl": "/gongkao-assets/remote/9dca14a98d410ca297f7.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983566560_tmpryqk9gez.png",
+      "localUrl": "/gongkao-assets/remote/1141c4aa981e132b39c8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983687270_img_1-1747981175856-382.png",
+      "localUrl": "/gongkao-assets/remote/6431ea1b523d61e887f9.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983569092_tmp1yekwybv.png",
+      "localUrl": "/gongkao-assets/remote/0a819f0e82d9e2e29174.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983571297_tmpw4u472do.webp",
+      "localUrl": "/gongkao-assets/remote/88f535c424b76ce00699.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983686951_1730274970879.png",
+      "localUrl": "/gongkao-assets/remote/5a217af6a87bfe80f7a8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983574790_tmpyek3u20y.webp",
+      "localUrl": "/gongkao-assets/remote/78919c26f80a036a371b.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983568100_tmp67511lp5.png",
+      "localUrl": "/gongkao-assets/remote/c94e136e8b81c9121f4b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983687005_tqyb.png",
+      "localUrl": "/gongkao-assets/remote/cab45026b6f8062534db.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983557148_yu.jpg",
+      "localUrl": "/gongkao-assets/remote/f96e533127aff6147c36.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983687574_1730275410775.png",
+      "localUrl": "/gongkao-assets/remote/7b0c4dc4ded14c2a0583.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983688686_1730275469189.png",
+      "localUrl": "/gongkao-assets/remote/111e657ce94762dfaf51.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986798376_wzbhyt.png",
+      "localUrl": "/gongkao-assets/remote/de9a7ea697b813f5b25a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986876300_img%20%281%29.png",
+      "localUrl": "/gongkao-assets/remote/9150796a282388e54ff7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986885147_img%20%282%29.png",
+      "localUrl": "/gongkao-assets/remote/1e07d0c180c58e932ce9.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986886877_1729750996020.png",
+      "localUrl": "/gongkao-assets/remote/cb26859e30a6d56a929e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986793339_gl.png",
+      "localUrl": "/gongkao-assets/remote/61041502a60ecc5c0f2c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986888209_1729826249351.png",
+      "localUrl": "/gongkao-assets/remote/9f33275b6e35070fa3c2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986799423_img-1747981093703-305.png",
+      "localUrl": "/gongkao-assets/remote/685261ef8e7f82134a03.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986800182_img_1-1747981093703-306.png",
+      "localUrl": "/gongkao-assets/remote/777657bb84367c2595df.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986791055_1729835419335.png",
+      "localUrl": "/gongkao-assets/remote/a854c9a96203c694bb8c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986981531_img_2-1747981093703-307.png",
+      "localUrl": "/gongkao-assets/remote/3d1b266ebc5249f15716.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986884136_img_3-1747981093703-308.png",
+      "localUrl": "/gongkao-assets/remote/f4af61b40aafa5eb342d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986973987_1729838751153.png",
+      "localUrl": "/gongkao-assets/remote/67802f736e06d7144f51.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986889061_1729753645327.png",
+      "localUrl": "/gongkao-assets/remote/4aaba72e9804ef8a3c36.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986887663_1729753688644.png",
+      "localUrl": "/gongkao-assets/remote/f087c7e57d13f6cb23d3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986792024_1729753792116.png",
+      "localUrl": "/gongkao-assets/remote/f78d6a1789c694f5137a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986884767_1729758775957.png",
+      "localUrl": "/gongkao-assets/remote/c3de395bb4708d1f789a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986887087_1729753983824.png",
+      "localUrl": "/gongkao-assets/remote/b979908ef5c72ec26d09.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986799565_img_4-1747981093703-309.png",
+      "localUrl": "/gongkao-assets/remote/b446bba7e1e102b009d8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986792446_1730097988755.png",
+      "localUrl": "/gongkao-assets/remote/9572becc6f07bd4b635d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986796901_1730098249968.png",
+      "localUrl": "/gongkao-assets/remote/af6909e22c142514880e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986889794_bhhbbh.png",
+      "localUrl": "/gongkao-assets/remote/703c1b03702b761b5d84.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986886734_cahobbh.png",
+      "localUrl": "/gongkao-assets/remote/790e9d1e9845528d0c18.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986972714_rjdqx.png",
+      "localUrl": "/gongkao-assets/remote/ba44fa9edf9e34391c62.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986793180_img_6-1747981093704-310.png",
+      "localUrl": "/gongkao-assets/remote/3cbef67b10a09bcfd337.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986976474_img_5-1747981093704-311.png",
+      "localUrl": "/gongkao-assets/remote/d31445187bf194465fca.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987273726_img_7-1747981129125-362.png",
+      "localUrl": "/gongkao-assets/remote/a5fc5f6a71c5e0ce87e4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987269900_1730167984957.png",
+      "localUrl": "/gongkao-assets/remote/8b374d3112b155c18264.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987271523_img_8-1747981129125-363.png",
+      "localUrl": "/gongkao-assets/remote/e55eeb9039e482cc6779.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987271162_1730170731571.png",
+      "localUrl": "/gongkao-assets/remote/747d8fc3f883c35f7c02.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987270759_1730170917917.jpg",
+      "localUrl": "/gongkao-assets/remote/a95239787c384a05ac5a.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987273589_1730186703829.png",
+      "localUrl": "/gongkao-assets/remote/d3e3af5a6ea5a9ac8d29.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987268389_img_9-1747981129126-364.png",
+      "localUrl": "/gongkao-assets/remote/faa1be489e3fb7c49d95.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987268945_1730187605594.png",
+      "localUrl": "/gongkao-assets/remote/a3c0ae03df4442e9ce9f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986997217_img-1747981030146-215.png",
+      "localUrl": "/gongkao-assets/remote/4d9c64cc1a09775baa2c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986999281_img_1-1747981030146-216.png",
+      "localUrl": "/gongkao-assets/remote/6c2c31362b18b3562032.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987003054_1729070537041.png",
+      "localUrl": "/gongkao-assets/remote/618c464f318cac3bee8c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986997803_1729070913215.png",
+      "localUrl": "/gongkao-assets/remote/03ec97f7ebc30f267fa5.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986996189_1729071070616.png",
+      "localUrl": "/gongkao-assets/remote/9bb96dabc98ce83dee97.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987000054_1729071197165.png",
+      "localUrl": "/gongkao-assets/remote/97f2e29cb7ba5c6cb663.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987000431_img_2-1747981030147-217.png",
+      "localUrl": "/gongkao-assets/remote/0a33efc49b2bf77a1c2e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987077595_1729132164132.png",
+      "localUrl": "/gongkao-assets/remote/ceab6fa5deb3a8387807.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986995360_1729132488402.png",
+      "localUrl": "/gongkao-assets/remote/9db746b0ef8149949310.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986997510_1729132729836.png",
+      "localUrl": "/gongkao-assets/remote/43085e2ec4f51ec34cfd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987022482_1729134451805.png",
+      "localUrl": "/gongkao-assets/remote/9b4765ed7fdfdf941e06.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987002711_1729134765539.png",
+      "localUrl": "/gongkao-assets/remote/ecdcf2950a84fe3a0246.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987016894_1729134823922.png",
+      "localUrl": "/gongkao-assets/remote/f4e0f2284b3fabaaa4f6.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987021599_1729134869138.png",
+      "localUrl": "/gongkao-assets/remote/1f5f7b0fa716b4b97ecc.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987131549_dianliu.jpg",
+      "localUrl": "/gongkao-assets/remote/b422c9e02024fec25139.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987017930_1729135278923.png",
+      "localUrl": "/gongkao-assets/remote/9eaa6e5d96c9abad8b8d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987016418_1729135472069.png",
+      "localUrl": "/gongkao-assets/remote/149d9e85b2439083033e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987019535_img_7-1747981030147-218.png",
+      "localUrl": "/gongkao-assets/remote/827445d0c8a2ca9b3dcc.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987141008_1729220960472.png",
+      "localUrl": "/gongkao-assets/remote/31e85aeef0149dd80f56.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987161858_img_21.png",
+      "localUrl": "/gongkao-assets/remote/9b032a58e3b81dad5229.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987167454_1729233390352.png",
+      "localUrl": "/gongkao-assets/remote/77a9475b70eb39b0bb3f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987169442_1729233443862.png",
+      "localUrl": "/gongkao-assets/remote/9762b699c24a35414521.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987167675_img_22.png",
+      "localUrl": "/gongkao-assets/remote/75e684e47a4448a12f49.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987162789_img_24.png",
+      "localUrl": "/gongkao-assets/remote/23270eebb69623aa1136.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987167230_1729235396139.png",
+      "localUrl": "/gongkao-assets/remote/7e589d0c6b3c79a36f33.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987164308_img_25.png",
+      "localUrl": "/gongkao-assets/remote/5389fe063a86b93dc6e7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987192395_1729236603372.png",
+      "localUrl": "/gongkao-assets/remote/109de8dbd9355761ddcf.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987192740_1729236848994.png",
+      "localUrl": "/gongkao-assets/remote/11fba4ce3d34df3d98b1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987167365_img_26.png",
+      "localUrl": "/gongkao-assets/remote/57b2e66a61674b12abf2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987168230_1729237624978.png",
+      "localUrl": "/gongkao-assets/remote/2068db3c7e0f5534868e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987234909_1729237933979.png",
+      "localUrl": "/gongkao-assets/remote/a9705a5cc5e0e399f302.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987192496_1729238215065.jpg",
+      "localUrl": "/gongkao-assets/remote/c140a35d85d979969920.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987171306_1729238397756.png",
+      "localUrl": "/gongkao-assets/remote/8bd55ca538b4f986002b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987224823_img_27.png",
+      "localUrl": "/gongkao-assets/remote/c25454350374725e4394.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987222918_1729497878603.png",
+      "localUrl": "/gongkao-assets/remote/4397e00fe6d5366ea56e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987195032_1729498048688.png",
+      "localUrl": "/gongkao-assets/remote/857c4052aff5be165d53.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987192623_1729503874405.png",
+      "localUrl": "/gongkao-assets/remote/4de4677cb484d9923dee.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987189969_1729504018135.png",
+      "localUrl": "/gongkao-assets/remote/f53db32e0192d8f1ff00.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987210704_img_28.png",
+      "localUrl": "/gongkao-assets/remote/987e8f78fb274aea1c40.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987187340_1729734462569.png",
+      "localUrl": "/gongkao-assets/remote/ca0055a9e85dafb2f2c7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987191914_1729735024987.png",
+      "localUrl": "/gongkao-assets/remote/e65dfdeec47c635321ec.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987191868_1729735129976.png",
+      "localUrl": "/gongkao-assets/remote/502a78b289d2617d9861.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987204612_img_34.png",
+      "localUrl": "/gongkao-assets/remote/557ef7581665e3202119.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/1729070982949.png",
+      "localUrl": "/gongkao-assets/remote/ebc0d2d691b7453c3615.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_3.png",
+      "localUrl": "/gongkao-assets/remote/9c17b6cfa659494d1f3f.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_4.png",
+      "localUrl": "/gongkao-assets/remote/31e519fb13d09361a561.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_5.png",
+      "localUrl": "/gongkao-assets/remote/6d964fe10965099f6d9d.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_6.png",
+      "localUrl": "/gongkao-assets/remote/f782c9054fae20458b10.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_8.png",
+      "localUrl": "/gongkao-assets/remote/3d6e69f4f173d68bf7d1.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_9.png",
+      "localUrl": "/gongkao-assets/remote/3d6e69f4f173d68bf7d1.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_10.png",
+      "localUrl": "/gongkao-assets/remote/f170db03005406d8b8cf.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_11.png",
+      "localUrl": "/gongkao-assets/remote/403d5ef8b847be749e19.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_12.png",
+      "localUrl": "/gongkao-assets/remote/f8eacee5b5721c554cba.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_13.png",
+      "localUrl": "/gongkao-assets/remote/13341b22994a0b90ad70.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_14.png",
+      "localUrl": "/gongkao-assets/remote/62571c25ea5468c46a47.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_15.png",
+      "localUrl": "/gongkao-assets/remote/4839e74773cd031d6d4b.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_16.png",
+      "localUrl": "/gongkao-assets/remote/22409c503107a3d25b7d.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_17.png",
+      "localUrl": "/gongkao-assets/remote/a4fd0539571482473f53.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_18.png",
+      "localUrl": "/gongkao-assets/remote/3e49f5c9175cdb5f219c.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_19.png",
+      "localUrl": "/gongkao-assets/remote/7361cca62210198147d3.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_20.png",
+      "localUrl": "/gongkao-assets/remote/e2ed016beb2e5e8eb446.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_23.png",
+      "localUrl": "/gongkao-assets/remote/fcce84a8146276205da0.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_29.png",
+      "localUrl": "/gongkao-assets/remote/b4080227640a4c7a08cb.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_30.png",
+      "localUrl": "/gongkao-assets/remote/0bbd571503a64e39f8bb.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_31.png",
+      "localUrl": "/gongkao-assets/remote/8a0f40704e86d7005779.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_32.png",
+      "localUrl": "/gongkao-assets/remote/b83464a6eaf355397b09.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/img/img_33.png",
+      "localUrl": "/gongkao-assets/remote/39221d6284f14c1a3d49.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986235037_tmp3idn0_wo.png",
+      "localUrl": "/gongkao-assets/remote/d0744e90d2c10196ccf0.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986262391_tmpz7dyg4pf.png",
+      "localUrl": "/gongkao-assets/remote/fdf3eb508faab1ba9c98.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986276766_tmpypsdorkv.png",
+      "localUrl": "/gongkao-assets/remote/9fa0ef657024666a5e36.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986290353_tmpgqgga__0.png",
+      "localUrl": "/gongkao-assets/remote/59bae61703af2fcdae02.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748329275028_tmp2_biv74i.png",
+      "localUrl": "/gongkao-assets/remote/4d2fdfdded78164252bf.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748329477232_tmpo5u0m_6w.png",
+      "localUrl": "/gongkao-assets/remote/9104cc94f97495d974af.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748329489193_tmpg0jqvhii.png",
+      "localUrl": "/gongkao-assets/remote/275be6a7a3fbde83e96a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986148945_tmp02pzre9i.png",
+      "localUrl": "/gongkao-assets/remote/dcc4aa6fa0532a6bd203.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986205042_tmpyx9xwl1p.png",
+      "localUrl": "/gongkao-assets/remote/5dad80ec609d4cb649ed.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986162654_tmp3vlojzpu.png",
+      "localUrl": "/gongkao-assets/remote/fae5ea9a75ddb0bcf02c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986185643_tmppt89btcz.png",
+      "localUrl": "/gongkao-assets/remote/7025040f58d02ee0c649.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984076265_tmp1gi4flmi.png",
+      "localUrl": "/gongkao-assets/remote/351002d81812743ddbd2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984071802_tmpgyx07s70.png",
+      "localUrl": "/gongkao-assets/remote/068dfd6fafd8b55eddc2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984069286_tmptus70ap0.png",
+      "localUrl": "/gongkao-assets/remote/50d3ee552e7e1e093eb2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984072046_tmpctr2fl1u.png",
+      "localUrl": "/gongkao-assets/remote/bd60c716824c37e73ebf.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984078153_tmpcrh6gefx.png",
+      "localUrl": "/gongkao-assets/remote/0d4a17a10ec95462c661.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984078167_tmpu5f9q89j.png",
+      "localUrl": "/gongkao-assets/remote/21ec0d2124da9703c4d5.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984080999_tmpx8zt444x.png",
+      "localUrl": "/gongkao-assets/remote/a69bb2c25549baae1b5b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984072144_tmpsn7fzlwk.png",
+      "localUrl": "/gongkao-assets/remote/d236a0b3cf71f02188e1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984115333_tmph_9gca0k.png",
+      "localUrl": "/gongkao-assets/remote/413cc6e4dec0e1b609f1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984083176_tmppu5ulvsk.png",
+      "localUrl": "/gongkao-assets/remote/339cf3761708ed3d1113.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984071104_tmpk3m7x08k.png",
+      "localUrl": "/gongkao-assets/remote/6751dbb68d6d6855cdee.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984073110_tmpg_nph9nv.png",
+      "localUrl": "/gongkao-assets/remote/82e0dd005840d3bd8ce4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984076272_tmpv9t4kg66.png",
+      "localUrl": "/gongkao-assets/remote/642a2ba6f8667c0b8a9a.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/assets/1724401600487.B9d4h_kF.png",
+      "localUrl": "/gongkao-assets/remote/8e22f503fb3f450483c6.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984046063_tmp76zbkbye.png",
+      "localUrl": "/gongkao-assets/remote/aa1d8f6fb85367342b2b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984041930_tmp5kfmze8w.png",
+      "localUrl": "/gongkao-assets/remote/485440848ead76664421.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983999699_tmpz4pzh_ty.png",
+      "localUrl": "/gongkao-assets/remote/33c54230adac33b0d1c2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984045842_tmpi9xi80av.png",
+      "localUrl": "/gongkao-assets/remote/b01d9b7bb0d32f4b6a21.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984002143_tmpiegfbxql.png",
+      "localUrl": "/gongkao-assets/remote/4d64343357abe8b748a0.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983999371_tmpoc9r1zg7.png",
+      "localUrl": "/gongkao-assets/remote/eeab93c9b8bb77ab309a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984043109_tmpc94lzqp8.png",
+      "localUrl": "/gongkao-assets/remote/2d2870ab02b618193c07.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984044979_tmpu_tkzx_g.jpg",
+      "localUrl": "/gongkao-assets/remote/be07cbe8ed7e0f1bc1c6.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984040908_tmp77nmr6dx.png",
+      "localUrl": "/gongkao-assets/remote/0d545b3332e360eb9d0d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984037592_tmpkupodmna.png",
+      "localUrl": "/gongkao-assets/remote/ab3d39ab1123acc165e9.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983996283_tmp3ry8lzd0.png",
+      "localUrl": "/gongkao-assets/remote/16d8b49d10759227b7d8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983996203_tmplwzkvziv.png",
+      "localUrl": "/gongkao-assets/remote/17e3d6c2ee08babdbb66.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984025153_tmplmhsmnvu.png",
+      "localUrl": "/gongkao-assets/remote/1410763783b0226c95ec.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983996998_tmpo9d3qpe3.png",
+      "localUrl": "/gongkao-assets/remote/139a2f3f4bf6c0fbbcf7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984002447_tmpabvtff9r.png",
+      "localUrl": "/gongkao-assets/remote/bb70c8b75a185cc60389.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984001054_tmpb3qew1c0.png",
+      "localUrl": "/gongkao-assets/remote/20d373922149abc82791.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983997436_tmpkphimlq1.png",
+      "localUrl": "/gongkao-assets/remote/465b8afd6aef409b9c3e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984003400_tmpex00hxoh.png",
+      "localUrl": "/gongkao-assets/remote/41b7f086f5132c01fd02.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984177774_tmp81vvu9m3.png",
+      "localUrl": "/gongkao-assets/remote/1ae965c58f05f055ada1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984162362_tmp3smdh98o.png",
+      "localUrl": "/gongkao-assets/remote/e35c618e6a3726e2dc4b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984168575_tmptv0edkhu.webp",
+      "localUrl": "/gongkao-assets/remote/f86166f1b6e2f85c5169.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984163679_tmpfmrfl689.png",
+      "localUrl": "/gongkao-assets/remote/1dae9e3a69342716f863.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984164793_tmpxf9y5c5k.png",
+      "localUrl": "/gongkao-assets/remote/da959a3e574321bdca7b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984175698_tmpo4elxul9.png",
+      "localUrl": "/gongkao-assets/remote/e21ece02f7ee03a00de3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984177625_tmp6mbinj8r.png",
+      "localUrl": "/gongkao-assets/remote/e83e55d7f19b35ee62fc.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984196905_tmp836x_93o.jpg",
+      "localUrl": "/gongkao-assets/remote/05cca2f2d5b6f8eef9ff.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984160446_tmpte_mkwqt.png",
+      "localUrl": "/gongkao-assets/remote/581e64842abfadc09b23.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984166377_tmp9l9jd55r.webp",
+      "localUrl": "/gongkao-assets/remote/818e57de491f5054d4a5.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984178499_tmp34zfzec0.png",
+      "localUrl": "/gongkao-assets/remote/fd3da08c9460f9ab9bee.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984161611_tmpeks99bb5.png",
+      "localUrl": "/gongkao-assets/remote/bb680e7a10578fc3ffc4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984159745_tmp2jyg7svt.png",
+      "localUrl": "/gongkao-assets/remote/5298dbfd75532172fb2b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984163464_tmp30azlkfl.png",
+      "localUrl": "/gongkao-assets/remote/9505c45c1e4fe1a2818a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984181247_tmp33xdkvj9.png",
+      "localUrl": "/gongkao-assets/remote/9353a839f670c75d3018.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984162844_tmp1729j2cv.png",
+      "localUrl": "/gongkao-assets/remote/65e4ce80d4867fcce2f5.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747985456747_tmpeiqjqz_v.png",
+      "localUrl": "/gongkao-assets/remote/50c43f897c7fb55fb8ee.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984230341_tmpfe0s6yt3.png",
+      "localUrl": "/gongkao-assets/remote/c8cf341e99f22b61d9a1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984246536_tmpk1cxo4np.png",
+      "localUrl": "/gongkao-assets/remote/4f7149a7d56879d2e8a1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984242817_tmpo0lgk8rd.jpg",
+      "localUrl": "/gongkao-assets/remote/96dacce78f27f5e7a12c.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984227859_tmp4my7_bxm.png",
+      "localUrl": "/gongkao-assets/remote/15d1ca3f847a2c4e0577.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984227310_tmpqh2ew79h.png",
+      "localUrl": "/gongkao-assets/remote/e27edc0b59323be7f47a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984231302_tmpv0yfjw1c.png",
+      "localUrl": "/gongkao-assets/remote/fa993da897c4fdd197de.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984243536_tmpbs_medu5.png",
+      "localUrl": "/gongkao-assets/remote/089f05c073d84603d953.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984235009_tmpxpxs0cue.png",
+      "localUrl": "/gongkao-assets/remote/406f27486a712e8906a3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984238837_tmpteui6bbi.png",
+      "localUrl": "/gongkao-assets/remote/723821546697a4728962.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984245342_tmp8_tvti3a.png",
+      "localUrl": "/gongkao-assets/remote/3837b0c32129ead2782d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984234084_tmpwgxyyio3.png",
+      "localUrl": "/gongkao-assets/remote/ecbe5d3ad01fac19f7f3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984238834_tmpgll_gtli.png",
+      "localUrl": "/gongkao-assets/remote/aed78677d0040ae580fb.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984234637_tmpubr66ect.png",
+      "localUrl": "/gongkao-assets/remote/7d123b5b82ce7dcad7bd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984240259_tmp6fd9tw6a.png",
+      "localUrl": "/gongkao-assets/remote/a4f824c420d316afad60.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984296750_tmp7ntgyx_y.png",
+      "localUrl": "/gongkao-assets/remote/0cd10aa0bcee3a6ff623.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984305089_tmpfrhby1l0.png",
+      "localUrl": "/gongkao-assets/remote/3c8adc0b3381984ffc8e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984307327_tmpubt1k6h_.png",
+      "localUrl": "/gongkao-assets/remote/e474b16b9b06630449ba.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984247768_tmpkds2rgf2.webp",
+      "localUrl": "/gongkao-assets/remote/5482ca7f6a434986c779.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984246762_tmpf8akk2yh.webp",
+      "localUrl": "/gongkao-assets/remote/d27cd38c2334fa4c8c45.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984230729_tmppxgn00ok.png",
+      "localUrl": "/gongkao-assets/remote/2e4906b68f84df13be5f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984233415_tmpilhg0de1.webp",
+      "localUrl": "/gongkao-assets/remote/8ce0781678e987d1ebdd.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984324799_tmp_62h4bcs.png",
+      "localUrl": "/gongkao-assets/remote/7fb1fc346f44387175c1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984231714_tmpubv0ypt2.png",
+      "localUrl": "/gongkao-assets/remote/f908febb94a31576388e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984334033_tmpdnire2aq.png",
+      "localUrl": "/gongkao-assets/remote/fc3a3efc1cb63cbcc17c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984331998_tmpv4zqj0ic.png",
+      "localUrl": "/gongkao-assets/remote/913b61147b53f827b9fb.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984133280_tmpbx1jo0_l.png",
+      "localUrl": "/gongkao-assets/remote/6739b2547593ca2faa37.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984126008_tmpqydx66hz.png",
+      "localUrl": "/gongkao-assets/remote/c8a3974b0f4e9e8b1f41.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984126663_tmpszlizwpa.png",
+      "localUrl": "/gongkao-assets/remote/e44ac4bbd7f3a2423ccd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984131623_tmpeuqum71f.jpg",
+      "localUrl": "/gongkao-assets/remote/604bda1a80838d6e7b70.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984131824_tmp4if8tl53.png",
+      "localUrl": "/gongkao-assets/remote/6e70d13fd7330c67fbab.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984125651_tmpfm5ry634.png",
+      "localUrl": "/gongkao-assets/remote/2acfdc1b1345fae9b885.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984127503_tmpa6t93l5x.png",
+      "localUrl": "/gongkao-assets/remote/9a85cf935989e35e2add.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984126561_tmprd_uinn6.png",
+      "localUrl": "/gongkao-assets/remote/3914935f44f614433959.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984127461_tmp8vo_6opp.png",
+      "localUrl": "/gongkao-assets/remote/c35548bd5c4e11f7b7bd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983796623_1724038646970.png",
+      "localUrl": "/gongkao-assets/remote/da412f2d7617f3e48ee8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986645347_1724038842653.png",
+      "localUrl": "/gongkao-assets/remote/a93cb96adfd661be9d33.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983803161_img_8.png",
+      "localUrl": "/gongkao-assets/remote/06892430c5a28baa09fc.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983794305_img_4.png",
+      "localUrl": "/gongkao-assets/remote/a4a5306eb79f4ca9cf58.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983801507_img_6.png",
+      "localUrl": "/gongkao-assets/remote/cfa3d44155bae95d389a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983802691_img_5.png",
+      "localUrl": "/gongkao-assets/remote/ec2a200233f1a3a21c3d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983803127_img_9.png",
+      "localUrl": "/gongkao-assets/remote/cad33b29f362995bbade.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983758336_img_7.png",
+      "localUrl": "/gongkao-assets/remote/5476cf51b68d038be346.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983801039_img_12.png",
+      "localUrl": "/gongkao-assets/remote/851ef60c86735e79292e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986646789_img_15.png",
+      "localUrl": "/gongkao-assets/remote/487553b6de18b12eb054.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983765048_img_16.png",
+      "localUrl": "/gongkao-assets/remote/61a0964db2f6043a4975.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983801424_1724144121733.png",
+      "localUrl": "/gongkao-assets/remote/e61c80ff54baf68030b4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983758789_0067VYMWgy1fpyafll0ibj30jg05st9l.jpg",
+      "localUrl": "/gongkao-assets/remote/5800773e14761f0cf0a1.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986652363_0067VYMWgy1fpyafrp06zj30jg05swff.jpg",
+      "localUrl": "/gongkao-assets/remote/98197ee88c9f0dba8dfc.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986671783_0067VYMWgy1fpyafz413kj30jg05sab6.jpg",
+      "localUrl": "/gongkao-assets/remote/1bb736dcdaded83e4b46.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983797565_0067VYMWgy1fpyagaz8roj30jg069q40.jpg",
+      "localUrl": "/gongkao-assets/remote/5d1c1f156bcb5e818988.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986644184_0067VYMWgy1fpyaglxcj9j30jg058dhg.jpg",
+      "localUrl": "/gongkao-assets/remote/d616dd701d26cdad8565.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986643238_mzr2.png",
+      "localUrl": "/gongkao-assets/remote/9d1eea686041717a111b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983765837_mzr.png",
+      "localUrl": "/gongkao-assets/remote/e11009d45392268b0789.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986646633_1732962883069.png",
+      "localUrl": "/gongkao-assets/remote/4a5592f680b762895ead.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748317464280_tmp_mjmrmor.png",
+      "localUrl": "/gongkao-assets/remote/31e2440eb771f592069d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748317494950_tmpp3vdywjp.png",
+      "localUrl": "/gongkao-assets/remote/7ad1c25d82358a89ca10.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986653088_img.png",
+      "localUrl": "/gongkao-assets/remote/f37e80cdfd1070ec380e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986666448_img_1.png",
+      "localUrl": "/gongkao-assets/remote/98f4c57e8e1da229b59b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986644957_img_1a.png",
+      "localUrl": "/gongkao-assets/remote/4a1194429af0d1f00f3c.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983765629_img_1b.png",
+      "localUrl": "/gongkao-assets/remote/e56614dd2acdade1be19.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983896077_img_3.png",
+      "localUrl": "/gongkao-assets/remote/660653d7da2fcb4ced84.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983899154_img_2.png",
+      "localUrl": "/gongkao-assets/remote/77bc7383748c002b545a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983762448_img_2a.png",
+      "localUrl": "/gongkao-assets/remote/70d625d78212d5297e2f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983764658_img_2b.png",
+      "localUrl": "/gongkao-assets/remote/5061435c83cbbf66b4f3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983758701_img_4-1747980421707-105.png",
+      "localUrl": "/gongkao-assets/remote/87768525cef3c60641fd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983886746_img_5-1747980421707-106.png",
+      "localUrl": "/gongkao-assets/remote/ef915697f3bbc1217a98.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983887590_img_6-1747980421707-107.png",
+      "localUrl": "/gongkao-assets/remote/9bf649c97ab301c1a0bd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983880447_img_7-1747980421707-108.png",
+      "localUrl": "/gongkao-assets/remote/42e278c17e25f060ade1.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983878767_6fcf1ebdc46446b3912e0ca291fd29ab.png",
+      "localUrl": "/gongkao-assets/remote/55cb20549dda5c291d12.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983875664_6401.png",
+      "localUrl": "/gongkao-assets/remote/131b91b2c16e278640b7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983866321_6411.png",
+      "localUrl": "/gongkao-assets/remote/c852c7ca9ca09f5c2d55.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983869196_6421.png",
+      "localUrl": "/gongkao-assets/remote/996c383d1a9b329fa60d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983860250_1724145300666.png",
+      "localUrl": "/gongkao-assets/remote/ee857acfa69b2d1ba990.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983856585_img_2-1747980421707-109.png",
+      "localUrl": "/gongkao-assets/remote/c4470b919336182ed5ae.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983851414_cft.png",
+      "localUrl": "/gongkao-assets/remote/2bdca92fd128ab5e2531.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986672684_slz.png",
+      "localUrl": "/gongkao-assets/remote/559034de509674178e5e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983760210_yz.png",
+      "localUrl": "/gongkao-assets/remote/22e7bd983e32ef18b9bd.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983783987_yuanzhu.png",
+      "localUrl": "/gongkao-assets/remote/44fd55cecb66b719a38d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986644711_yuantai.png",
+      "localUrl": "/gongkao-assets/remote/4246dd9e64b9d4c4fa7d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983819024_slzhui.png",
+      "localUrl": "/gongkao-assets/remote/611d36afa92786346866.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983826312_silzhui.png",
+      "localUrl": "/gongkao-assets/remote/e17a98b3391f4f873184.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983834578_1724205593531.png",
+      "localUrl": "/gongkao-assets/remote/ee1e1d84a4e47d9129ef.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747983839872_img_1-1747980421708-110.png",
+      "localUrl": "/gongkao-assets/remote/bf0d4b322ee725944ed6.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747985740834_tmp04d6adoz.png",
+      "localUrl": "/gongkao-assets/remote/270a4e58cfd0bc59700f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747985764059_tmpg9d2dp42.png",
+      "localUrl": "/gongkao-assets/remote/7d6f4985acc1bf14ea5e.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747985941311_tmps8dle89u.png",
+      "localUrl": "/gongkao-assets/remote/a859efea4587dc1bfa94.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747985977457_tmpslole_d6.png",
+      "localUrl": "/gongkao-assets/remote/68bb067a27608039f4f3.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986033174_tmpvy44isfa.png",
+      "localUrl": "/gongkao-assets/remote/cacca8be069debd10164.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986049254_tmpm84e32a7.png",
+      "localUrl": "/gongkao-assets/remote/40b84ce1a247472c0663.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986069835_tmpw7yxit5l.png",
+      "localUrl": "/gongkao-assets/remote/a2fdb15375431244a5f2.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986093794_tmphd0xghr1.png",
+      "localUrl": "/gongkao-assets/remote/3ede7a19ba4e2d7299ae.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986108790_tmp_bjuh741.png",
+      "localUrl": "/gongkao-assets/remote/2c4ae31638d7456f7583.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986125016_tmpnm0a2rto.png",
+      "localUrl": "/gongkao-assets/remote/857986258719921a6367.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747986001169_tmp7ny_wazq.png",
+      "localUrl": "/gongkao-assets/remote/0944b94796002be57c18.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/dcf.png",
+      "localUrl": "/gongkao-assets/remote/f6b5009b5783ea4397a4.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/sbx.png",
+      "localUrl": "/gongkao-assets/remote/f9243ee1a8f354bb314c.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/slgx/img_1.png",
+      "localUrl": "/gongkao-assets/remote/ccd1292003456395e474.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/ljhrc.png",
+      "localUrl": "/gongkao-assets/remote/99e94a3a404c95515cb6.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/sjhrc.png",
+      "localUrl": "/gongkao-assets/remote/74efd0a72f01eefcadfa.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/2018hljrc.png",
+      "localUrl": "/gongkao-assets/remote/78583956da769768ce58.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_9.png",
+      "localUrl": "/gongkao-assets/remote/8ee06e1f02b4d61b137e.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/assets/1722922843514.CB-kNZV-.jpg",
+      "localUrl": "/gongkao-assets/remote/6a95de5503de8dc518ed.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_3.png",
+      "localUrl": "/gongkao-assets/remote/b41219098f2547b73718.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_4.png",
+      "localUrl": "/gongkao-assets/remote/189763458af19d9a645c.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_1.png",
+      "localUrl": "/gongkao-assets/remote/b8481f7a5bcc3639d634.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_2.png",
+      "localUrl": "/gongkao-assets/remote/47f180dabb494702f74e.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/assets/1721894032645.UpoxAY8i.png",
+      "localUrl": "/gongkao-assets/remote/59b39f3084b7e6fc6054.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_8.png",
+      "localUrl": "/gongkao-assets/remote/c8255d6f92ff529d2b78.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/sl/img_5.png",
+      "localUrl": "/gongkao-assets/remote/df6e73befc82c2ea3cdf.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984386382_tmplt2xs7e6.png",
+      "localUrl": "/gongkao-assets/remote/b30218b522e09a24435b.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984391417_tmpvjmmw99q.png",
+      "localUrl": "/gongkao-assets/remote/5d49521dbb4cc3b11d83.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984388473_tmp_w6r0ery.png",
+      "localUrl": "/gongkao-assets/remote/39402516433b50ea9096.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984386907_tmphlk5fdjw.png",
+      "localUrl": "/gongkao-assets/remote/a69c56782382837b161f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984392982_tmpt4xeybja.png",
+      "localUrl": "/gongkao-assets/remote/2140448ec47215a19144.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984385929_tmpl3j98y3i.png",
+      "localUrl": "/gongkao-assets/remote/9d46f130541ee018f7a0.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747984387833_tmplm3qpore.png",
+      "localUrl": "/gongkao-assets/remote/4698525bb34eb70d3302.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987484281_tmpu9vhs6b9.png",
+      "localUrl": "/gongkao-assets/remote/7eb3391d276b23404a8f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748418868215_tmpi9ya65nj.png",
+      "localUrl": "/gongkao-assets/remote/bead875147227534b655.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987680365_tmpgkgmzs6s.png",
+      "localUrl": "/gongkao-assets/remote/c829f3d87da78e184499.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987691329_tmp5zhnmf4_.png",
+      "localUrl": "/gongkao-assets/remote/6efc875c20f0784c321f.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748418305500_tmpwd21f2x_.png",
+      "localUrl": "/gongkao-assets/remote/37f0fe1abfad72480131.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748418112179_tmp6q43msll.png",
+      "localUrl": "/gongkao-assets/remote/f446b63aa5156532873a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748418135379_tmpkm00oa68.png",
+      "localUrl": "/gongkao-assets/remote/230f440346019c457cd8.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1748418168344_tmp8am5r2bf.png",
+      "localUrl": "/gongkao-assets/remote/6f19bd3e0acf019a0055.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987567949_tmpchzv1yat.png",
+      "localUrl": "/gongkao-assets/remote/d7ac07a8c6ccd8fc0da7.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987529889_tmpeuq7cjt4.png",
+      "localUrl": "/gongkao-assets/remote/9853270b16a45770b01a.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987544598_tmpjqn4z2tv.webp",
+      "localUrl": "/gongkao-assets/remote/bab2b5901d69df31bfb1.webp"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747988895560_image.png",
+      "localUrl": "/gongkao-assets/remote/54f0f4af12a0faa69c59.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987724338_tmpb5_h6l_h.jpg",
+      "localUrl": "/gongkao-assets/remote/c491d0439858f3d32c72.jpg"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747989240866_image.png",
+      "localUrl": "/gongkao-assets/remote/1b49045ee9b85e2c76a6.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987511158_tmp8xwgkozp.png",
+      "localUrl": "/gongkao-assets/remote/ffef4eb2b55ec8048219.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_4.png",
+      "localUrl": "/gongkao-assets/remote/4fc99010d1e8f37e72b2.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_5.png",
+      "localUrl": "/gongkao-assets/remote/9ba8bd6394fc334a2f55.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_6.png",
+      "localUrl": "/gongkao-assets/remote/6b2978d3f682df126130.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_7.png",
+      "localUrl": "/gongkao-assets/remote/e95622eaf3c2470de41e.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_8.png",
+      "localUrl": "/gongkao-assets/remote/c0e4609707b00cc476a6.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_9.png",
+      "localUrl": "/gongkao-assets/remote/2121851f380fc61ac52b.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_10.png",
+      "localUrl": "/gongkao-assets/remote/bd5316c9e6a3bc16b43e.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_11.png",
+      "localUrl": "/gongkao-assets/remote/996ac0507a080d5c0fef.png"
+    },
+    {
+      "sourceUrl": "https://sakib.hidns.co/zlfx/img_12.png",
+      "localUrl": "/gongkao-assets/remote/dd0115ad2139b819a225.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987587952_tmpy985i0nt.png",
+      "localUrl": "/gongkao-assets/remote/bb813dfa590a41b0c735.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987604751_tmpzkoh7hcp.png",
+      "localUrl": "/gongkao-assets/remote/0e89d1e469372b4fb955.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987627415_tmp_j24z1vx.png",
+      "localUrl": "/gongkao-assets/remote/74da9a6c3d5fadbbb8e4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987634560_tmpmjac4g52.png",
+      "localUrl": "/gongkao-assets/remote/b0c43c6d5f4c47d93856.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987653542_tmpmxagmjw4.png",
+      "localUrl": "/gongkao-assets/remote/1625b60d1f1cd752f90d.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987746994_tmpi1dt2lsl.png",
+      "localUrl": "/gongkao-assets/remote/48b232a67738d22c2eea.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987764344_tmpfo3iw1j7.png",
+      "localUrl": "/gongkao-assets/remote/2c34994d67e4d3414bf4.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987773757_tmpzoc7hod3.png",
+      "localUrl": "/gongkao-assets/remote/b4774245822a2213c397.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987788939_tmpcohd303p.png",
+      "localUrl": "/gongkao-assets/remote/330e1ac5d60aa845e585.png"
+    },
+    {
+      "sourceUrl": "https://sakib-img.pages.dev/file/1747987805059_tmp1651k9eo.png",
+      "localUrl": "/gongkao-assets/remote/140ac863c28dd776ebbb.png"
+    }
+  ],
+  "files": [
+    {
+      "source": "公基常识/法律篇/法理学.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/法理学.md",
+      "sourceSha256": "7eb728fa8a56be7f9f42d198011c19ac7dfcdac76a1fa7d1d5ff9279bff78b33"
+    },
+    {
+      "source": "公基常识/法律篇/民法.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/民法.md",
+      "sourceSha256": "807b363ec88e5353beb16efda9eb8e1726ffa9c57d54cd140d20131b5c0001e3"
+    },
+    {
+      "source": "公基常识/法律篇/其他法律法规.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/其他法律法规.md",
+      "sourceSha256": "efbaa3bbcf8ff15b48c49203c567736d01efa1255c009537e47c64cd549bfeb3"
+    },
+    {
+      "source": "公基常识/法律篇/宪法.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/宪法.md",
+      "sourceSha256": "a1649a521a3420e14d4e8cc2e5464f762378d193e9725e9bc1cc7784e353c984"
+    },
+    {
+      "source": "公基常识/法律篇/刑法.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/刑法.md",
+      "sourceSha256": "fb06fa8e48c5437e2ad6fe6ec0d1dacae827e80432257e5d0a74bb1b50cb9c6e"
+    },
+    {
+      "source": "公基常识/法律篇/行政法.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/法律篇/行政法.md",
+      "sourceSha256": "75c94f02e026fe96321d4e0ad1a997eff340d457dbc6b5f2db1ec6805d8ba7c0"
+    },
+    {
+      "source": "公基常识/公文篇.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/公文篇.md",
+      "sourceSha256": "1f52b097c4c1eabfa5b6f69636af5e38458a7fab1b311d235d4d5a8fc5b46f7f"
+    },
+    {
+      "source": "公基常识/管理篇.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/管理篇.md",
+      "sourceSha256": "e5a334b163ec7e223daee6d8b19f43002c54a504a17b7cc16c424a087d533524"
+    },
+    {
+      "source": "公基常识/国情省情/国情.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/国情省情/国情.md",
+      "sourceSha256": "9d5e6240970290d1fe78030278b16dbf59335e74adc6d6ec7520dcf081f7356a"
+    },
+    {
+      "source": "公基常识/经济篇/国际经济.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/国际经济.md",
+      "sourceSha256": "163f081a00c3aaa41972e76c14d97b2ca3ee1029b0ebb90693782c50bcb0bd7b"
+    },
+    {
+      "source": "公基常识/经济篇/宏观经济.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/宏观经济.md",
+      "sourceSha256": "aa3c9280c36e7b791199becb99a84f87d4e6ce0eb0ed8f45b1d595a8c591533c"
+    },
+    {
+      "source": "公基常识/经济篇/马克思政治经济学.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/马克思政治经济学.md",
+      "sourceSha256": "0d56a68f3401ae4f1adb6f3e7612e0977a0e2431ec271416f9546e7c2e87c3b8"
+    },
+    {
+      "source": "公基常识/经济篇/市场经济理论.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/市场经济理论.md",
+      "sourceSha256": "c31b7e1d006b84c4ad347b7f3fb591b4e6894cd66ae88822dc0d5e4b38f4fcf4"
+    },
+    {
+      "source": "公基常识/经济篇/收入分配.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/收入分配.md",
+      "sourceSha256": "745a6849a61862bb5ea07db0e6f70c0e3769a60a5ec7d1f5ee5e94b56bac8171"
+    },
+    {
+      "source": "公基常识/经济篇/微观经济.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/经济篇/微观经济.md",
+      "sourceSha256": "f1407122c047fb44eb341c8eb672dfef6c6895f11ed6ce094942d89b4bc7cceb"
+    },
+    {
+      "source": "公基常识/历史篇/中国古代史.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/历史篇/中国古代史.md",
+      "sourceSha256": "63ef74a5f18107c144f2e484a5ac37dc6820c078d9f1f0d2fb9d43c8b764b336"
+    },
+    {
+      "source": "公基常识/历史篇/中国近代史.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/历史篇/中国近代史.md",
+      "sourceSha256": "5d1ee8b856a75c0df0df189c5b5bde4376615dae56712a6c813ab6566cc9daa5"
+    },
+    {
+      "source": "公基常识/历史篇/中国现代史.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/历史篇/中国现代史.md",
+      "sourceSha256": "d106de519a41aa8eed624c62c23c371403c6098d7df64bd6aa054be677c14711"
+    },
+    {
+      "source": "公基常识/马克思主义哲学.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/马克思主义哲学.md",
+      "sourceSha256": "b0cb92ff31d597dc57e85957f79b4d15fe065d7ea3070ac7cfcc3c000cffa31c"
+    },
+    {
+      "source": "公基常识/毛泽东思想.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/毛泽东思想.md",
+      "sourceSha256": "5a4b1aecdbb58e25233ecf715ddddebb392766bdf684da484c57d6014fb011ad"
+    },
+    {
+      "source": "公基常识/人文篇/古代文化.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/人文篇/古代文化.md",
+      "sourceSha256": "32ec6b7045a56d1d7eb04da090a73d14ad1eb0adbc6d681d1b9b7467f9812a3d"
+    },
+    {
+      "source": "公基常识/人文篇/古代文学.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/人文篇/古代文学.md",
+      "sourceSha256": "86b26d6359d57bdd8e643dc000cd22b46de2d18dbf2238183395bea8925d33e4"
+    },
+    {
+      "source": "公基常识/人文篇/现代文化.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/人文篇/现代文化.md",
+      "sourceSha256": "d13f08b63cc3b783ca2e5b2fb14df38a134a466e5f7a75589792a88feff7bd9a"
+    },
+    {
+      "source": "公基常识/人文篇/现代文学.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/人文篇/现代文学.md",
+      "sourceSha256": "f6aa853d300f11e39b01147c7d421441d9260e67a7c1ba733bf4dba4fa45d5ed"
+    },
+    {
+      "source": "公基常识/荣誉成就.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/荣誉成就.md",
+      "sourceSha256": "6b238803a22a50cebcf911938305e3edd1ec5ab13aa4eadf321e5c40bcf5dd74"
+    },
+    {
+      "source": "公基常识/自然科技篇/地理知识.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/地理知识.md",
+      "sourceSha256": "d26be1b99165dce7bb63fe8ac27d5748b060bb9a857158297262b7ace331937e"
+    },
+    {
+      "source": "公基常识/自然科技篇/高新技术.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/高新技术.md",
+      "sourceSha256": "db7a8d9b4c1c666c4af7344fae7297f7a765ffc6351ba5de514611d5a7eda1a2"
+    },
+    {
+      "source": "公基常识/自然科技篇/化学知识.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/化学知识.md",
+      "sourceSha256": "bc141133169016dbec3614299922ab45b8146e01e0251535cc531c05a86430c5"
+    },
+    {
+      "source": "公基常识/自然科技篇/科技史.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/科技史.md",
+      "sourceSha256": "33ae2bcde5324e4967417f925845668910eb75b3f2e62e33685547d6eb832166"
+    },
+    {
+      "source": "公基常识/自然科技篇/生活常识.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/生活常识.md",
+      "sourceSha256": "05f1fed5d041020bb8360fa773099205e8f93cd3429f988f1eb1fb0300652f23"
+    },
+    {
+      "source": "公基常识/自然科技篇/生物知识.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/生物知识.md",
+      "sourceSha256": "93c761443ba01281031ca8c6e7f3dc0c5923167da6467f74c832ac5715ce9d1b"
+    },
+    {
+      "source": "公基常识/自然科技篇/物理知识.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/自然科技篇/物理知识.md",
+      "sourceSha256": "4378fdaf4621d5d12f8a9beee10951020da1a4c49f6df30bb902d38f1d4d6873"
+    },
+    {
+      "source": "公基常识/index.md",
+      "output": "docs/knowledge/gongkao/xingce/gongji-changshi/index.md",
+      "sourceSha256": "04810d6d93c54c5ff86a94f19d55614733dfcbbb6316c15c3660470960ab37ec"
+    },
+    {
+      "source": "判断推理/01定义判断.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/01定义判断.md",
+      "sourceSha256": "cf4d7fc69947eb6bf724cda0947e33b663d34393117f7373ec74d44b72e83ffd"
+    },
+    {
+      "source": "判断推理/02思维导图.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/02思维导图.md",
+      "sourceSha256": "ecfc807adf19cf410d41eca7944957c218c5dc5821ea0c92e20aee7629b04757"
+    },
+    {
+      "source": "判断推理/科学推理/地理.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/科学推理/地理.md",
+      "sourceSha256": "e2bb2117af61ebdd881739eac4f79549a17031bdc98e980ca2a8b761e5bc7414"
+    },
+    {
+      "source": "判断推理/科学推理/化学.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/科学推理/化学.md",
+      "sourceSha256": "9732fa0ac7c26a659a2af588bba7afd9983603809554f2a650866bbd97c098e7"
+    },
+    {
+      "source": "判断推理/科学推理/生物.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/科学推理/生物.md",
+      "sourceSha256": "68730496f84d5929f8ed6355e2cf3deafcd8d810ae934e44776f5bd8036a46a5"
+    },
+    {
+      "source": "判断推理/科学推理/物理.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/科学推理/物理.md",
+      "sourceSha256": "953d46ae941851316dbdf3e7f79c60be327b8555b17f64e36fe16703e1a1593e"
+    },
+    {
+      "source": "判断推理/类比推理/01语义关系.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/类比推理/01语义关系.md",
+      "sourceSha256": "4a8221bb0561606e55f04b8f9caa1ed3ad8296f8f5bfd22dd8b4d6f3ef8d511b"
+    },
+    {
+      "source": "判断推理/类比推理/02逻辑关系.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/类比推理/02逻辑关系.md",
+      "sourceSha256": "f5802d98200228f61e3b7038df2f84da9ff8a04392a5d6776d60d05f3de4bc21"
+    },
+    {
+      "source": "判断推理/类比推理/03语法关系.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/类比推理/03语法关系.md",
+      "sourceSha256": "3d7a4172f454f3522ebc7834612185093547249228fced41feb0ef7ea2136e14"
+    },
+    {
+      "source": "判断推理/逻辑判断/01翻译推理.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/01翻译推理.md",
+      "sourceSha256": "d95f6de493f91f06200dadefdc7d5f78ef8cf1d6ea3c76ec260d6ab33474b8d3"
+    },
+    {
+      "source": "判断推理/逻辑判断/02组合排列.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/02组合排列.md",
+      "sourceSha256": "6eea40ecff3b5c5f857e48c8edb433242ec070638abfdff5889dd5ba7c39ebeb"
+    },
+    {
+      "source": "判断推理/逻辑判断/03加强削弱.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/03加强削弱.md",
+      "sourceSha256": "6adbc3d4e79cf2c45f06967ea16c19403e8b96c2907c4d92bf455281f6347945"
+    },
+    {
+      "source": "判断推理/逻辑判断/04日常结论.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/04日常结论.md",
+      "sourceSha256": "a05502e5a54d47d72d841308b982dd3b3b2b34c6d1de1a2cd658d4af5f78f07b"
+    },
+    {
+      "source": "判断推理/逻辑判断/05结构相似.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/05结构相似.md",
+      "sourceSha256": "018e6125988660de81ccd11686fcd7f901086d34c7c7a4dc513b774e9c9b7107"
+    },
+    {
+      "source": "判断推理/逻辑判断/06集合推理.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/逻辑判断/06集合推理.md",
+      "sourceSha256": "021f72dcbdb30ca8db4b0fb0ed10874717ce3d3888d2462053c239d7b35e1633"
+    },
+    {
+      "source": "判断推理/图形推理/01位置规律.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/01位置规律.md",
+      "sourceSha256": "1e9afe5a5a4688b1257ed7c6b0fe3b9b1d2dcef82fe99a571648b0ab10aa349f"
+    },
+    {
+      "source": "判断推理/图形推理/02样式规律.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/02样式规律.md",
+      "sourceSha256": "cd53558d2500db97573b9ae7e8de28315f935ea3bbbe3880089d1f322f805253"
+    },
+    {
+      "source": "判断推理/图形推理/03属性规律.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/03属性规律.md",
+      "sourceSha256": "2f6733c24e573de2c77c5655ec5c82cad4d9e0ee9009549122dd74c1d2ec972d"
+    },
+    {
+      "source": "判断推理/图形推理/04数量规律.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/04数量规律.md",
+      "sourceSha256": "3eba2e5ff17adc68bfd76881edd82d1b1a0aa6d51ce3c8011f14ef579c4e48e7"
+    },
+    {
+      "source": "判断推理/图形推理/05特殊规律.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/05特殊规律.md",
+      "sourceSha256": "36ce5657a26795ca992457fbec900bbfccbcc232363a65ba2238fde4662e4c2d"
+    },
+    {
+      "source": "判断推理/图形推理/06空间类.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/图形推理/06空间类.md",
+      "sourceSha256": "a4bcb1c02057298fcee7e03a42c6deed98e1452108d11a7d33e1bf6e87f34729"
+    },
+    {
+      "source": "判断推理/index.md",
+      "output": "docs/knowledge/gongkao/xingce/panduan-tuili/index.md",
+      "sourceSha256": "dfe104be083f35a8262a304fec97759b86537ab368f20b760e6807cb9d76fbc0"
+    },
+    {
+      "source": "申论/01什么是申论.md",
+      "output": "docs/knowledge/gongkao/shenlun/01什么是申论.md",
+      "sourceSha256": "559a5325c09548318eb594c67a56c0ed404081d774c57d1767d43687468641b0"
+    },
+    {
+      "source": "申论/02材料阅读技巧.md",
+      "output": "docs/knowledge/gongkao/shenlun/02材料阅读技巧.md",
+      "sourceSha256": "bee2a6596297f17101ef245873646a499da45e49a8ebc889f9f362f49c0e0924"
+    },
+    {
+      "source": "申论/03题型详解/公文写作.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/公文写作.md",
+      "sourceSha256": "06c30897ba4ca192aa9d76103733936417a0c68fb85b6646c72008560f9df32b"
+    },
+    {
+      "source": "申论/03题型详解/归纳概括.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/归纳概括.md",
+      "sourceSha256": "bfeaa824c5a34b8766a95998bbcd182f6fe1657b2eef0fea261113d049987b71"
+    },
+    {
+      "source": "申论/03题型详解/提出对策.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/提出对策.md",
+      "sourceSha256": "887b7b53519117fee611d1133af68db52c56b34b9be2860c99a90fe0e46e7535"
+    },
+    {
+      "source": "申论/03题型详解/文章写作.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/文章写作.md",
+      "sourceSha256": "56026e9c8d1cd8b779a3702d1dbd941ebac82b7a79d58e870df1b692a4ea2c98"
+    },
+    {
+      "source": "申论/03题型详解/综合分析.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/综合分析.md",
+      "sourceSha256": "f9518657e9d93c948f62eb6e646b66d0c3a1345949ea6e9ba05839a1fe677837"
+    },
+    {
+      "source": "申论/03题型详解/作文写作模板.md",
+      "output": "docs/knowledge/gongkao/shenlun/03题型详解/作文写作模板.md",
+      "sourceSha256": "918443a5dcc11089ddf70373434706aaba55a7ea7a1e793772aae5fe8931c4c5"
+    },
+    {
+      "source": "申论/04申论规范词.md",
+      "output": "docs/knowledge/gongkao/shenlun/04申论规范词.md",
+      "sourceSha256": "936b889aeedab84328fdac12dfd3f94add6480cee64431f7bc782ccb909cbed3"
+    },
+    {
+      "source": "申论/05必备名言.md",
+      "output": "docs/knowledge/gongkao/shenlun/05必备名言.md",
+      "sourceSha256": "1018b2c838b90a8df59d3521ae9d2aba2c65acc6b497337fca3033ac3e6467ae"
+    },
+    {
+      "source": "申论/06人物素材.md",
+      "output": "docs/knowledge/gongkao/shenlun/06人物素材.md",
+      "sourceSha256": "8327e261671d3d1a85f3a76b62ecdd21f060f1016faa1f3caffba5a0d7cfd004"
+    },
+    {
+      "source": "申论/07范文欣赏.md",
+      "output": "docs/knowledge/gongkao/shenlun/07范文欣赏.md",
+      "sourceSha256": "cebbcab279cdbde21e187a78a172abacaac0381b8c70d97c3329154b450cae02"
+    },
+    {
+      "source": "数量关系/数学常识.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学常识.md",
+      "sourceSha256": "5b150209d5b7642530e3c7835d7778c8faa08f533c0851e49b32b2f4ffe9ed1d"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/方阵问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/方阵问题.md",
+      "sourceSha256": "a3ce49b77373ec4b3ab523e4a248d7b2a5903d0c7b6f0d6fc67d71d096641fad"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/工程问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/工程问题.md",
+      "sourceSha256": "5819049d524f0d2674c068dfe835b05523e09409f89a66f6d8afee54685645db"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/几何问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/几何问题.md",
+      "sourceSha256": "361d5cee03a52c71f2e8a780ce1974c2337dfda77be759534cf31e14e531082b"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/计算问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/计算问题.md",
+      "sourceSha256": "acfd6d82e3218e0bf13205b33b07533c6bfb485f84a0c25c3ee55f25ce0a713b"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/经济利润问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/经济利润问题.md",
+      "sourceSha256": "cb0b872744058d403f51785432b80344db88cb3d94d2c1e2a5cb34fe5232619d"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/牛吃草问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/牛吃草问题.md",
+      "sourceSha256": "79f5735bb28677231a05299069afd17babb6604a5ec617e170d03861a771d9bb"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/排列组合及概率.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/排列组合及概率.md",
+      "sourceSha256": "70f69036bd79f104ba24df7c33c431c04c24c402009f5b4c08e201138f8005f6"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/容斥问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/容斥问题.md",
+      "sourceSha256": "9140732f0753dbeefdbf054f119d12a0970cdbe266efef91a9416ad4d7963426"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/溶液问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/溶液问题.md",
+      "sourceSha256": "4b3349cd43e4932a45880b74cd2f2ab3d668d6e53fa13598e0dbbb638ac63139"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/行程问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/行程问题.md",
+      "sourceSha256": "0ddd4939933e4139919cf77d71d55e6ce40f6f6f368370cc23c32e3bb88a9fb9"
+    },
+    {
+      "source": "数量关系/数学运算/核心题型/最值问题.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/核心题型/最值问题.md",
+      "sourceSha256": "0ab455ee08ef510695368ca9944d6998f5c6a766fe5cfb29a82d8097309b3d2b"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/倍数特性.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/倍数特性.md",
+      "sourceSha256": "3106ce0faaf90e2e9a7e9f897498f3a0ed7a5d156fa9a04187cfce1d42946b0e"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/代入排除思想.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/代入排除思想.md",
+      "sourceSha256": "dcc28ed69453c76df3c9494191ad66c6dae46c06365ac188d120fa71147af057"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/方程思想.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/方程思想.md",
+      "sourceSha256": "f0588ee35595bddf62cd596d6163ae1a50179adac8aba334c2d332746d90d23d"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/赋值思想.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/赋值思想.md",
+      "sourceSha256": "8d2cb1acfa00aaf55730f9eda0073011bfc1c0c7fd31bdc15b87a24b6df2349b"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/逆向推理.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/逆向推理.md",
+      "sourceSha256": "19246d381ffb7f631bd1ebf1db496771db6e46538d931db120c8c9215c984cb1"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/奇偶特性.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/奇偶特性.md",
+      "sourceSha256": "a44d1fa5fa1f9bc1a77ef650f129b646821657c118cc8c020387bea26c080581"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/十字交叉.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/十字交叉.md",
+      "sourceSha256": "d47c9e8a9ff826106b05d1ca61a9087e1784ede442be8c5d13c9282a15e636db"
+    },
+    {
+      "source": "数量关系/数学运算/解题思想/余数特性.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数学运算/解题思想/余数特性.md",
+      "sourceSha256": "2a2cf1558550b4da545f292efc7e7df25673db67ed57e238e81499efd497d34e"
+    },
+    {
+      "source": "数量关系/数字推理/非特征数列/递推数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/非特征数列/递推数列.md",
+      "sourceSha256": "5a44adb34a76993b98d9edc568410eb09c6d2f32038ec3a5db90b457ae83579f"
+    },
+    {
+      "source": "数量关系/数字推理/非特征数列/多级数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/非特征数列/多级数列.md",
+      "sourceSha256": "00af2cc67a648c0a3d668cb7ad86f9adb27fc5449d1a2f38d2e7932ac622aec5"
+    },
+    {
+      "source": "数量关系/数字推理/非特征数列/特殊数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/非特征数列/特殊数列.md",
+      "sourceSha256": "4c68f619cd5d65f5bcde8c3bb0e217c37cc3e8e983608aab6e6db47376f08825"
+    },
+    {
+      "source": "数量关系/数字推理/非特征数列/图形数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/非特征数列/图形数列.md",
+      "sourceSha256": "d34f8aea3f0e0a793dfdcdcf12205a8480506e57118a4bfa888622a49b6cd3c5"
+    },
+    {
+      "source": "数量关系/数字推理/特征数列/多重数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/特征数列/多重数列.md",
+      "sourceSha256": "bafd206929c6e34622567e86deb75e8b87d19da6c54026d32f3fbfe0be93a7f6"
+    },
+    {
+      "source": "数量关系/数字推理/特征数列/分数数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/特征数列/分数数列.md",
+      "sourceSha256": "89cd74d7440b2a1667748edba4a5fec397a41e8dec57d6124eca2175fc93a9b8"
+    },
+    {
+      "source": "数量关系/数字推理/特征数列/基础数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/特征数列/基础数列.md",
+      "sourceSha256": "e3a1f23081408dc1a197b7f5b48d99083ec280012d9a9e6fa8a42a71e9065b37"
+    },
+    {
+      "source": "数量关系/数字推理/特征数列/幂次数列.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/数字推理/特征数列/幂次数列.md",
+      "sourceSha256": "b6c77bca1f0a999751a42691f3024e44c84b823194e972c2a8308735a4b917d7"
+    },
+    {
+      "source": "数量关系/index.md",
+      "output": "docs/knowledge/gongkao/xingce/shuliang-guanxi/index.md",
+      "sourceSha256": "a94b4a2646ef70d334592b567b96602cd64c4668cfcbfc68bc30a835369ee824"
+    },
+    {
+      "source": "言语理解/标题填入.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/标题填入.md",
+      "sourceSha256": "e78b8d95be015c0c4ea4222f428bb27a2d7c107a2ab040df5e97e21a5d681c2e"
+    },
+    {
+      "source": "言语理解/病句辨析.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/病句辨析.md",
+      "sourceSha256": "54a0f15b5718ac855375b4dda85dfcd4335eb90789d35648e3d86ada44c96f0e"
+    },
+    {
+      "source": "言语理解/逻辑填空/词义辨析.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/逻辑填空/词义辨析.md",
+      "sourceSha256": "3fabc64e2753ad618cde66679de0de2a0b81ee62ce5d154203185c1ab9486fdc"
+    },
+    {
+      "source": "言语理解/逻辑填空/词语辨析.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/逻辑填空/词语辨析.md",
+      "sourceSha256": "79e0420d8f33cf66de1761397ade366bd1b14e03bb5c5af5f8f0a486b575fe9d"
+    },
+    {
+      "source": "言语理解/逻辑填空/语境分析.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/逻辑填空/语境分析.md",
+      "sourceSha256": "5b0bb0c64937043754365c633aacbde1b5a54697fba3523e56543bbe8e988048"
+    },
+    {
+      "source": "言语理解/歧义句辨析.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/歧义句辨析.md",
+      "sourceSha256": "2d25b5665ba9cc8a8a5d72627be514a9c7925b1a120cfe3100b0add8b1c78aa4"
+    },
+    {
+      "source": "言语理解/推断下文.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/推断下文.md",
+      "sourceSha256": "21f656a6cc15360dcc0ce6ecdb16ddf7b65009ef187926827d42be479d816ca0"
+    },
+    {
+      "source": "言语理解/细节判断.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/细节判断.md",
+      "sourceSha256": "d5b2a05a7f631d854f8f6fc4e8f0c1b570a1d521002fd882c345107bd0b8319e"
+    },
+    {
+      "source": "言语理解/语句排序.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/语句排序.md",
+      "sourceSha256": "a88b8fd9f30f7ce1f70743a8109b33bd1df7853b7ac7d545f40ac029b9232811"
+    },
+    {
+      "source": "言语理解/语句填空.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/语句填空.md",
+      "sourceSha256": "7d8dcc14a4b0315a991921cb9ed721616ade94401f6878a2681de784d1b1e996"
+    },
+    {
+      "source": "言语理解/中心理解/并列关系.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/并列关系.md",
+      "sourceSha256": "4cafecc5c476224bd31a4a8e46297e025cf7fde6fbda9b25fbe59f9939fe9b22"
+    },
+    {
+      "source": "言语理解/中心理解/递进关系.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/递进关系.md",
+      "sourceSha256": "b04034f52325169bb5ed7fa7686bc5f1c8149c982b140a4bb0da105fb9a03db4"
+    },
+    {
+      "source": "言语理解/中心理解/反面论证.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/反面论证.md",
+      "sourceSha256": "727c6b37775cf3ee3e58ce6fc22435da147c5e38401f929750cd119633d762be"
+    },
+    {
+      "source": "言语理解/中心理解/条件关系.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/条件关系.md",
+      "sourceSha256": "3f65efa31faa451b86e864c1f2dba377a28a4957ab96cfd58d10ec90389d2407"
+    },
+    {
+      "source": "言语理解/中心理解/行为脉络.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/行为脉络.md",
+      "sourceSha256": "07281f9adc5770d714901e374abead0ee7a4763bd54024a25ee552d58fcafae8"
+    },
+    {
+      "source": "言语理解/中心理解/因果关系.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/因果关系.md",
+      "sourceSha256": "41338f51e054d4dfe3ed977243c8c32d206f7003bb0d69697abf32f68bb98e73"
+    },
+    {
+      "source": "言语理解/中心理解/转折关系.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/中心理解/转折关系.md",
+      "sourceSha256": "2ca1f91f62bd50db803591623fc206e615bd07be91de0e65115b8ade7609dd59"
+    },
+    {
+      "source": "言语理解/index.md",
+      "output": "docs/knowledge/gongkao/xingce/yanyu-lijie/index.md",
+      "sourceSha256": "9998f47ea5a7aca7e9bfcfe9300946e7f8274eea2ab1e6696ccc254525e20e77"
+    },
+    {
+      "source": "政治理论/党的创新理论.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/党的创新理论.md",
+      "sourceSha256": "b53b0d02d1dfa8457bd2b48e4fe9976f68b424cb83e810862c2c108b52cef552"
+    },
+    {
+      "source": "政治理论/马克思主义哲学.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/马克思主义哲学.md",
+      "sourceSha256": "a1da9dfa0ed6089bfab9d2c11eef3bf96f226aa47e563156374cf0d4f693824f"
+    },
+    {
+      "source": "政治理论/马克思主义政治经济学.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/马克思主义政治经济学.md",
+      "sourceSha256": "ef8f120888b3152d5c669c76609a5bf5e1a1994c77fa7c589f13eaa3e05341f2"
+    },
+    {
+      "source": "政治理论/其他热点/央视春晚考点.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/其他热点/央视春晚考点.md",
+      "sourceSha256": "93a0915fce6802f19fb246440b29a43ae7faa6432f74d3ddad4d2f3f1bc3043a"
+    },
+    {
+      "source": "政治理论/求是文章/促进高质量充分就业.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/求是文章/促进高质量充分就业.md",
+      "sourceSha256": "12cbbbc69ebeb046a8b6f63529e245d0650aa36d97480f571a43b803e36dc04e"
+    },
+    {
+      "source": "政治理论/求是文章/加快建设文化强国.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/求是文章/加快建设文化强国.md",
+      "sourceSha256": "c4c07c98f20f9b31e94e695e9abafcdfd0a7819eec57adc00a9e8ad27236c081"
+    },
+    {
+      "source": "政治理论/中国特色社会主义理论体系.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/中国特色社会主义理论体系.md",
+      "sourceSha256": "2c8ffc2361764eb26bf321de5e50f637c9fa4948e88198bfa9639a8dc9a6f7f4"
+    },
+    {
+      "source": "政治理论/重要会议/2025中央经济工作会议.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要会议/2025中央经济工作会议.md",
+      "sourceSha256": "b8b2282852f31c3c9730e8ac97a13de9072b71ddba96a884d04caaf3f2bfe35c"
+    },
+    {
+      "source": "政治理论/重要会议/二十大.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要会议/二十大.md",
+      "sourceSha256": "de5d2c8931ac31cc474256cc9af05083bda70401c6775289f7491009f8444b24"
+    },
+    {
+      "source": "政治理论/重要会议/二十届三中全会.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要会议/二十届三中全会.md",
+      "sourceSha256": "c490e95b5316b07ceb963aed0a9697061dd345861809358ed7a11cd276a2c150"
+    },
+    {
+      "source": "政治理论/重要会议/亚太经合组织会议.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要会议/亚太经合组织会议.md",
+      "sourceSha256": "dc019de5484dda7afa763bf147f359072f88825edf02d1777340605cddfce2f0"
+    },
+    {
+      "source": "政治理论/重要讲话/2025年新年贺词.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要讲话/2025年新年贺词.md",
+      "sourceSha256": "5ed80aebfb2df4f14f1058f4ce31be7d307d3330a90d6758fc1d12302e8c35ab"
+    },
+    {
+      "source": "政治理论/重要讲话/全国人大成立70周年讲话.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要讲话/全国人大成立70周年讲话.md",
+      "sourceSha256": "193bca1ad4f2ebdbf6180fd4182e1d8671a77b74823b83e5d56ae19a73bb8fd8"
+    },
+    {
+      "source": "政治理论/重要考察/重庆考察与新时代推动西部大开发座谈会.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要考察/重庆考察与新时代推动西部大开发座谈会.md",
+      "sourceSha256": "c784083196b37d4faa99d419983d072b639062fe459f15d6893bf24d53f02e70"
+    },
+    {
+      "source": "政治理论/重要文件/2024中央一号文件.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要文件/2024中央一号文件.md",
+      "sourceSha256": "5ee97b2f5367c1b547b2622b8f0ea01966107df44c83d987e8c1332e8aa2d360"
+    },
+    {
+      "source": "政治理论/重要文件/2025中央一号文件.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要文件/2025中央一号文件.md",
+      "sourceSha256": "05c4222c16c257f258defd96b60ccbf77d91f173d748da4aac0635ddb5b026e2"
+    },
+    {
+      "source": "政治理论/重要文件/2025中央政府工作报告.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要文件/2025中央政府工作报告.md",
+      "sourceSha256": "12b7afa42c368ea9d3ab3280ef828da0e09caed0e7e7e339e94be08ed054df1d"
+    },
+    {
+      "source": "政治理论/重要文件/关于全面推进美丽中国建设的意见.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要文件/关于全面推进美丽中国建设的意见.md",
+      "sourceSha256": "e71bf1a447b13b877ee839703c574a963cf973c515b6c058ff6c8c27734dd0e2"
+    },
+    {
+      "source": "政治理论/重要文件/乡村全面振兴规划.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/重要文件/乡村全面振兴规划.md",
+      "sourceSha256": "eb4b3b78e7f036a00eecaa36d9c6106fd0073826130e002af587914862547ca5"
+    },
+    {
+      "source": "政治理论/index.md",
+      "output": "docs/knowledge/gongkao/xingce/zhengzhi-lilun/index.md",
+      "sourceSha256": "34fb1718f01b445c412f49f8ff3cef84b89de392dec409d6a4be5986d04b46ca"
+    },
+    {
+      "source": "资料分析/01开篇.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/01开篇.md",
+      "sourceSha256": "4f6f5f91c6ebc38e810731fb73c7e90f73267371e67e781570ad12cca675bce0"
+    },
+    {
+      "source": "资料分析/02结构阅读法.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/02结构阅读法.md",
+      "sourceSha256": "24bb17dc7e6eacb846082712d0c326af4d064cde062144f39e35335b065d93a9"
+    },
+    {
+      "source": "资料分析/03速算技巧.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/03速算技巧.md",
+      "sourceSha256": "fb2a0d85b7146121a323858ac4a2104bd9644574b6a38e0b5e5c96eee1ffc830"
+    },
+    {
+      "source": "资料分析/04比重专题.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/04比重专题.md",
+      "sourceSha256": "8824fc6c9eb7fa0167f257981aa77273dea49f4e481864c79e2c4b6349120d55"
+    },
+    {
+      "source": "资料分析/05平均数专题.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/05平均数专题.md",
+      "sourceSha256": "35bb6afee60bb738528effe82d6bb23b9022044b55079d632edb429019812d97"
+    },
+    {
+      "source": "资料分析/06增长量专题.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/06增长量专题.md",
+      "sourceSha256": "54724324c7c8cb09a7f0795b1dbf7b34f7aa48035a154d5bad6c2fcb51dbfc75"
+    },
+    {
+      "source": "资料分析/07增长率专题.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/07增长率专题.md",
+      "sourceSha256": "014902912e460aaf5a0a68e1774aaebd933c470c9b5a6868aa758f49da0510e4"
+    },
+    {
+      "source": "资料分析/08倍数专题.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/08倍数专题.md",
+      "sourceSha256": "53a6c6a67ba0555473c65dde1c890627b578b14b13de5251dbe1a322141b2277"
+    },
+    {
+      "source": "资料分析/09真题演练.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/09真题演练.md",
+      "sourceSha256": "e28b8eb8023575770e3d3fbd10d6af026503eda2651c8c1dbbb89deb1f85ae50"
+    },
+    {
+      "source": "资料分析/10秒杀技巧.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/10秒杀技巧.md",
+      "sourceSha256": "745c1748621a87473a47540d1c4f6ad4da023d8e2aaaedaa8c528dc07e9f2372"
+    },
+    {
+      "source": "资料分析/11思维导图.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/11思维导图.md",
+      "sourceSha256": "c8ed3707cab6819192459024ae89e8667431a51645ffc87f1682b94d0a696282"
+    },
+    {
+      "source": "资料分析/index.md",
+      "output": "docs/knowledge/gongkao/xingce/ziliao-fenxi/index.md",
+      "sourceSha256": "da33bc2cb3aa8914b015fe700fb96832a257de6610bbec6e7386d320d74c4a17"
+    }
+  ]
+}
