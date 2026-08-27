@@ -73,7 +73,7 @@ function SiteWordmark() {
   return (
     <a className="site-wordmark" href="/" aria-label="上岸知识库首页">
       <span className="site-wordmark__symbol" aria-hidden="true">
-        岸
+        <img src="/brand-mark.svg" alt="" width="34" height="34" />
       </span>
       <span className="site-wordmark__text">
         <strong>上岸知识库</strong>
