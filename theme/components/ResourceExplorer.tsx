@@ -57,6 +57,15 @@ const examLabels: Record<ExamKey, string> = {
   other: '其他考试资料',
 };
 
+const examDescriptions: Record<ExamKey, string> = {
+  kaoyan: '公共课、专业课与院校备考资料',
+  gongkao: '行测、申论与公考备考课程',
+  kaobian: '事业单位、三支一扶与考编资料',
+  teacher: '教师资格证与教师招聘资料',
+  cet: '英语四级、六级课程与备考资料',
+  other: '医考、面试及其他考试资料',
+};
+
 interface FilterOption<T extends string> {
   value: T;
   label: string;
@@ -326,6 +335,7 @@ export function ResourceExplorer() {
         .map((examKey) => ({
           key: examKey,
           label: examLabels[examKey],
+          description: examDescriptions[examKey],
           items: filteredResources.filter(
             (resource) => resource.exam === examKey,
           ),
@@ -342,7 +352,7 @@ export function ResourceExplorer() {
   };
 
   return (
-    <section className="resource-explorer" aria-label="资料筛选">
+    <section className="resource-explorer rp-not-doc" aria-label="资料筛选">
       <div className="resource-explorer__toolbar">
         <label className="resource-field resource-field--search">
           <span>关键词</span>
@@ -377,13 +387,24 @@ export function ResourceExplorer() {
       {filteredResources.length > 0 ? (
         <div className="resource-list">
           {resourceGroups.map((group, index) => (
-            <section className="resource-group" key={group.key}>
+            <section
+              className="resource-group"
+              data-category={group.key}
+              key={group.key}
+            >
               <header className="resource-group__header">
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <div>
-                  <h2>{group.label}</h2>
-                  <p>{group.items.length} 份资料</p>
+                <div className="resource-group__marker" aria-hidden="true">
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <small>分类</small>
                 </div>
+                <div className="resource-group__heading">
+                  <span>RESOURCE CATEGORY</span>
+                  <h2>{group.label}</h2>
+                  <p>{group.description}</p>
+                </div>
+                <strong className="resource-group__count">
+                  {group.items.length} 份资料
+                </strong>
               </header>
               <div className="resource-group__items">
                 {group.items.map((resource) => (
