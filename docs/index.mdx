@@ -41,10 +41,10 @@ outline: false
     </div>
 
     <div className="exam-orbit" aria-label="按考试类型选择入口">
-      <div className="exam-orbit__glow"></div>
-      <div className="exam-orbit__grid"></div>
+      <div className="exam-orbit__glow" aria-hidden="true"></div>
+      <div className="exam-orbit__grid" aria-hidden="true"></div>
 
-      <div className="exam-orbit__center">
+      <div className="exam-orbit__center" aria-hidden="true">
         <span>STEP 01</span>
         <strong>先选考试</strong>
         <small>知识与资料一目了然</small>
@@ -127,70 +127,20 @@ outline: false
   </div>
 </section>
 
-  <section className="landing-section" aria-labelledby="choose-path-title">
+  <section
+    className="landing-section landing-section--focus"
+    aria-labelledby="focus-title"
+    data-reveal
+  >
     <header className="landing-section__header">
       <div>
-        <p>CHOOSE YOUR PATH</p>
-        <h2 id="choose-path-title">不用逛目录，先选你要做的事。</h2>
-      </div>
-      <span>知识内容留在站内，外部资料集中索引，两者不混在一起。</span>
-    </header>
-
-    <div className="landing-paths">
-      <article className="path-card path-card--knowledge">
-        <div className="path-card__topline">
-          <span>知识库</span>
-          <span>READ / 01</span>
-        </div>
-        <h3>把一个知识点真正弄懂。</h3>
-        <p>适合需要连续阅读、反复回看的内容。目前重点建设计算机 408 与考公知识体系。</p>
-        <div className="path-card__links">
-          <a href="/knowledge/kaoyan/408/">
-            <span>考研</span>
-            <strong>计算机 408</strong>
-            <small>四门核心科目</small>
-          </a>
-          <a href="/knowledge/gongkao/">
-            <span>考公</span>
-            <strong>行测与申论</strong>
-            <small>模块化知识框架</small>
-          </a>
-        </div>
-      </article>
-
-      <article className="path-card path-card--resources">
-        <div className="path-card__topline">
-          <span>资料库</span>
-          <span>FIND / 02</span>
-        </div>
-        <h3>直接找到对应考试的资料。</h3>
-        <p>按考试类型、关键词和链接状态筛选，不在知识文章里重复散落网盘地址。</p>
-        <div className="resource-category-list">
-          <a href="/resources/?exam=kaoyan">考研资料</a>
-          <a href="/resources/?exam=gongkao">考公资料</a>
-          <a href="/resources/?exam=kaobian">考编资料</a>
-          <a href="/resources/?exam=teacher">教师资格证</a>
-          <a href="/resources/?exam=cet">英语四六级</a>
-          <a href="/resources/?exam=other">其他资料</a>
-        </div>
-        <a className="path-card__cta" href="/resources/">
-          打开资料检索
-        </a>
-      </article>
-    </div>
-
-  </section>
-
-  <section className="landing-section landing-section--focus" aria-labelledby="focus-title">
-    <header className="landing-section__header">
-      <div>
-        <p>FOCUS FIRST</p>
+        <p>READ FIRST</p>
         <h2 id="focus-title">先把最需要理解的内容做深。</h2>
       </div>
       <span>不追求一次铺满所有考试，优先保证已有内容清楚、可读、可维护。</span>
     </header>
 
-    <div className="focus-board">
+    <div className="focus-board" data-reveal-group>
       <a className="focus-board__main" href="/knowledge/kaoyan/408/">
         <span>考研 · 计算机 408</span>
         <strong>四门课，整理成一套稳定的复习骨架。</strong>
@@ -229,16 +179,40 @@ outline: false
 
   </section>
 
-<section className="landing-final-cta">
-  <div>
-    <p>资料正在陆续核验</p>
-    <h2>链接宁可暂时不放，也不让你反复试错。</h2>
-  </div>
-  <div>
-    <p>每条资料将标注来源、授权情况、网盘平台与最后验证日期。</p>
-    <a href="/about/">查看收录原则</a>
-  </div>
-</section>
+  <section
+    className="landing-section"
+    aria-labelledby="resources-title"
+    data-reveal
+  >
+    <header className="landing-section__header">
+      <div>
+        <p>ALL MATERIALS</p>
+        <h2 id="resources-title">网盘资料，按考试直接筛选。</h2>
+      </div>
+      <span>
+        每条资料标注来源、平台与最后验证日期；链接宁可暂时不放，也不让你反复试错，收录原则见「关于本站」。
+      </span>
+    </header>
+
+    <div
+      className="resource-category-list resource-category-list--wide"
+      data-reveal-group
+    >
+      <a href="/resources/?exam=kaoyan">考研资料</a>
+      <a href="/resources/?exam=gongkao">考公资料</a>
+      <a href="/resources/?exam=kaobian">考编资料</a>
+      <a href="/resources/?exam=teacher">教师资格证</a>
+      <a href="/resources/?exam=cet">英语四六级</a>
+      <a href="/resources/?exam=other">其他资料</a>
+    </div>
+
+    <p className="landing-resources-cta">
+      <a className="landing-button landing-button--primary" href="/resources/">
+        打开资料检索
+      </a>
+    </p>
+
+  </section>
 
   <footer className="landing-footer">
     <a className="landing-footer__brand" href="/">上岸知识库</a>

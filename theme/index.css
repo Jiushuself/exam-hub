@@ -485,7 +485,6 @@ a[href='/about.html'] {
 .landing-hero,
 .landing-principles,
 .landing-section,
-.landing-final-cta,
 .landing-footer {
   width: min(1260px, calc(100% - 56px));
   margin-inline: auto;
@@ -578,8 +577,7 @@ a[href='/about.html'] {
     background 180ms ease;
 }
 
-.landing-button::after,
-.path-card__cta::after {
+.landing-button::after {
   content: '↗';
   font-family: var(--archive-sans);
   font-size: 0.92em;
@@ -730,9 +728,6 @@ a[href='/about.html'] {
 
 .floating-exam-card {
   --card-rotate: 0deg;
-  --drift-x: 4px;
-  --drift-y: -8px;
-  --drift-rotate: 1deg;
   position: absolute;
   z-index: 2;
   display: flex;
@@ -746,10 +741,9 @@ a[href='/about.html'] {
   box-shadow: var(--archive-shadow-card);
   color: #183027 !important;
   transform: translate3d(0, 0, 0) rotate(var(--card-rotate));
-  animation: card-drift var(--float-duration, 5.6s) ease-in-out infinite
-    alternate;
   transition:
-    box-shadow 180ms ease,
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 260ms ease,
     border-color 180ms ease;
   will-change: transform;
 }
@@ -772,12 +766,11 @@ a[href='/about.html'] {
 .floating-exam-card:hover,
 .floating-exam-card:focus-visible {
   z-index: 8;
-  animation: none;
   border-color: color-mix(in srgb, var(--card-accent) 52%, white);
   box-shadow:
     0 38px 76px -32px color-mix(in srgb, var(--card-accent) 34%, transparent),
     0 14px 28px -18px rgba(16, 50, 40, 0.28);
-  transform: translate3d(0, -10px, 28px) rotate(0deg) scale(1.025);
+  transform: translate3d(0, -10px, 0) rotate(0deg) scale(1.02);
 }
 
 .floating-exam-card > strong {
@@ -806,9 +799,6 @@ a[href='/about.html'] {
   --card-bg: #def6ef;
   --card-accent: #138f79;
   --card-rotate: -6deg;
-  --drift-x: 6px;
-  --drift-y: -10px;
-  --float-duration: 5.2s;
   top: 42px;
   left: 18px;
   width: 264px;
@@ -819,10 +809,6 @@ a[href='/about.html'] {
   --card-bg: #ffebe3;
   --card-accent: #dc7459;
   --card-rotate: 5deg;
-  --drift-x: -5px;
-  --drift-y: -9px;
-  --drift-rotate: -1deg;
-  --float-duration: 6.1s;
   top: 54px;
   right: 9px;
   width: 236px;
@@ -833,9 +819,6 @@ a[href='/about.html'] {
   --card-bg: #fff3cf;
   --card-accent: #c99526;
   --card-rotate: 4deg;
-  --drift-x: 4px;
-  --drift-y: -7px;
-  --float-duration: 5.8s;
   top: 254px;
   left: -3px;
   width: 188px;
@@ -845,9 +828,6 @@ a[href='/about.html'] {
   --card-bg: #ece8fa;
   --card-accent: #7760aa;
   --card-rotate: -4deg;
-  --drift-x: -5px;
-  --drift-y: -8px;
-  --float-duration: 6.4s;
   top: 258px;
   right: -2px;
   width: 211px;
@@ -857,9 +837,6 @@ a[href='/about.html'] {
   --card-bg: #e6efff;
   --card-accent: #5379cc;
   --card-rotate: -3deg;
-  --drift-x: 6px;
-  --drift-y: -8px;
-  --float-duration: 6.7s;
   bottom: 24px;
   left: 58px;
   width: 212px;
@@ -869,23 +846,9 @@ a[href='/about.html'] {
   --card-bg: #eef1ef;
   --card-accent: #68766f;
   --card-rotate: 6deg;
-  --drift-x: -4px;
-  --drift-y: -7px;
-  --float-duration: 5.5s;
   right: 38px;
   bottom: 35px;
   width: 183px;
-}
-
-@keyframes card-drift {
-  from {
-    transform: translate3d(0, 0, 0) rotate(var(--card-rotate));
-  }
-
-  to {
-    transform: translate3d(var(--drift-x), var(--drift-y), 0)
-      rotate(calc(var(--card-rotate) + var(--drift-rotate)));
-  }
 }
 
 html.dark .floating-exam-card {
@@ -974,8 +937,7 @@ html.dark .floating-exam-card::after {
   margin-bottom: 49px;
 }
 
-.landing-section__header p,
-.landing-final-cta > div:first-child > p {
+.landing-section__header p {
   margin: 0 0 15px;
   color: var(--archive-green-bright);
   font-family: var(--archive-mono);
@@ -984,8 +946,7 @@ html.dark .floating-exam-card::after {
   letter-spacing: 0.14em;
 }
 
-.landing-section__header h2,
-.landing-final-cta h2 {
+.landing-section__header h2 {
   max-width: 850px;
   margin: 0;
   font-family: var(--archive-sans);
@@ -1001,116 +962,8 @@ html.dark .floating-exam-card::after {
   line-height: 1.75;
 }
 
-.landing-paths {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.72fr);
-  gap: 20px;
-}
-
-.path-card {
-  position: relative;
-  display: flex;
-  min-height: 490px;
-  flex-direction: column;
-  overflow: hidden;
-  padding: clamp(28px, 4vw, 48px);
-  border: 1px solid var(--archive-line);
-  border-radius: 20px;
-  box-shadow: 0 24px 58px -44px rgba(14, 65, 53, 0.34);
-}
-
-.path-card__topline {
-  display: flex;
-  justify-content: space-between;
-  color: var(--archive-faint);
-  font-family: var(--archive-mono);
-  font-size: 0.65rem;
-  font-weight: 750;
-  letter-spacing: 0.12em;
-}
-
-.path-card h3 {
-  max-width: 610px;
-  margin: auto 0 0;
-  font-family: var(--archive-sans);
-  font-size: clamp(2.2rem, 3.8vw, 4rem);
-  font-weight: 850;
-  letter-spacing: -0.065em;
-  line-height: 1.08;
-}
-
-.path-card > p {
-  max-width: 650px;
-  margin: 20px 0 28px;
-  color: var(--archive-muted);
-  font-size: 0.9rem;
-  line-height: 1.75;
-}
-
-.path-card--knowledge {
-  border-color: transparent;
-  background:
-    radial-gradient(
-      circle at 85% 10%,
-      color-mix(in srgb, var(--archive-green-bright) 36%, transparent),
-      transparent 35%
-    ),
-    var(--archive-green-deep);
-  color: #f3fbf8;
-}
-
-.path-card--knowledge .path-card__topline,
-.path-card--knowledge > p {
-  color: rgba(243, 251, 248, 0.68);
-}
-
-.path-card__links {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.path-card__links a {
-  position: relative;
-  display: grid;
-  gap: 7px;
-  min-height: 124px;
-  padding: 19px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 13px;
-  background: rgba(255, 255, 255, 0.08);
-  transition:
-    transform 180ms ease,
-    background 180ms ease;
-}
-
-.path-card__links a::after {
-  content: '↗';
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  font-size: 0.75rem;
-}
-
-.path-card__links a:hover {
-  background: rgba(255, 255, 255, 0.14);
-  transform: translateY(-4px);
-}
-
-.path-card__links span,
-.path-card__links small {
-  color: rgba(243, 251, 248, 0.65);
-  font-size: 0.68rem;
-}
-
-.path-card__links strong {
-  margin-top: auto;
-  font-size: 1.05rem;
-  font-weight: 800;
-}
-
-.path-card--resources {
-  background: var(--archive-surface-raised);
+.landing-resources-cta {
+  margin: 26px 0 0;
 }
 
 .resource-category-list {
@@ -1149,16 +1002,9 @@ html.dark .floating-exam-card::after {
   transform: translateY(-2px);
 }
 
-.path-card__cta {
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  gap: 10px;
-  margin-top: 22px;
-  border-bottom: 1px solid currentColor;
-  color: var(--archive-green-deep) !important;
-  font-size: 0.78rem;
-  font-weight: 800;
+.resource-category-list--wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .landing-section--focus {
@@ -1305,29 +1151,6 @@ html.dark .floating-exam-card::after {
   font-weight: 850;
   letter-spacing: -0.06em;
   line-height: 1.08;
-}
-
-.landing-final-cta {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(270px, 0.42fr);
-  gap: clamp(60px, 10vw, 150px);
-  align-items: end;
-  padding-block: clamp(78px, 7vw, 94px);
-  border-top: 1px solid var(--archive-line-strong);
-}
-
-.landing-final-cta > div:last-child p {
-  margin: 0 0 25px;
-  color: var(--archive-muted);
-  font-size: 0.9rem;
-  line-height: 1.8;
-}
-
-.landing-final-cta a {
-  border-bottom: 1px solid currentColor;
-  color: var(--archive-green-deep) !important;
-  font-size: 0.8rem;
-  font-weight: 800;
 }
 
 .landing-footer {
@@ -1965,12 +1788,45 @@ html.dark .floating-exam-card::after {
   white-space: nowrap;
 }
 
+.resource-group__items {
+  display: grid;
+  gap: 14px;
+  padding: 16px 0 20px;
+}
+
 .resource-row {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
   gap: 46px;
-  padding: 34px 0;
-  border-bottom: 1px solid var(--archive-line);
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid
+    color-mix(in srgb, var(--resource-category-color) 14%, var(--archive-line));
+  border-radius: 16px 16px 6px 16px;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--resource-category-color) 5%, transparent) 0,
+      transparent 34%
+    ),
+    var(--archive-surface-raised);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--archive-surface-raised) 72%, white),
+    0 12px 28px -30px rgba(14, 65, 53, 0.32);
+}
+
+.resource-row::before {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 54px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: var(--resource-category-color);
+  content: '';
+  opacity: 0.72;
+  transform-origin: left center;
 }
 
 .resource-row__meta,
@@ -1989,8 +1845,10 @@ html.dark .floating-exam-card::after {
 
 .resource-row__tags span {
   padding: 3px 7px;
+  border: 1px solid
+    color-mix(in srgb, var(--resource-category-color) 12%, var(--archive-line));
   border-radius: 6px;
-  background: var(--archive-paper);
+  background: var(--resource-category-soft);
 }
 
 .resource-row h2 {
@@ -2004,16 +1862,39 @@ html.dark .floating-exam-card::after {
 }
 
 .resource-row__aside {
-  border-left: 1px solid var(--archive-line);
-  padding-left: 28px;
+  align-self: stretch;
+  padding: 20px 22px;
+  border: 1px solid
+    color-mix(in srgb, var(--resource-category-color) 13%, var(--archive-line));
+  border-radius: 12px 12px 4px 12px;
+  background: color-mix(
+    in srgb,
+    var(--resource-category-color) 4%,
+    var(--archive-paper)
+  );
 }
 
 .resource-status {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   margin-bottom: 14px;
+  padding: 5px 8px;
+  border: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 7%, transparent);
   color: var(--archive-green);
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.resource-status::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 12%, transparent);
+  content: '';
 }
 
 .resource-status--review {
@@ -2298,18 +2179,6 @@ html.dark .floating-exam-card::after {
     margin-inline: auto;
   }
 
-  .landing-paths {
-    grid-template-columns: 1fr;
-  }
-
-  .path-card {
-    min-height: 500px;
-  }
-
-  .path-card--resources {
-    min-height: 470px;
-  }
-
   .resource-explorer__toolbar {
     grid-template-columns: 1fr 1fr;
   }
@@ -2336,7 +2205,6 @@ html.dark .floating-exam-card::after {
   .landing-hero,
   .landing-principles,
   .landing-section,
-  .landing-final-cta,
   .landing-footer {
     width: min(100% - 28px, 1260px);
   }
@@ -2507,7 +2375,6 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-section__header,
-  .landing-final-cta,
   .landing-footer {
     grid-template-columns: 1fr;
   }
@@ -2517,33 +2384,12 @@ html.dark .floating-exam-card::after {
     margin-bottom: 30px;
   }
 
-  .landing-section__header h2,
-  .landing-final-cta h2 {
+  .landing-section__header h2 {
     font-size: clamp(2.15rem, 10.8vw, 3.25rem);
   }
 
-  .path-card {
-    min-height: 0;
-    padding: 24px;
-    border-radius: 17px;
-  }
-
-  .path-card__links,
   .resource-category-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .path-card h3 {
-    margin-top: 60px;
-  }
-
-  .path-card > p {
-    margin: 16px 0 24px;
-  }
-
-  .path-card__links a {
-    min-height: 108px;
-    padding: 16px;
   }
 
   .resource-category-list a {
@@ -2573,11 +2419,6 @@ html.dark .floating-exam-card::after {
 
   .focus-board__subjects small {
     grid-column: 2;
-  }
-
-  .landing-final-cta {
-    gap: 34px;
-    padding-block: 66px;
   }
 
   .landing-footer {
@@ -2720,14 +2561,13 @@ html.dark .floating-exam-card::after {
 
   .resource-row {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 18px;
+    padding: 22px;
+    border-radius: 14px 14px 5px 14px;
   }
 
   .resource-row__aside {
-    border-top: 1px solid var(--archive-line);
-    border-left: 0;
-    padding-top: 24px;
-    padding-left: 0;
+    padding: 18px;
   }
 
   .community-join {
@@ -2824,6 +2664,420 @@ html.dark .floating-exam-card::after {
   border-color: rgba(251, 146, 60, 0.35);
   background: rgba(124, 45, 18, 0.28);
   color: #fdba74;
+}
+
+/*
+ * ──────────────────────────────────────────────
+ * 丝滑动效层 · smooth motion layer
+ * 统一缓动 + 滚动 reveal + 路由淡入；
+ * 仅装饰，不影响任何内容结构。
+ * ──────────────────────────────────────────────
+ */
+:root {
+  --archive-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --archive-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 路由切换淡入 */
+.sr-page-enter {
+  animation: sr-page-fade 340ms var(--archive-ease-out);
+}
+
+@keyframes sr-page-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 滚动 reveal（仅 JS 就位后才隐藏，JS 失效时内容直接可见） */
+.sr-armed [data-reveal],
+.sr-armed [data-reveal-group] > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 640ms var(--archive-ease-out) var(--sr-delay, 0ms),
+    transform 640ms var(--archive-ease-out) var(--sr-delay, 0ms);
+  transition-behavior: allow-discrete;
+}
+
+[data-reveal].sr-visible,
+[data-reveal-group].sr-visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+/* 统一交互过渡的手感 */
+a,
+button,
+.rp-nav-menu__item,
+.rp-hover-group,
+.rp-hover-group__item,
+.rp-sidebar a {
+  transition-property:
+    color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
+}
+
+/* ── 首页：hero 入场编排 ── */
+.landing-eyebrow,
+.landing-hero h1,
+.landing-hero__summary,
+.landing-actions,
+.landing-shortcuts {
+  animation: landing-rise 780ms var(--archive-ease-out) both;
+}
+
+.landing-hero h1 {
+  animation-delay: 70ms;
+}
+
+.landing-hero__summary {
+  animation-delay: 150ms;
+}
+
+.landing-actions {
+  animation-delay: 240ms;
+}
+
+.landing-shortcuts {
+  animation-delay: 330ms;
+}
+
+.exam-orbit {
+  animation: landing-rise 880ms var(--archive-ease-out) 140ms both;
+}
+
+@keyframes landing-rise {
+  from {
+    opacity: 0;
+    translate: 0 22px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* 悬浮考试卡：只做一次错峰入场，悬停交给 transform 过渡，避免闪跳 */
+.floating-exam-card {
+  animation: landing-rise 720ms var(--archive-ease-out) both;
+}
+
+.floating-exam-card--kaoyan {
+  animation-delay: 300ms;
+}
+
+.floating-exam-card--gongkao {
+  animation-delay: 390ms;
+}
+
+.floating-exam-card--kaobian {
+  animation-delay: 480ms;
+}
+
+.floating-exam-card--teacher {
+  animation-delay: 570ms;
+}
+
+.floating-exam-card--cet {
+  animation-delay: 660ms;
+}
+
+.floating-exam-card--other {
+  animation-delay: 750ms;
+}
+
+/* ── 知识卡片 hub ── */
+.kb-hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-block: 1.2rem 1.6rem;
+}
+
+a.kb-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 168px;
+  padding: 22px 22px 18px;
+  overflow: hidden;
+  border: 1px solid var(--archive-line);
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      160deg,
+      var(--archive-surface-raised) 62%,
+      color-mix(in srgb, var(--archive-green-soft) 48%, transparent)
+    ),
+    var(--archive-surface-raised);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(20, 37, 31, 0.05);
+  transition:
+    transform 260ms var(--archive-ease-out),
+    box-shadow 260ms var(--archive-ease-out),
+    border-color 260ms ease;
+}
+
+a.kb-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 22px;
+  left: 22px;
+  height: 2px;
+  border-radius: 0 0 3px 3px;
+  background: var(--archive-green-bright);
+  opacity: 0;
+  transform: scaleX(0.4);
+  transition:
+    opacity 240ms ease,
+    transform 260ms var(--archive-ease-out);
+}
+
+a.kb-card:hover,
+a.kb-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: color-mix(
+    in srgb,
+    var(--archive-green) 40%,
+    var(--archive-line)
+  );
+  box-shadow: var(--archive-shadow-card);
+  text-decoration: none;
+}
+
+a.kb-card:hover::after,
+a.kb-card:focus-visible::after {
+  opacity: 1;
+  transform: none;
+}
+
+.kb-card__eyebrow {
+  color: var(--archive-green);
+  font-family: var(--archive-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.kb-card strong {
+  font-family: var(--archive-serif);
+  font-size: 1.14rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.kb-card p {
+  margin: 0;
+  color: var(--archive-muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.kb-card__meta {
+  margin-top: auto;
+  padding-top: 4px;
+  color: var(--archive-faint);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+}
+
+/* 考公模块列表（行测 / 申论的小入口） */
+.kb-module-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+  margin-block: 0.6rem 1.4rem;
+}
+
+a.kb-module {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid var(--archive-line);
+  border-radius: 13px;
+  background: var(--archive-surface-raised);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 220ms var(--archive-ease-out),
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+a.kb-module:hover,
+a.kb-module:focus-visible {
+  transform: translateY(-2px);
+  border-color: color-mix(
+    in srgb,
+    var(--archive-green) 42%,
+    var(--archive-line)
+  );
+  background: color-mix(
+    in srgb,
+    var(--archive-green-soft) 26%,
+    var(--archive-surface-raised)
+  );
+  box-shadow: 0 14px 30px -18px rgba(14, 65, 53, 0.28);
+  text-decoration: none;
+}
+
+.kb-module strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.kb-module small {
+  color: var(--archive-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ── 资料库丝滑感 ── */
+.resource-group,
+.resource-row,
+.resource-notice {
+  transition-duration: 220ms;
+}
+
+.resource-row {
+  transition:
+    border-color 200ms ease,
+    box-shadow 260ms var(--archive-ease-out),
+    transform 260ms var(--archive-ease-out),
+    background-color 200ms ease;
+}
+
+.resource-row::before {
+  transition:
+    width 280ms var(--archive-ease-out),
+    opacity 180ms ease;
+}
+
+.resource-row__aside {
+  transition:
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.resource-row:hover,
+.resource-row:focus-within {
+  border-color: color-mix(
+    in srgb,
+    var(--resource-category-color) 46%,
+    var(--archive-line)
+  );
+  background-color: color-mix(
+    in srgb,
+    var(--resource-category-color) 3%,
+    var(--archive-surface-raised)
+  );
+  box-shadow:
+    inset 0 0 0 1px
+      color-mix(in srgb, var(--resource-category-color) 10%, transparent),
+    0 24px 50px -28px
+      color-mix(in srgb, var(--resource-category-color) 34%, transparent),
+    0 12px 24px -22px rgba(14, 65, 53, 0.34);
+  transform: translateY(-4px);
+}
+
+.resource-row:hover::before,
+.resource-row:focus-within::before {
+  width: 92px;
+  opacity: 1;
+}
+
+.resource-row:hover .resource-row__aside,
+.resource-row:focus-within .resource-row__aside {
+  border-color: color-mix(
+    in srgb,
+    var(--resource-category-color) 24%,
+    var(--archive-line)
+  );
+  background-color: color-mix(
+    in srgb,
+    var(--resource-category-color) 7%,
+    var(--archive-paper)
+  );
+}
+
+.resource-row__actions button,
+.resource-row__actions a {
+  transition:
+    transform 180ms var(--archive-ease-out),
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.resource-row__actions button:hover,
+.resource-row__actions a:hover {
+  transform: translateY(-1px);
+}
+
+.resource-select__menu {
+  animation: sr-menu-in 180ms var(--archive-ease-out);
+}
+
+@keyframes sr-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── 阅读体验细节 ── */
+.rp-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--archive-line-strong) transparent;
+}
+
+.rp-doc img:not(.community-card__qr img) {
+  transition: box-shadow 260ms var(--archive-ease-out);
+}
+
+.rp-doc :is(h2, h3) {
+  scroll-margin-top: calc(var(--rp-nav-height) + 20px);
+}
+
+.rp-blockquote,
+.rp-doc blockquote {
+  transition: border-color 200ms ease;
+}
+
+/* 侧栏链接 hover 更跟手 */
+.rp-sidebar a {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    padding-left 220ms var(--archive-ease-out);
+}
+
+.rp-sidebar a:hover {
+  padding-left: calc(var(--rp-padding-left, 12px) + 4px);
 }
 
 @media (prefers-reduced-motion: reduce) {

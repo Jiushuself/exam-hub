@@ -12,4 +12,7 @@ export default defineConfig({
   logoText: '上岸知识库',
   logoHref: '/',
   plugins: [katex()],
+  globalUIComponents: [
+    path.join(__dirname, 'theme', 'components', 'SmoothReveal.tsx'),
+  ],
 });

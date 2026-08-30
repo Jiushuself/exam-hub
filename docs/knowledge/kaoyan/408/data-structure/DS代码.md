@@ -4000,7 +4000,7 @@ int Index_KMP(SString S, SString T)
 > world
 > --4.删除部分str1后的str1：
 > hello
-> --5.插入s2到str1,打印 插入str2后的字符串str1:
+> --5.插入s2到str1,打印插入str2后的字符串str1:
 > hellosuhan
 > --6.连接str1到str2末尾.
 > --7.对比str1和str2
@@ -5721,7 +5721,7 @@ double GetCompressionRate(HuffmanTree HT, HuffmanCode HC, int n){
 ```
 
 > 哈夫曼树为:>
-> 下标 权值 父结点 左孩子 右孩子
+> 下标权值父结点左孩子右孩子
 > 0
 > 1 27.00 9 0 0
 > 2 8.00 7 0 0

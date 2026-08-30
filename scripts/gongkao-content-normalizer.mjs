@@ -1,3 +1,5 @@
+import { normalizeGongkaoTypography } from './gongkao-typography-normalizer.mjs';
+
 const circledNumbers = new Set([
   '①',
   '②',
@@ -139,22 +141,44 @@ function normalizeListMarkers(markdown) {
     }
 
     let line = originalLine;
-    let match = line.match(/^(\s*)(\d+)\.\s+\*\*(\d+)(、|\.(?!\d))\s*(.*)$/);
+    let match = line.match(/^(\s*)(\d+)\.\s+\*\*([0-9０-９]+)\.(\d.*)$/);
+    if (match) {
+      const [, indent, automaticNumber, writtenNumber, rest] = match;
+      const normalizedWrittenNumber = writtenNumber.normalize('NFKC');
+      if (automaticNumber === normalizedWrittenNumber) {
+        line = `${indent}${automaticNumber}. **${rest}`;
+      }
+    }
+
+    match = line.match(/^(\s*)(\d+)\.\s+([0-9０-９]+)\.(\d.*)$/);
+    if (match) {
+      const [, indent, automaticNumber, writtenNumber, rest] = match;
+      const normalizedWrittenNumber = writtenNumber.normalize('NFKC');
+      if (automaticNumber === normalizedWrittenNumber) {
+        line = `${indent}${automaticNumber}. ${rest}`;
+      }
+    }
+
+    match = line.match(
+      /^(\s*)(\d+)\.\s+\*\*([0-9０-９]+)(、|\.(?!\d))\s*(.*)$/,
+    );
     if (match) {
       const [, indent, automaticNumber, writtenNumber, separator, rest] = match;
+      const normalizedWrittenNumber = writtenNumber.normalize('NFKC');
       line =
-        automaticNumber === writtenNumber
+        automaticNumber === normalizedWrittenNumber
           ? `${indent}${automaticNumber}. **${rest}`
-          : `${indent}- **${writtenNumber}${separator}${rest}`;
+          : `${indent}- **${normalizedWrittenNumber}${separator}${rest}`;
     } else {
-      match = line.match(/^(\s*)(\d+)\.\s+(\d+)(、|\.(?!\d))\s*(.*)$/);
+      match = line.match(/^(\s*)(\d+)\.\s+([0-9０-９]+)(、|\.(?!\d))\s*(.*)$/);
       if (match) {
         const [, indent, automaticNumber, writtenNumber, separator, rest] =
           match;
+        const normalizedWrittenNumber = writtenNumber.normalize('NFKC');
         line =
-          automaticNumber === writtenNumber
+          automaticNumber === normalizedWrittenNumber
             ? `${indent}${automaticNumber}. ${rest}`
-            : `${indent}- ${writtenNumber}${separator}${rest}`;
+            : `${indent}- ${normalizedWrittenNumber}${separator}${rest}`;
       }
     }
 
@@ -255,6 +279,7 @@ export function normalizeGongkaoContent(markdown, sourcePath = '') {
   result = normalizeListMarkers(result);
   result = mergeDetachedColons(result);
   result = spaceCustomContainers(result);
+  result = normalizeGongkaoTypography(result, normalizedPath);
 
   return result;
 }
