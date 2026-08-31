@@ -6,6 +6,8 @@ sidebar: false
 outline: false
 ---
 
+import ExamWorkspace from '../theme/components/ExamWorkspace';
+
 <main className="landing-home">
   <section className="landing-hero" aria-labelledby="landing-home-title">
     <div className="landing-hero__copy">
@@ -14,22 +16,13 @@ outline: false
         <span>为每一种上岸目标整理</span>
       </p>
 
-      <h1 id="landing-home-title">
-        资料有很多，
-        <em>先找到现在该学的。</em>
-      </h1>
+      <h1 id="landing-home-title">资料有很多，<em>先找到现在该学的。</em></h1>
 
-      <p className="landing-hero__summary">
-        考研 408 与考公知识点可以直接阅读；考研、考公、考编、教师资格证、四六级等资料统一检索。少翻群聊，少试失效链接，把时间留给复习。
-      </p>
+      <p className="landing-hero__summary">考研 408 与考公知识点可以直接阅读；考研、考公、考编、教师资格证、四六级等资料统一检索。少翻群聊，少试失效链接，把时间留给复习。</p>
 
       <div className="landing-actions">
-        <a className="landing-button landing-button--primary" href="/knowledge/">
-          开始读知识点
-        </a>
-        <a className="landing-button landing-button--secondary" href="/resources/">
-          查找网盘资料
-        </a>
+        <a className="landing-button landing-button--primary" href="/knowledge/">开始读知识点</a>
+        <a className="landing-button landing-button--secondary" href="/resources/">查找网盘资料</a>
       </div>
 
       <nav className="landing-shortcuts" aria-label="热门入口">
@@ -109,118 +102,89 @@ outline: false
 
   </section>
 
-<section className="landing-principles" aria-label="本站内容特点">
-  <div>
-    <span>01</span>
-    <strong>站内直接阅读</strong>
-    <p>408 与考公知识点按章节组织。</p>
-  </div>
-  <div>
-    <span>02</span>
-    <strong>资料统一检索</strong>
-    <p>六类考试从同一个入口筛选。</p>
-  </div>
-  <div>
-    <span>03</span>
-    <strong>链接状态透明</strong>
-    <p>记录来源、平台与最后验证日期。</p>
-  </div>
-</section>
-
   <section
-    className="landing-section landing-section--focus"
-    aria-labelledby="focus-title"
+    id="exam-workspace"
+    className="landing-section landing-section--workspace"
+    aria-labelledby="workspace-title"
     data-reveal
   >
     <header className="landing-section__header">
-      <div>
-        <p>READ FIRST</p>
-        <h2 id="focus-title">先把最需要理解的内容做深。</h2>
-      </div>
-      <span>不追求一次铺满所有考试，优先保证已有内容清楚、可读、可维护。</span>
+      <p className="landing-section__eyebrow">STEP 02 · 选中考试</p>
+      <h2 id="workspace-title">选中考试，直接开始。</h2>
+      <p className="landing-section__lede">先确定正在准备的考试，再决定今天是直接读知识点，还是先把资料备齐。</p>
     </header>
 
-    <div className="focus-board" data-reveal-group>
-      <a className="focus-board__main" href="/knowledge/kaoyan/408/">
-        <span>考研 · 计算机 408</span>
-        <strong>四门课，整理成一套稳定的复习骨架。</strong>
-        <small>查看 408 知识框架</small>
-      </a>
-
-      <div className="focus-board__subjects" aria-label="计算机 408 科目">
-        <a href="/knowledge/kaoyan/408/">
-          <span>01</span>
-          <strong>数据结构</strong>
-          <small>结构、算法与复杂度</small>
-        </a>
-        <a href="/knowledge/kaoyan/408/">
-          <span>02</span>
-          <strong>计算机组成原理</strong>
-          <small>数据表示与系统结构</small>
-        </a>
-        <a href="/knowledge/kaoyan/408/">
-          <span>03</span>
-          <strong>操作系统</strong>
-          <small>进程、内存与文件系统</small>
-        </a>
-        <a href="/knowledge/kaoyan/408/">
-          <span>04</span>
-          <strong>计算机网络</strong>
-          <small>协议分层与传输过程</small>
-        </a>
-      </div>
-
-      <a className="focus-board__gongkao" href="/knowledge/gongkao/">
-        <span>考公知识库</span>
-        <strong>行测六大模块与申论</strong>
-        <small>146 篇知识文档站内阅读</small>
-      </a>
-    </div>
+    <ExamWorkspace defaultExam="kaoyan" />
 
   </section>
 
   <section
-    className="landing-section"
-    aria-labelledby="resources-title"
+    className="landing-section landing-section--updates"
+    aria-labelledby="updates-title"
     data-reveal
   >
-    <header className="landing-section__header">
-      <div>
-        <p>ALL MATERIALS</p>
-        <h2 id="resources-title">网盘资料，按考试直接筛选。</h2>
-      </div>
-      <span>
-        每条资料标注来源、平台与最后验证日期；链接宁可暂时不放，也不让你反复试错，收录原则见「关于本站」。
-      </span>
-    </header>
+    <div className="updates-panel">
+      <header className="landing-section__header updates-panel__intro">
+        <p className="landing-section__eyebrow">RECENTLY UPDATED</p>
+        <h2 id="updates-title">最近整理了什么。</h2>
+        <p className="landing-section__lede">知识章节新增、资料链接复核、分类调整都会记在这里，方便判断内容的维护状态。</p>
+        <a className="updates-panel__cta" href="/updates">查看全部更新 <span aria-hidden="true">↗</span></a>
+      </header>
 
-    <div
-      className="resource-category-list resource-category-list--wide"
-      data-reveal-group
-    >
-      <a href="/resources/?exam=kaoyan">考研资料</a>
-      <a href="/resources/?exam=gongkao">考公资料</a>
-      <a href="/resources/?exam=kaobian">考编资料</a>
-      <a href="/resources/?exam=teacher">教师资格证</a>
-      <a href="/resources/?exam=cet">英语四六级</a>
-      <a href="/resources/?exam=other">其他资料</a>
+      <ol className="updates-timeline" data-reveal-group>
+        <li className="updates-entry updates-entry--kaoyan">
+          <time dateTime="2026-08-26">08 / 26</time>
+          <div>
+            <strong>新增计算机 408 站内知识库</strong>
+            <span>数据结构、计组、操作系统、计算机网络分开展示，20 个章节可直接阅读，704 个图片引用已本地化。</span>
+          </div>
+        </li>
+
+        <li className="updates-entry updates-entry--gongkao">
+          <time dateTime="2026-08-25">08 / 25</time>
+          <div>
+            <strong>完成 146 篇考公知识页面整理</strong>
+            <span>覆盖行测六大模块与申论，配 34 份分级侧栏和逐页 SEO 描述，可在站内连续学习。</span>
+          </div>
+        </li>
+
+        <li className="updates-entry updates-entry--cet">
+          <time dateTime="2026-08-25">08 / 25</time>
+          <div>
+            <strong>资料索引上线</strong>
+            <span>支持按考试类型、关键词和链接状态筛选，每条资料记录来源、授权情况与最后验证日期。</span>
+          </div>
+        </li>
+      </ol>
     </div>
-
-    <p className="landing-resources-cta">
-      <a className="landing-button landing-button--primary" href="/resources/">
-        打开资料检索
-      </a>
-    </p>
 
   </section>
 
   <footer className="landing-footer">
-    <a className="landing-footer__brand" href="/">上岸知识库</a>
-    <p>知识整理与公开资料索引。保持清楚，也保持诚实。</p>
-    <div>
+    <div className="landing-footer__brand">
+      <a href="/">上岸知识库</a>
+      <p>知识整理与公开资料索引。保持清楚，也保持诚实。</p>
+    </div>
+
+    <nav className="landing-footer__group" aria-label="读知识">
+      <h2>读知识</h2>
+      <a href="/knowledge/kaoyan/408/">计算机 408</a>
+      <a href="/knowledge/gongkao/">行测与申论</a>
+      <a href="/knowledge/">知识库总览</a>
+    </nav>
+
+    <nav className="landing-footer__group" aria-label="找资料">
+      <h2>找资料</h2>
+      <a href="/resources/">资料检索</a>
+      <a href="/about/">收录原则</a>
+    </nav>
+
+    <nav className="landing-footer__group" aria-label="保持联系">
+      <h2>保持联系</h2>
       <a href="/community/">加入交流群</a>
       <a href="/updates">最近更新</a>
       <a href="/about">关于本站</a>
-    </div>
+    </nav>
+
   </footer>
 </main>

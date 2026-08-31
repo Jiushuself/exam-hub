@@ -483,7 +483,6 @@ a[href='/about.html'] {
 }
 
 .landing-hero,
-.landing-principles,
 .landing-section,
 .landing-footer {
   width: min(1260px, calc(100% - 56px));
@@ -510,7 +509,7 @@ a[href='/about.html'] {
   gap: 13px;
   margin: 0 0 25px;
   color: var(--archive-muted);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   font-weight: 650;
   letter-spacing: 0.11em;
 }
@@ -609,16 +608,17 @@ a[href='/about.html'] {
 .landing-shortcuts {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 18px;
+  gap: 10px 20px;
   align-items: center;
-  margin-top: 29px;
+  margin-top: 30px;
   color: var(--archive-muted);
-  font-size: 0.77rem;
+  font-size: 0.86rem;
 }
 
 .landing-shortcuts > span {
   color: var(--archive-faint);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
 }
 
@@ -705,10 +705,14 @@ a[href='/about.html'] {
 
 .exam-orbit__center span,
 .floating-exam-card__code {
-  color: var(--archive-faint);
+  color: color-mix(
+    in srgb,
+    var(--card-accent, var(--archive-green)) 72%,
+    #15241f
+  );
   font-family: var(--archive-mono);
-  font-size: 0.6rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 800;
   letter-spacing: 0.14em;
 }
 
@@ -782,16 +786,17 @@ a[href='/about.html'] {
 }
 
 .floating-exam-card > small {
-  margin-top: 5px;
-  color: #53675e;
-  font-size: 0.7rem;
-  line-height: 1.45;
+  margin-top: 6px;
+  color: #47604f;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .floating-exam-card > b {
   margin-top: 12px;
-  color: color-mix(in srgb, var(--card-accent) 78%, #173129);
-  font-size: 0.68rem;
+  color: color-mix(in srgb, var(--card-accent) 84%, #173129);
+  font-size: 0.78rem;
   font-weight: 800;
 }
 
@@ -799,6 +804,9 @@ a[href='/about.html'] {
   --card-bg: #def6ef;
   --card-accent: #138f79;
   --card-rotate: -6deg;
+  --drift-x: 5px;
+  --drift-y: -10px;
+  --float-duration: 6.2s;
   top: 42px;
   left: 18px;
   width: 264px;
@@ -809,6 +817,9 @@ a[href='/about.html'] {
   --card-bg: #ffebe3;
   --card-accent: #dc7459;
   --card-rotate: 5deg;
+  --drift-x: -4px;
+  --drift-y: -9px;
+  --float-duration: 7s;
   top: 54px;
   right: 9px;
   width: 236px;
@@ -819,6 +830,9 @@ a[href='/about.html'] {
   --card-bg: #fff3cf;
   --card-accent: #c99526;
   --card-rotate: 4deg;
+  --drift-x: 3px;
+  --drift-y: -7px;
+  --float-duration: 6.6s;
   top: 254px;
   left: -3px;
   width: 188px;
@@ -828,6 +842,9 @@ a[href='/about.html'] {
   --card-bg: #ece8fa;
   --card-accent: #7760aa;
   --card-rotate: -4deg;
+  --drift-x: -4px;
+  --drift-y: -8px;
+  --float-duration: 7.4s;
   top: 258px;
   right: -2px;
   width: 211px;
@@ -837,6 +854,9 @@ a[href='/about.html'] {
   --card-bg: #e6efff;
   --card-accent: #5379cc;
   --card-rotate: -3deg;
+  --drift-x: 5px;
+  --drift-y: -8px;
+  --float-duration: 7.8s;
   bottom: 24px;
   left: 58px;
   width: 212px;
@@ -846,6 +866,9 @@ a[href='/about.html'] {
   --card-bg: #eef1ef;
   --card-accent: #68766f;
   --card-rotate: 6deg;
+  --drift-x: -3px;
+  --drift-y: -7px;
+  --float-duration: 6.9s;
   right: 38px;
   bottom: 35px;
   width: 183px;
@@ -856,6 +879,7 @@ html.dark .floating-exam-card {
   color: var(--archive-ink) !important;
 }
 
+.dark .floating-exam-card > small,
 html.dark .floating-exam-card > small {
   color: var(--archive-muted);
 }
@@ -869,322 +893,829 @@ html.dark .floating-exam-card::after {
   color: var(--archive-ink);
 }
 
-.landing-principles {
-  position: relative;
-  z-index: 5;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: -34px;
-  border: 1px solid var(--archive-line);
-  border-radius: 20px;
-  background: color-mix(
-    in srgb,
-    var(--archive-surface-raised) 92%,
-    transparent
-  );
-  box-shadow: var(--archive-shadow-soft);
-  backdrop-filter: blur(14px);
-}
-
-.landing-principles > div {
-  display: grid;
-  grid-template-columns: 34px 1fr;
-  gap: 5px 13px;
-  align-content: center;
-  min-height: 122px;
-  padding: 24px 28px;
-  border-right: 1px solid var(--archive-line);
-}
-
-.landing-principles > div:last-child {
-  border-right: 0;
-}
-
-.landing-principles span {
-  grid-row: 1 / 3;
-  color: var(--archive-green-bright);
-  font-family: var(--archive-mono);
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-}
-
-.landing-principles strong {
-  font-size: 0.94rem;
-  font-weight: 800;
-}
-
-.landing-principles p {
-  margin: 0;
-  color: var(--archive-muted);
-  font-size: 0.76rem;
-  line-height: 1.6;
-}
-
+/* ── 区块节奏 ──
+ * 首屏 h1 最大 6rem 是全页唯一的大字号；区块标题降到 2.6rem，
+ * 让下半页读起来是「章节」而不是又一个首屏。 */
 .landing-section {
-  padding-block: clamp(88px, 8vw, 108px);
-}
-
-.landing-section + .landing-section {
-  border-top: 1px solid var(--archive-line-strong);
+  padding-block: clamp(52px, 5vw, 74px);
 }
 
 .landing-section__header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
-  gap: clamp(46px, 8vw, 120px);
-  align-items: end;
-  margin-bottom: 49px;
+  max-width: 62ch;
+  margin-bottom: clamp(22px, 2.6vw, 32px);
 }
 
-.landing-section__header p {
+/* 与首屏 mono 标签同源，但去掉胶囊底色，只留一枚小圆点 ——
+   一节里原来堆了四个全大写标签，那是噪音不是层级 */
+.landing-section__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   margin: 0 0 15px;
-  color: var(--archive-green-bright);
+  color: var(--archive-green);
+  font-family: var(--archive-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.landing-section__eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--archive-green-bright);
+}
+
+/* 衬线：比首屏那个又重又紧的无衬线标题松弛，也更自然 */
+.landing-section__header h2 {
+  margin: 0;
+  font-family: var(--archive-serif);
+  font-size: clamp(1.85rem, 2.7vw, 2.45rem);
+  font-weight: 650;
+  letter-spacing: -0.022em;
+  line-height: 1.3;
+}
+
+.landing-section__lede {
+  margin: 13px 0 0;
+  color: var(--archive-muted);
+  font-size: 0.97rem;
+  line-height: 1.78;
+}
+
+/* ── Exam Workspace ──
+ * 设计意图：整节只保留「一个容器」。
+ * tab 裸放在纸面上当控件，下面一块柔和晕染的场地承载内容，
+ * 两栏之间用一道细线分组——不再是盒子套盒子。 */
+
+/* 把考试色号注册成真正的 <color>，它们才能被 transition 插值。
+ * 于是切换考试时，整块场地的晕染、圆点、色块、按钮
+ * 是一起渐变过去的，而不是啪地跳一下。
+ * 不支持 @property 的浏览器只是少了这层渐变，颜色照常正确。 */
+@property --exam-accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #167867;
+}
+
+@property --exam-soft {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #dcf2eb;
+}
+
+/* 外层只负责排版，自己不是一个盒子：无边框、无底色、无阴影 */
+.exam-workspace {
+  --exam-soft: var(--archive-green-soft);
+  --exam-accent: var(--archive-green);
+  display: grid;
+  gap: clamp(14px, 1.6vw, 20px);
+  transition:
+    --exam-accent 460ms var(--archive-ease-out, ease),
+    --exam-soft 460ms var(--archive-ease-out, ease);
+}
+
+/* ── 考试切换：选中底色由一条滑块在 tab 之间滑过去 ── */
+.exam-selector {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  /* 底部留白给滑块的投影，否则会被 overflow 裁掉 */
+  padding: 4px 2px 14px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--archive-line-strong) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.exam-selector::-webkit-scrollbar {
+  height: 4px;
+}
+
+.exam-selector::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: var(--archive-line);
+}
+
+.exam-selector__glider {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: var(--glider-w, 0);
+  height: 42px;
+  border-radius: 999px;
+  background: var(--exam-soft);
+  box-shadow: 0 10px 20px -14px
+    color-mix(in srgb, var(--exam-accent) 80%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  translate: var(--glider-x, 0) 0;
+  transition:
+    translate 480ms var(--archive-ease-spring, ease),
+    width 480ms var(--archive-ease-out, ease),
+    opacity 220ms ease;
+}
+
+.exam-selector[data-glider='true'] .exam-selector__glider {
+  opacity: 1;
+}
+
+/* 有滑块时选中 tab 不再自己画底色，避免和滑块叠成两层 */
+.exam-selector[data-glider='true'] .exam-selector__tab.is-active {
+  background: transparent;
+  box-shadow: none;
+}
+
+.exam-selector__tab {
+  --exam-soft: var(--archive-green-soft);
+  --exam-accent: var(--archive-green);
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  min-height: 42px;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 9px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--archive-muted);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 650;
+  letter-spacing: -0.005em;
+  /* 不换行：滑块高度是写死的 42px，tab 一旦折行就对不齐了 */
+  white-space: nowrap;
+  transition:
+    color 200ms ease,
+    background-color 220ms var(--archive-ease-out, ease),
+    box-shadow 240ms ease,
+    translate 280ms var(--archive-ease-spring, ease),
+    scale 180ms ease;
+}
+
+.exam-selector__tab:hover {
+  background: color-mix(in srgb, var(--exam-soft) 40%, transparent);
+  color: var(--archive-ink);
+}
+
+/* 未选中的 tab 抬一下；选中的那张由滑块托着，不再重复抬升 */
+.exam-selector__tab:hover:not(.is-active) {
+  translate: 0 -2px;
+}
+
+.exam-selector__tab:active {
+  scale: 0.97;
+}
+
+.exam-selector__tab.is-active {
+  background: var(--exam-soft);
+  box-shadow: 0 10px 20px -14px
+    color-mix(in srgb, var(--exam-accent) 80%, transparent);
+  color: color-mix(in srgb, var(--exam-accent) 86%, #15241f);
+}
+
+.exam-selector__tab:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--exam-accent) 55%, white);
+  outline-offset: 2px;
+}
+
+.exam-selector__dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--exam-accent) 32%, transparent);
+  transition:
+    background-color 200ms ease,
+    scale 260ms var(--archive-ease-spring, ease);
+}
+
+.exam-selector__tab.is-active .exam-selector__dot {
+  background: var(--exam-accent);
+  scale: 1.15;
+}
+
+/* ── 场地：整节唯一的容器 ──
+ * 不画边框，只用一层水彩似的晕染 + 极浅的托底阴影。
+ * 注意：这里不能再声明 --exam-soft / --exam-accent，
+ * 它们由 .exam-workspace 上的行内值提供并在切换时插值，
+ * 中途重新声明会把渐变中的颜色顶掉，内容就会永远是绿色。 */
+.workspace {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(26px, 3vw, 40px) clamp(24px, 2.8vw, 38px)
+    clamp(28px, 3.2vw, 42px);
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      124% 96% at 6% 0%,
+      color-mix(in srgb, var(--exam-soft) 68%, transparent) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      88% 78% at 97% 3%,
+      color-mix(in srgb, var(--exam-accent) 9%, transparent) 0%,
+      transparent 56%
+    ),
+    var(--archive-surface-raised);
+  box-shadow:
+    0 1px 2px rgba(20, 37, 31, 0.04),
+    0 24px 50px -40px rgba(14, 65, 53, 0.34);
+}
+
+/* 整节唯一的环境动效：一团极慢漂移的柔光，复用首屏卡的 float-drift */
+.workspace::before {
+  --drift-x: -16px;
+  --drift-y: 12px;
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -32%;
+  right: -12%;
+  width: 46%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--exam-accent) 13%, transparent),
+    transparent 70%
+  );
+  filter: blur(26px);
+  pointer-events: none;
+  animation: float-drift 13s ease-in-out infinite;
+}
+
+.workspace__pane {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(20px, 2.4vw, 30px);
+}
+
+/* 切换考试时，标题和两栏依次滑入；
+ * 进场方向跟着 tab 的移动方向走（往右选就从右边来）。 */
+.workspace__head,
+.workspace__col {
+  animation: pane-item-in 560ms var(--archive-ease-out, ease) both;
+}
+
+.workspace__body > :nth-child(1) {
+  animation-delay: 70ms;
+}
+
+.workspace__body > :nth-child(2) {
+  animation-delay: 140ms;
+}
+
+@keyframes pane-item-in {
+  from {
+    opacity: 0;
+    translate: calc(var(--pane-dir, 0) * 20px) 8px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.workspace[data-dir='1'] {
+  --pane-dir: 1;
+}
+
+.workspace[data-dir='-1'] {
+  --pane-dir: -1;
+}
+
+/* ── 场地抬头：标题在左，状态在右，中间靠留白 ── */
+.workspace__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
+.workspace__title {
+  margin: 0;
+  font-family: var(--archive-serif);
+  font-size: clamp(1.45rem, 1.9vw, 1.78rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.workspace__tagline {
+  margin: 0;
+  color: var(--archive-muted);
+  font-size: 0.88rem;
+}
+
+/* ── 两栏：不是两个盒子，是被一道细线分开的两块内容 ── */
+.workspace__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(26px, 3.2vw, 46px);
+}
+
+.workspace__col {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.workspace__body > .workspace__col--find {
+  position: relative;
+  padding-left: clamp(26px, 3.2vw, 46px);
+}
+
+/* 分隔线向下淡出：资料栏内容通常比知识栏短，
+   实线一路拉到底反而会把那片留白显得更空 */
+.workspace__body > .workspace__col--find::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: linear-gradient(
+    color-mix(in srgb, var(--exam-accent) 24%, var(--archive-line)) 0%,
+    color-mix(in srgb, var(--exam-accent) 14%, var(--archive-line)) 42%,
+    transparent 100%
+  );
+}
+
+/* 角色标签：从 mono 全大写换成中文 + 一枚小圆点，噪音立刻降下来 */
+.workspace__role {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--archive-muted);
+  font-family: var(--archive-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.workspace__role::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--exam-accent);
+}
+
+/* 资料栏用空心点，和主推的知识栏区分开 */
+.workspace__col--find .workspace__role::before {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px
+    color-mix(in srgb, var(--exam-accent) 55%, transparent);
+}
+
+.workspace__col--placeholder .workspace__role::before {
+  background: color-mix(in srgb, var(--archive-faint) 60%, transparent);
+}
+
+/* 知识库未上线：整栏压暗，不和已上线的栏抢注意力 */
+.workspace__col--placeholder .workspace__col-title {
+  color: var(--archive-muted);
+}
+
+.workspace__col-title {
+  margin: 0;
+  font-family: var(--archive-serif);
+  font-size: clamp(1.16rem, 1.45vw, 1.36rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.workspace__col-summary {
+  margin: 0;
+  color: var(--archive-muted);
+  font-size: 0.91rem;
+  line-height: 1.75;
+}
+
+/* ── 模块清单：去掉横线表格感，改成带小圆点的两栏清单 ── */
+.workspace__modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px 20px;
+  margin: 3px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workspace__modules li {
+  display: grid;
+  gap: 3px;
+}
+
+.workspace__modules strong {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--archive-ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.workspace__modules strong::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  flex: none;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--exam-accent) 52%, transparent);
+  translate: 0 -3px;
+}
+
+.workspace__modules span {
+  padding-left: 13px;
+  color: var(--archive-muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* ── 资料类别：去边框的软色块 ── */
+.workspace__bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 3px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workspace__bullets li {
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--exam-accent) 10%, transparent);
+  color: color-mix(in srgb, var(--exam-accent) 74%, var(--archive-ink));
+  font-size: 0.79rem;
+  font-weight: 650;
+}
+
+/* ── CTA：主次靠形态区分，不靠卡片轻重 ──
+ * 不用 margin-top:auto 顶到底 —— 资料栏比知识栏短，
+ * 顶到底会让链接孤零零吊在一大片空白下面。 */
+.workspace__cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  color: color-mix(in srgb, var(--exam-accent) 74%, var(--archive-ink));
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: color 180ms ease;
+}
+
+.workspace__cta:hover {
+  color: color-mix(in srgb, var(--exam-accent) 94%, var(--archive-ink));
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.workspace__cta--primary {
+  min-height: 46px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--exam-accent) 88%, #0b241e);
+  box-shadow: 0 14px 26px -16px
+    color-mix(in srgb, var(--exam-accent) 88%, transparent);
+  color: #fff !important;
+  transition:
+    background-color 200ms ease,
+    box-shadow 240ms ease,
+    translate 240ms var(--archive-ease-spring, ease);
+}
+
+.workspace__cta--primary:hover {
+  background: color-mix(in srgb, var(--exam-accent) 72%, #0b241e);
+  box-shadow: 0 18px 30px -16px
+    color-mix(in srgb, var(--exam-accent) 92%, transparent);
+  color: #fff !important;
+  text-decoration: none;
+  translate: 0 -2px;
+}
+
+/* CTA 里的箭头跟着手走一小步 */
+.workspace__cta span,
+.updates-panel__cta span {
+  display: inline-block;
+  transition: translate 280ms var(--archive-ease-spring, ease);
+}
+
+.workspace__cta:hover span,
+.workspace__cta:focus-visible span,
+.updates-panel__cta:hover span,
+.updates-panel__cta:focus-visible span {
+  translate: 3px -3px;
+}
+
+/* ── Exam Workspace · 深色模式 ── */
+html.dark .workspace {
+  background:
+    radial-gradient(
+      124% 96% at 6% 0%,
+      color-mix(in srgb, var(--exam-accent) 15%, transparent) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      88% 78% at 97% 3%,
+      color-mix(in srgb, var(--exam-accent) 10%, transparent) 0%,
+      transparent 56%
+    ),
+    var(--archive-surface-raised);
+  box-shadow: 0 24px 50px -40px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .exam-selector__glider,
+html.dark .exam-selector__tab.is-active {
+  background: color-mix(
+    in srgb,
+    var(--exam-accent) 22%,
+    var(--archive-surface-raised)
+  );
+}
+
+html.dark .exam-selector__tab.is-active {
+  color: color-mix(in srgb, var(--exam-accent) 42%, var(--archive-ink));
+}
+
+html.dark .exam-selector__tab:hover {
+  background: color-mix(
+    in srgb,
+    var(--exam-accent) 12%,
+    var(--archive-surface-raised)
+  );
+}
+
+html.dark .workspace__body > .workspace__col--find::before {
+  background: linear-gradient(
+    color-mix(in srgb, var(--exam-accent) 32%, var(--archive-line)) 0%,
+    color-mix(in srgb, var(--exam-accent) 20%, var(--archive-line)) 42%,
+    transparent 100%
+  );
+}
+
+html.dark .workspace__bullets li {
+  background: color-mix(
+    in srgb,
+    var(--exam-accent) 15%,
+    var(--archive-surface-raised)
+  );
+  color: color-mix(in srgb, var(--exam-accent) 40%, var(--archive-ink));
+}
+
+html.dark .workspace__cta {
+  color: color-mix(in srgb, var(--exam-accent) 45%, var(--archive-ink));
+}
+
+html.dark .workspace__cta--primary {
+  background: color-mix(in srgb, var(--exam-accent) 80%, #ffffff);
+  color: #10201b !important;
+}
+
+html.dark .workspace__cta--primary:hover {
+  background: color-mix(in srgb, var(--exam-accent) 62%, #ffffff);
+  color: #10201b !important;
+}
+
+/* ── 最近更新 ──
+ * 也拆掉外框：左边是说明，右边是一条真正的时间线。
+ * 没有卡片、没有底色，一条细线 + 圆点就够了。 */
+.landing-section--updates {
+  padding-block: clamp(44px, 4vw, 62px) clamp(56px, 5vw, 78px);
+}
+
+.updates-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(0, 1.26fr);
+  gap: clamp(26px, 4vw, 68px);
+  align-items: start;
+}
+
+.updates-panel__intro {
+  margin-bottom: 0;
+}
+
+.updates-panel__cta {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding-inline: 20px;
+  border-radius: 999px;
+  background: var(--archive-green-soft);
+  color: var(--archive-green-deep) !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    translate 220ms var(--archive-ease-spring, ease),
+    background-color 200ms ease;
+}
+
+.updates-panel__cta:hover {
+  background: color-mix(
+    in srgb,
+    var(--archive-green) 20%,
+    var(--archive-green-soft)
+  );
+  translate: 0 -2px;
+}
+
+.updates-timeline {
+  position: relative;
+  display: grid;
+  margin: 0;
+  padding: 2px 0 0 28px;
+  list-style: none;
+}
+
+/* 贯穿的细线，向下淡出 */
+.updates-timeline::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  bottom: 10px;
+  left: 4px;
+  width: 1px;
+  background: linear-gradient(
+    var(--archive-line-strong),
+    color-mix(in srgb, var(--archive-line) 15%, transparent)
+  );
+  scale: 1 0;
+  transform-origin: top;
+  transition: scale 900ms var(--archive-ease-out, ease);
+}
+
+.updates-timeline.sr-visible::before {
+  scale: 1 1;
+}
+
+.updates-entry {
+  --entry-accent: var(--archive-green);
+  position: relative;
+  display: grid;
+  gap: 5px;
+  padding-bottom: clamp(22px, 2.4vw, 30px);
+}
+
+.updates-entry:last-child {
+  padding-bottom: 0;
+}
+
+/* 节点圆点：跟着 reveal 的 --sr-delay 依次弹出 */
+.updates-entry::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -28px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--entry-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--entry-accent) 13%, transparent);
+  scale: 0;
+  transition: scale 420ms var(--archive-ease-spring, ease) var(--sr-delay, 0ms);
+}
+
+.updates-timeline.sr-visible .updates-entry::before {
+  scale: 1;
+}
+
+.updates-entry time {
+  color: color-mix(in srgb, var(--entry-accent) 68%, var(--archive-ink));
+  font-family: var(--archive-mono);
+  font-size: 0.71rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.updates-entry > div {
+  display: grid;
+  gap: 5px;
+}
+
+.updates-entry strong {
+  color: var(--archive-ink);
+  font-family: var(--archive-serif);
+  font-size: 1.04rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.updates-entry span {
+  color: var(--archive-muted);
+  font-size: 0.88rem;
+  line-height: 1.74;
+}
+
+/* 沿用首屏考试卡的色号 */
+.updates-entry--kaoyan {
+  --entry-accent: #138f79;
+}
+
+.updates-entry--gongkao {
+  --entry-accent: #dc7459;
+}
+
+.updates-entry--cet {
+  --entry-accent: #5379cc;
+}
+
+html.dark .updates-entry time {
+  color: color-mix(in srgb, var(--entry-accent) 45%, var(--archive-ink));
+}
+
+/* ── 页脚 ──
+ * 原「三件事」区块的链接收在这里：站内地图本来就属于页脚，
+ * 放在这里不再和首屏的考试卡抢注意力。 */
+.landing-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+  gap: clamp(22px, 3vw, 46px);
+  align-items: start;
+  padding-block: clamp(30px, 3.2vw, 42px) clamp(38px, 4vw, 54px);
+  border-top: 1px solid var(--archive-line);
+  color: var(--archive-muted);
+  font-size: 0.88rem;
+}
+
+.landing-footer__brand a {
+  color: var(--archive-ink) !important;
+  font-size: 1rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.landing-footer__brand p {
+  max-width: 34ch;
+  margin: 10px 0 0;
+  line-height: 1.75;
+}
+
+.landing-footer__group {
+  display: grid;
+  align-content: start;
+  gap: 1px;
+}
+
+.landing-footer__group h2 {
+  margin: 0 0 9px;
+  color: var(--archive-faint);
   font-family: var(--archive-mono);
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 0.14em;
 }
 
-.landing-section__header h2 {
-  max-width: 850px;
-  margin: 0;
-  font-family: var(--archive-sans);
-  font-size: clamp(2.5rem, 4.5vw, 4.8rem);
-  font-weight: 850;
-  letter-spacing: -0.07em;
-  line-height: 1.08;
-}
-
-.landing-section__header > span {
-  color: var(--archive-muted);
-  font-size: 0.9rem;
-  line-height: 1.75;
-}
-
-.landing-resources-cta {
-  margin: 26px 0 0;
-}
-
-.resource-category-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 9px;
-}
-
-.resource-category-list a {
-  display: flex;
-  min-height: 47px;
+.landing-footer__group a {
+  display: inline-flex;
+  min-height: 30px;
+  width: fit-content;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 14px;
-  border: 1px solid var(--archive-line);
-  border-radius: 10px;
-  color: var(--archive-muted);
-  font-size: 0.76rem;
-  font-weight: 700;
+  color: var(--archive-muted) !important;
   transition:
-    background 160ms ease,
     color 160ms ease,
-    transform 160ms ease;
+    translate 240ms var(--archive-ease-out, ease);
 }
 
-.resource-category-list a::after {
-  content: '+';
-  color: var(--archive-green-bright);
-  font-size: 1rem;
-  font-weight: 500;
+.landing-footer__group a:hover {
+  color: var(--archive-green-deep) !important;
+  translate: 3px 0;
 }
 
-.resource-category-list a:hover {
-  background: var(--archive-green-soft);
-  color: var(--archive-green-deep);
-  transform: translateY(-2px);
-}
+/* ── 动效降级 ──
+ * 全局那条 prefers-reduced-motion 只压了 duration，没压 delay；
+ * 这里把首页新增的编排整条关掉，元素直接停在终态。 */
+@media (prefers-reduced-motion: reduce) {
+  .workspace__head,
+  .workspace__col,
+  .workspace::before,
+  .exam-selector__glider,
+  .updates-timeline::before,
+  .updates-entry::before {
+    animation: none !important;
+    transition: none !important;
+  }
 
-.resource-category-list--wide {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.landing-section--focus {
-  padding-top: clamp(84px, 7vw, 98px);
-}
-
-.focus-board {
-  display: grid;
-  grid-template-columns: minmax(330px, 1.05fr) minmax(330px, 0.88fr) minmax(
-      220px,
-      0.57fr
-    );
-  gap: 14px;
-}
-
-.focus-board__main,
-.focus-board__gongkao {
-  position: relative;
-  display: flex;
-  min-height: 440px;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 34px;
-  border-radius: 20px;
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease;
-}
-
-.focus-board__main:hover,
-.focus-board__gongkao:hover {
-  box-shadow: var(--archive-shadow-card);
-  transform: translateY(-5px);
-}
-
-.focus-board__main {
-  background: #172e27;
-  color: #f2faf6 !important;
-}
-
-.focus-board__main::before {
-  content: '408';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: rgba(255, 255, 255, 0.055);
-  font-family: var(--archive-sans);
-  font-size: 16rem;
-  font-weight: 900;
-  letter-spacing: -0.12em;
-  transform: translate(-50%, -52%);
-}
-
-.focus-board__main span,
-.focus-board__gongkao span {
-  position: relative;
-  font-size: 0.7rem;
-  font-weight: 750;
-  letter-spacing: 0.12em;
-}
-
-.focus-board__main strong {
-  position: relative;
-  max-width: 490px;
-  margin-top: auto;
-  font-family: var(--archive-serif);
-  font-size: clamp(2.1rem, 3.5vw, 3.7rem);
-  font-weight: 650;
-  line-height: 1.14;
-}
-
-.focus-board__main small,
-.focus-board__gongkao small {
-  position: relative;
-  margin-top: 25px;
-  font-size: 0.76rem;
-  text-decoration: underline;
-  text-underline-offset: 0.35em;
-}
-
-.focus-board__subjects {
-  display: grid;
-  grid-template-rows: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.focus-board__subjects a {
-  display: grid;
-  grid-template-columns: 32px minmax(130px, 0.82fr) minmax(145px, 1fr);
-  gap: 12px;
-  align-items: center;
-  padding: 18px 20px;
-  border: 1px solid var(--archive-line);
-  border-radius: 13px;
-  background: var(--archive-surface-raised);
-  transition:
-    background 160ms ease,
-    transform 160ms ease;
-}
-
-.focus-board__subjects a:hover {
-  background: var(--archive-green-soft);
-  transform: translateX(4px);
-}
-
-.focus-board__subjects span {
-  color: var(--archive-green-bright);
-  font-family: var(--archive-mono);
-  font-size: 0.62rem;
-}
-
-.focus-board__subjects strong {
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
-.focus-board__subjects small {
-  color: var(--archive-muted);
-  font-size: 0.7rem;
-}
-
-.focus-board__gongkao {
-  min-height: 440px;
-  background: #ffe9df;
-  color: #522a21 !important;
-}
-
-.focus-board__gongkao::before {
-  content: '';
-  position: absolute;
-  right: -80px;
-  bottom: -70px;
-  width: 240px;
-  height: 240px;
-  border: 54px solid rgba(242, 120, 93, 0.25);
-  border-radius: 50%;
-}
-
-.focus-board__gongkao strong {
-  position: relative;
-  margin-top: auto;
-  font-family: var(--archive-sans);
-  font-size: clamp(2rem, 3vw, 3.1rem);
-  font-weight: 850;
-  letter-spacing: -0.06em;
-  line-height: 1.08;
-}
-
-.landing-footer {
-  display: grid;
-  grid-template-columns: 0.42fr 1fr auto;
-  gap: 30px;
-  align-items: center;
-  padding-block: 34px 45px;
-  border-top: 1px solid var(--archive-line-strong);
-  color: var(--archive-muted);
-  font-size: 0.75rem;
-}
-
-.landing-footer__brand {
-  color: var(--archive-ink) !important;
-  font-size: 0.95rem;
-  font-weight: 850;
-}
-
-.landing-footer p {
-  margin: 0;
-}
-
-.landing-footer > div {
-  display: flex;
-  gap: 20px;
-}
-
-.landing-footer > div a {
-  border-bottom: 1px solid transparent;
-}
-
-.landing-footer > div a:hover {
-  border-color: currentColor;
+  /* 线和圆点直接停在终态，否则永远是 scale(0) 看不见 */
+  .updates-timeline::before,
+  .updates-entry::before {
+    scale: 1;
+  }
 }
 
 /* Resource explorer */
@@ -2151,15 +2682,6 @@ html.dark .floating-exam-card::after {
   .floating-exam-card--gongkao {
     right: 0;
   }
-
-  .focus-board {
-    grid-template-columns: minmax(330px, 1fr) minmax(330px, 1fr);
-  }
-
-  .focus-board__gongkao {
-    grid-column: 1 / -1;
-    min-height: 260px;
-  }
 }
 
 @media (max-width: 960px) {
@@ -2177,6 +2699,44 @@ html.dark .floating-exam-card::after {
   .exam-orbit {
     width: min(690px, 100%);
     margin-inline: auto;
+  }
+
+  .workspace__body {
+    grid-template-columns: 1fr;
+  }
+
+  /* 单列时竖分隔线要改成横的 */
+  .workspace__body > .workspace__col--find {
+    padding-left: 0;
+    padding-top: clamp(22px, 3vw, 30px);
+  }
+
+  .workspace__body > .workspace__col--find::before {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--exam-accent) 24%, var(--archive-line)) 0%,
+      transparent 100%
+    );
+  }
+
+  .updates-panel {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .landing-footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+  }
+
+  .landing-footer__brand {
+    grid-column: 1 / -1;
   }
 
   .resource-explorer__toolbar {
@@ -2203,7 +2763,6 @@ html.dark .floating-exam-card::after {
   }
 
   .landing-hero,
-  .landing-principles,
   .landing-section,
   .landing-footer {
     width: min(100% - 28px, 1260px);
@@ -2355,37 +2914,16 @@ html.dark .floating-exam-card::after {
     display: none;
   }
 
-  .landing-principles {
-    grid-template-columns: 1fr;
-    margin-top: -18px;
-  }
-
-  .landing-principles > div {
-    min-height: 105px;
-    border-right: 0;
-    border-bottom: 1px solid var(--archive-line);
-  }
-
-  .landing-principles > div:last-child {
-    border-bottom: 0;
-  }
-
   .landing-section {
-    padding-block: 68px;
-  }
-
-  .landing-section__header,
-  .landing-footer {
-    grid-template-columns: 1fr;
+    padding-block: 46px;
   }
 
   .landing-section__header {
-    gap: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 
   .landing-section__header h2 {
-    font-size: clamp(2.15rem, 10.8vw, 3.25rem);
+    font-size: clamp(1.75rem, 7.6vw, 2.15rem);
   }
 
   .resource-category-list {
@@ -2397,33 +2935,60 @@ html.dark .floating-exam-card::after {
     padding-inline: 12px;
   }
 
-  .focus-board {
+  .updates-panel {
     grid-template-columns: 1fr;
+    gap: 22px;
   }
 
-  .focus-board__main,
-  .focus-board__gongkao {
-    min-height: 300px;
-    padding: 24px;
-    border-radius: 17px;
+  .updates-timeline {
+    padding-left: 24px;
   }
 
-  .focus-board__gongkao {
-    grid-column: auto;
-    min-height: 230px;
-  }
-
-  .focus-board__subjects a {
-    grid-template-columns: 28px 1fr;
-  }
-
-  .focus-board__subjects small {
-    grid-column: 2;
+  .updates-entry::before {
+    left: -24px;
   }
 
   .landing-footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 18px;
     align-items: start;
-    gap: 15px;
+  }
+
+  .landing-footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .exam-selector {
+    padding-inline: 2px;
+    scroll-padding-inline: 2px;
+  }
+
+  .exam-selector__tab {
+    padding: 0 15px;
+    font-size: 0.92rem;
+  }
+
+  .workspace {
+    padding: 22px 20px 26px;
+    border-radius: 22px;
+  }
+
+  .workspace__title {
+    font-size: clamp(1.4rem, 6.4vw, 1.72rem);
+  }
+
+  .workspace__body {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace__modules {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .workspace__cta--primary {
+    align-self: stretch;
+    justify-content: center;
   }
 
   .resource-explorer__toolbar {
@@ -2770,33 +3335,78 @@ button,
   }
 }
 
-/* 悬浮考试卡：只做一次错峰入场，悬停交给 transform 过渡，避免闪跳 */
+/* 悬浮考试卡：scale 管入场、translate 管漂浮、transform 管悬停，三个通道互不干扰，永不闪跳 */
 .floating-exam-card {
-  animation: landing-rise 720ms var(--archive-ease-out) both;
+  animation:
+    card-enter 780ms var(--archive-ease-out) both,
+    float-drift var(--float-duration, 6.5s) ease-in-out var(--drift-delay, 0s)
+      infinite;
+}
+
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    scale: 0.88;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes float-drift {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: var(--drift-x, 4px) var(--drift-y, -8px);
+  }
 }
 
 .floating-exam-card--kaoyan {
-  animation-delay: 300ms;
+  animation-delay:
+    260ms,
+    -1.4s;
 }
 
 .floating-exam-card--gongkao {
-  animation-delay: 390ms;
+  animation-delay:
+    360ms,
+    -3.1s;
 }
 
 .floating-exam-card--kaobian {
-  animation-delay: 480ms;
+  animation-delay:
+    460ms,
+    -4.6s;
 }
 
 .floating-exam-card--teacher {
-  animation-delay: 570ms;
+  animation-delay:
+    560ms,
+    -2.2s;
 }
 
 .floating-exam-card--cet {
-  animation-delay: 660ms;
+  animation-delay:
+    660ms,
+    -5.3s;
 }
 
 .floating-exam-card--other {
-  animation-delay: 750ms;
+  animation-delay:
+    760ms,
+    -0.7s;
+}
+
+/* 小屏卡片为网格平铺，只保留入场，不做漂浮 */
+@media (max-width: 720px) {
+  .floating-exam-card {
+    animation: card-enter 620ms var(--archive-ease-out) both;
+  }
 }
 
 /* ── 知识卡片 hub ── */
