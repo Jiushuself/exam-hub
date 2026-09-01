@@ -296,6 +296,60 @@ function WorkspacePane({ exam, baseId }: { exam: ExamConfig; baseId: string }) {
   );
 }
 
+/**
+ * 光斑跟随指针 —— 整节唯一的「跟手」反馈。
+ * 只写 CSS 变量、用 rAF 合帧，不触发 React 重渲染。
+ * 触屏和 reduced-motion 直接不挂，省得白算。
+ */
+function useSpotlight(ref: React.RefObject<HTMLDivElement | null>) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof window === 'undefined') {
+      return;
+    }
+    const canHover = window.matchMedia('(hover: hover)').matches;
+    const reduced = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches;
+    if (!canHover || reduced) {
+      return;
+    }
+
+    let frame = 0;
+    let x = 50;
+    let y = 0;
+
+    const paint = () => {
+      frame = 0;
+      el.style.setProperty('--spot-x', `${x}%`);
+      el.style.setProperty('--spot-y', `${y}%`);
+    };
+
+    const onMove = (event: PointerEvent) => {
+      const rect = el.getBoundingClientRect();
+      x = ((event.clientX - rect.left) / rect.width) * 100;
+      y = ((event.clientY - rect.top) / rect.height) * 100;
+      if (!frame) {
+        frame = requestAnimationFrame(paint);
+      }
+    };
+    const onEnter = () => el.setAttribute('data-spot', 'true');
+    const onLeave = () => el.removeAttribute('data-spot');
+
+    el.addEventListener('pointermove', onMove);
+    el.addEventListener('pointerenter', onEnter);
+    el.addEventListener('pointerleave', onLeave);
+    return () => {
+      el.removeEventListener('pointermove', onMove);
+      el.removeEventListener('pointerenter', onEnter);
+      el.removeEventListener('pointerleave', onLeave);
+      if (frame) {
+        cancelAnimationFrame(frame);
+      }
+    };
+  }, [ref]);
+}
+
 export default function ExamWorkspace({
   defaultExam = 'kaoyan',
 }: ExamWorkspaceProps) {
@@ -305,6 +359,9 @@ export default function ExamWorkspace({
   /** 切换方向：新面板从哪一侧滑进来，跟着 tab 的移动方向走 */
   const [dir, setDir] = useState(0);
   const prevIndex = useRef(EXAM_ORDER.indexOf(defaultExam));
+  const fieldRef = useRef<HTMLDivElement>(null);
+
+  useSpotlight(fieldRef);
 
   useEffect(() => {
     const initial = readInitialExam(defaultExam);
@@ -348,7 +405,12 @@ export default function ExamWorkspace({
         onSelect={handleSelect}
         baseId={baseId}
       />
-      <div className="workspace" data-exam={selected} data-dir={dir}>
+      <div
+        className="workspace"
+        ref={fieldRef}
+        data-exam={selected}
+        data-dir={dir}
+      >
         <WorkspacePane exam={exam} baseId={baseId} />
       </div>
     </div>

@@ -20,6 +20,22 @@ const DESKTOP = { width: 1440, height: 900 };
 const MOBILE = { width: 390, height: 844 };
 
 const SHOTS = [
+  // 打开页面看到的第一屏（只截视口，不滚动）—— 判断首屏是否收得住
+  {
+    name: 'fold-desktop',
+    el: null,
+    fold: true,
+    viewport: DESKTOP,
+    theme: 'light',
+  },
+
+  {
+    name: 'principles-mobile',
+    el: '.landing-principles',
+    viewport: MOBILE,
+    theme: 'light',
+  },
+
   // 整页
   { name: 'home-desktop-light', el: null, viewport: DESKTOP, theme: 'light' },
   { name: 'home-desktop-dark', el: null, viewport: DESKTOP, theme: 'dark' },
@@ -196,7 +212,8 @@ async function run() {
     await target.screenshot({
       path: file,
       animations: 'disabled',
-      ...(shot.el ? {} : { fullPage: true }),
+      // 分区图截元素；整页图默认 fullPage；fold 图只截视口
+      ...(shot.el ? {} : { fullPage: !shot.fold }),
     });
 
     console.log(`  ✓ ${file}`);
