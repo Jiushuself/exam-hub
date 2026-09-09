@@ -9,10 +9,32 @@ description: 计算机 408 知识库总览，按数据结构、计算机组成�
 
 ## 四门专业课
 
-- [数据结构](./data-structure/)（源目录暂无 Markdown 章节）
-- [计算机组成原理](./computer-organization/)（7 篇章节笔记）
-- [操作系统](./operating-system/)（5 篇章节笔记）
-- [计算机网络](./computer-network/)（6 篇章节笔记）
+<div className="kb-hub" data-reveal-group>
+  <a className="kb-card" href="./data-structure/" data-reveal>
+    <span className="kb-card__eyebrow">SUBJECT / 01</span>
+    <strong>数据结构</strong>
+    <p>线性表、树、图、查找、排序与数据结构基础。</p>
+    <span className="kb-card__meta">11 篇章节笔记 · 开始阅读 →</span>
+  </a>
+  <a className="kb-card" href="./computer-organization/" data-reveal>
+    <span className="kb-card__eyebrow">SUBJECT / 02</span>
+    <strong>计算机组成原理</strong>
+    <p>数据表示、存储系统、指令系统、CPU、总线与 I/O。</p>
+    <span className="kb-card__meta">7 篇章节笔记 · 开始阅读 →</span>
+  </a>
+  <a className="kb-card" href="./operating-system/" data-reveal>
+    <span className="kb-card__eyebrow">SUBJECT / 03</span>
+    <strong>操作系统</strong>
+    <p>系统概述、进程与线程、内存、文件和输入输出管理。</p>
+    <span className="kb-card__meta">5 篇章节笔记 · 开始阅读 →</span>
+  </a>
+  <a className="kb-card" href="./computer-network/" data-reveal>
+    <span className="kb-card__eyebrow">SUBJECT / 04</span>
+    <strong>计算机网络</strong>
+    <p>网络体系结构、物理层、数据链路层、网络层、传输层与应用层。</p>
+    <span className="kb-card__meta">6 篇章节笔记 · 开始阅读 →</span>
+  </a>
+</div>
 
 ## 考研经验
 
