@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "综应总览"
+  },
+  {
+    "name": "01综合应用能力A类",
+    "label": "01 综合应用能力A类",
+    "type": "file"
+  },
+  {
+    "name": "02综合应用能力B类",
+    "label": "02 综合应用能力B类",
+    "type": "file"
+  },
+  {
+    "name": "03综合应用能力C类",
+    "label": "03 综合应用能力C类",
+    "type": "file"
+  },
+  {
+    "name": "04综合应用能力D类",
+    "label": "04 综合应用能力D类",
+    "type": "file"
+  },
+  {
+    "name": "05论证评价",
+    "label": "05 论证评价",
+    "type": "file"
+  }
+]

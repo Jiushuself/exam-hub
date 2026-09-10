@@ -13,5 +13,15 @@
     "type": "file",
     "name": "语境分析",
     "label": "语境分析"
+  },
+  {
+    "name": "词句理解",
+    "label": "词句理解",
+    "type": "file"
+  },
+  {
+    "name": "词语积累",
+    "label": "词语积累",
+    "type": "file"
   }
 ]

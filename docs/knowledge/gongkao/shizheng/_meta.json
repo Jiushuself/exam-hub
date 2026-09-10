@@ -1,0 +1,107 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "月度时政总览"
+  },
+  {
+    "name": "202502",
+    "label": "2025年2月",
+    "type": "file"
+  },
+  {
+    "name": "202503",
+    "label": "2025年3月",
+    "type": "file"
+  },
+  {
+    "name": "202504",
+    "label": "2025年4月",
+    "type": "file"
+  },
+  {
+    "name": "202505",
+    "label": "2025年5月",
+    "type": "file"
+  },
+  {
+    "name": "202506",
+    "label": "2025年6月",
+    "type": "file"
+  },
+  {
+    "name": "202507",
+    "label": "2025年7月",
+    "type": "file"
+  },
+  {
+    "name": "202508",
+    "label": "2025年8月",
+    "type": "file"
+  },
+  {
+    "name": "202509",
+    "label": "2025年9月",
+    "type": "file"
+  },
+  {
+    "name": "202510",
+    "label": "2025年10月",
+    "type": "file"
+  },
+  {
+    "name": "202511",
+    "label": "2025年11月",
+    "type": "file"
+  },
+  {
+    "name": "202512",
+    "label": "2025年12月",
+    "type": "file"
+  },
+  {
+    "name": "202601",
+    "label": "2026年1月",
+    "type": "file"
+  },
+  {
+    "name": "202602",
+    "label": "2026年2月",
+    "type": "file"
+  },
+  {
+    "name": "202603",
+    "label": "2026年3月",
+    "type": "file"
+  },
+  {
+    "name": "202604",
+    "label": "2026年4月",
+    "type": "file"
+  },
+  {
+    "name": "202605",
+    "label": "2026年5月",
+    "type": "file"
+  },
+  {
+    "name": "202606",
+    "label": "2026年6月",
+    "type": "file"
+  },
+  {
+    "name": "202607",
+    "label": "2026年7月",
+    "type": "file"
+  },
+  {
+    "name": "202608",
+    "label": "2026年8月",
+    "type": "file"
+  },
+  {
+    "name": "202609",
+    "label": "2026年9月",
+    "type": "file"
+  }
+]

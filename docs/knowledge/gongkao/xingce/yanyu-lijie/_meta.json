@@ -48,5 +48,10 @@
     "type": "dir-section-header",
     "name": "中心理解",
     "label": "中心理解"
+  },
+  {
+    "name": "篇章阅读",
+    "label": "篇章阅读",
+    "type": "file"
   }
 ]

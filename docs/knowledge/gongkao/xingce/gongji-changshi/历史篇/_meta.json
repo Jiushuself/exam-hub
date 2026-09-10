@@ -13,5 +13,10 @@
     "type": "file",
     "name": "中国现代史",
     "label": "中国现代史"
+  },
+  {
+    "name": "世界历史",
+    "label": "世界历史",
+    "type": "file"
   }
 ]

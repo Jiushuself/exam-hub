@@ -58,5 +58,15 @@
     "type": "dir-section-header",
     "name": "自然科技篇",
     "label": "自然科技篇"
+  },
+  {
+    "name": "国防与军队",
+    "label": "国防与军队",
+    "type": "file"
+  },
+  {
+    "name": "党的基本知识",
+    "label": "党的基本知识",
+    "type": "file"
   }
 ]
