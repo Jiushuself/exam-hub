@@ -5,6 +5,7 @@ import {
   Layout as OriginalLayout,
   SidebarList,
 } from '@rspress/core/theme-original';
+import { useLayoutEffect } from 'react';
 import type { SidebarData } from '@rspress/shared';
 
 export * from '@rspress/core/theme-original';
@@ -97,5 +98,42 @@ export function Sidebar() {
 }
 
 export function Layout() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      const target = event.target as Element | null;
+      if (!target?.closest) {
+        return;
+      }
+      const fill = target.closest('.gongkao-fill');
+      if (fill) {
+        fill.classList.toggle('gk-revealed');
+        return;
+      }
+      const toggle = target.closest('.gongkao-fill-toggle');
+      if (toggle) {
+        const next = !document.documentElement.classList.contains('gk-reveal-all');
+        document.documentElement.classList.toggle('gk-reveal-all', next);
+        document.querySelectorAll('.gongkao-fill-toggle').forEach((el) => {
+          el.setAttribute('aria-pressed', String(next));
+        });
+      }
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
+  // 路由切换后同步页内按钮的开关状态（SPA 内容稍后挂载）
+  useLayoutEffect(() => {
+    const id = window.setTimeout(() => {
+      const on = document.documentElement.classList.contains('gk-reveal-all');
+      document.querySelectorAll('.gongkao-fill-toggle').forEach((el) => {
+        el.setAttribute('aria-pressed', String(on));
+      });
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, [pathname]);
+
   return <OriginalLayout navTitle={<SiteWordmark />} />;
 }

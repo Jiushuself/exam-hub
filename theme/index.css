@@ -3368,6 +3368,133 @@ html.dark .updates-entry time {
 
 /*
  * ──────────────────────────────────────────────
+ * 考公 · 互动填空涂层 · gongkao interactive fill
+ * 未揭示：灰涂层遮住参考表述；桌面悬停临时揭示、移开盖上；
+ * 点击固定揭示（gk-revealed），再点盖上；
+ * 页内总按钮 .gongkao-fill-toggle 切换 html.gk-reveal-all 全页显/盖。
+ * 仅以类名命中，对考公库之外的页面零影响。
+ * ──────────────────────────────────────────────
+ */
+.gongkao-fill {
+  display: inline-block;
+  padding: 0 0.4em;
+  margin: 0 0.08em;
+  border-radius: 0.3em;
+  background: rgba(127, 138, 152, 0.26);
+  color: transparent;
+  transition:
+    color 0.16s var(--archive-ease-out),
+    background-color 0.16s var(--archive-ease-out);
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .gongkao-fill:hover {
+    color: inherit;
+    background: rgba(56, 132, 255, 0.14);
+  }
+}
+
+.gongkao-fill.gk-revealed,
+html.gk-reveal-all .gongkao-fill {
+  color: inherit;
+  background: rgba(56, 132, 255, 0.14);
+}
+
+[data-status='todo'].gongkao-fill {
+  border-bottom: 2px dashed rgba(100, 116, 139, 0.55);
+}
+
+.dark .gongkao-fill {
+  background: rgba(148, 163, 184, 0.24);
+}
+
+.dark .gongkao-fill.gk-revealed,
+.dark html.gk-reveal-all .gongkao-fill {
+  background: rgba(96, 165, 250, 0.16);
+}
+
+.gongkao-fill-bar {
+  position: fixed;
+  right: 18px;
+  bottom: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 640px) {
+  .gongkao-fill-bar {
+    right: 12px;
+    bottom: 14px;
+    padding: 4px;
+  }
+}
+
+.gongkao-fill-toggle {
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.08);
+  color: #1d4ed8;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition:
+    background 0.16s,
+    color 0.16s;
+}
+
+.gongkao-fill-toggle:hover {
+  background: rgba(59, 130, 246, 0.16);
+}
+
+.gongkao-fill-toggle[aria-pressed='true'] {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.dark .gongkao-fill-toggle {
+  border-color: rgba(147, 197, 253, 0.4);
+  background: rgba(37, 99, 235, 0.12);
+  color: #93c5fd;
+}
+
+.dark .gongkao-fill-toggle[aria-pressed='true'] {
+  background: #1e40af;
+  color: #e0f2fe;
+}
+
+.dark .gongkao-fill-bar {
+  border-color: rgba(71, 85, 105, 0.6);
+  background: rgba(15, 23, 42, 0.88);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+@media print {
+  .gongkao-fill-bar {
+    display: none;
+  }
+
+  .gongkao-fill {
+    color: inherit;
+    background: none;
+    border-bottom: 1px solid currentColor;
+    border-radius: 0;
+  }
+}
+
+/*
+ * ──────────────────────────────────────────────
  * 丝滑动效层 · smooth motion layer
  * 统一缓动 + 滚动 reveal + 路由淡入；
  * 仅装饰，不影响任何内容结构。
