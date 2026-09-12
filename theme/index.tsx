@@ -1,11 +1,11 @@
 import './index.css';
 
-import { useLocation, useSidebarDynamic } from '@rspress/core/runtime';
+import { useLocation, useSidebar } from '@rspress/core/runtime';
 import {
   Layout as OriginalLayout,
   SidebarList,
 } from '@rspress/core/theme-original';
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import type { SidebarData } from '@rspress/shared';
 
 export * from '@rspress/core/theme-original';
@@ -84,16 +84,77 @@ function SiteWordmark() {
   );
 }
 
+/**
+ * 让侧栏的目录分组默认折叠起来，由用户点箭头展开。
+ *
+ * 注意：这里必须硬写 collapsed: true，而不能写成 `item.collapsed ?? true`。
+ * Rspress 的 normalizeThemeConfig 会给每个分组填默认值 collapsed: false，
+ * 所以「框架填的 false」和「用户手动展开的 false」在数据上无法区分。
+ * 因此折叠只在初始化时执行一次（见 Sidebar 里的 ref 守卫），
+ * 之后由 Rspress 自己的 setSidebarData 接管，用户的手动操作不会被覆盖。
+ */
+function collapseSidebarEntry(item: SidebarEntry): SidebarEntry {
+  if (!('items' in item) || !Array.isArray(item.items)) {
+    return item;
+  }
+
+  return {
+    ...item,
+    items: item.items.map(collapseSidebarEntry),
+    collapsible: true,
+    collapsed: true,
+  };
+}
+
+function collapseSidebarData(sidebarData: SidebarData): SidebarData {
+  return sidebarData.map(collapseSidebarEntry);
+}
+
+/**
+ * 生成侧栏的初始数据：先按分区过滤（考研页不显示考公），再默认折叠。
+ *
+ * 过滤和折叠都要写进 state 本身，不能在渲染时临时算一份副本：
+ * SidebarGroup 的展开/收起是按「数组下标」回写 setSidebarData 的，
+ * 如果渲染的是过滤后的副本、而 setSidebarData 操作的是未过滤的原始数据，
+ * 下标就会错位——例如考公页点「考公」实际改到的是不可见的「考研」。
+ */
+function buildSidebarData(
+  rawSidebarData: SidebarData,
+  section: ExamSection | null,
+): SidebarData {
+  const filtered = section
+    ? filterSidebarData(rawSidebarData, section)
+    : rawSidebarData;
+
+  return collapseSidebarData(filtered);
+}
+
 export function Sidebar() {
   const { pathname } = useLocation();
-  const [sidebarData, setSidebarData] = useSidebarDynamic();
+  const rawSidebarData = useSidebar();
   const section = getExamSection(pathname);
-  const visibleSidebar = section
-    ? filterSidebarData(sidebarData, section)
-    : sidebarData;
+
+  // 用 useState 的惰性初始化把「过滤 + 默认折叠」做进首屏渲染。
+  // 这点很关键：若改成用 useLayoutEffect 折叠，SSR 阶段 effect 不执行，
+  // 生产构建的 HTML 会是全展开的，用户会先看到侧栏闪一下再收起。
+  const [sidebarData, setSidebarData] = useState(() =>
+    buildSidebarData(rawSidebarData, section),
+  );
+
+  // 只在切换知识库分区（考研 <-> 考公）时重算，
+  // 分区内跳转保留用户手动展开的分组。
+  const builtFor = useRef<ExamSection | null>(section);
+
+  useLayoutEffect(() => {
+    if (builtFor.current === section) {
+      return;
+    }
+    builtFor.current = section;
+    setSidebarData(buildSidebarData(rawSidebarData, section));
+  }, [section, rawSidebarData]);
 
   return (
-    <SidebarList sidebarData={visibleSidebar} setSidebarData={setSidebarData} />
+    <SidebarList sidebarData={sidebarData} setSidebarData={setSidebarData} />
   );
 }
 
