@@ -6,6 +6,7 @@ import {
   useState,
   type KeyboardEvent as ReactKeyboardEvent,
 } from 'react';
+import { useLocation, useNavigate } from '@rspress/core/runtime';
 import {
   resources,
   type ExamKey,
@@ -309,15 +310,39 @@ export function ResourceExplorer() {
   const [exam, setExam] = useState<ExamFilter>('all');
   const [status, setStatus] = useState<StatusFilter>('all');
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
+  /**
+   * URL ?exam= 与筛选器保持双向一致：
+   * - 导航下拉点「考研资料」等项时，是同路由 query-only 导航，组件不重挂载；
+   *   旧实现只在挂载时读一次参数，筛选器就停在旧值（点了没反应）。
+   *   这里监听 location.search，query 一变就同步（无参数时回到「全部」）。
+   * - 页内下拉改选时反向写回 URL（replace 不产生历史记录），
+   *   URL 始终反映当前筛选，之后点导航项才不会撞上旧 query。
+   */
   useEffect(() => {
-    const requestedExam = new URLSearchParams(window.location.search).get(
-      'exam',
+    const requestedExam = new URLSearchParams(location.search).get('exam');
+    setExam(
+      examOptions.some((option) => option.value === requestedExam)
+        ? (requestedExam as ExamFilter)
+        : 'all',
     );
-    if (examOptions.some((option) => option.value === requestedExam)) {
-      setExam(requestedExam as ExamFilter);
+  }, [location.search]);
+
+  const handleExamChange = (value: ExamFilter) => {
+    setExam(value);
+    const params = new URLSearchParams(location.search);
+    if (value === 'all') {
+      params.delete('exam');
+    } else {
+      params.set('exam', value);
     }
-  }, []);
+    const query = params.toString();
+    navigate(`${location.pathname}${query ? `?${query}` : ''}`, {
+      replace: true,
+    });
+  };
 
   const filteredResources = useMemo(
     () =>
@@ -368,7 +393,7 @@ export function ResourceExplorer() {
           label="考试类型"
           value={exam}
           options={examOptions}
-          onChange={setExam}
+          onChange={handleExamChange}
         />
 
         <FilterSelect
