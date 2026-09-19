@@ -58,16 +58,11 @@
     "link": "/community/"
   },
   {
-    "text": "更多",
-    "items": [
-      {
-        "text": "最近更新",
-        "link": "/updates"
-      },
-      {
-        "text": "关于与收录原则",
-        "link": "/about"
-      }
-    ]
+    "text": "最近更新",
+    "link": "/updates"
+  },
+  {
+    "text": "关于与收录原则",
+    "link": "/about"
   }
 ]
