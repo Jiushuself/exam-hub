@@ -1,38 +1,11 @@
-import {
-  useEffect,
-  useId,
-  useMemo,
-  useRef,
-  useState,
-  type KeyboardEvent as ReactKeyboardEvent,
-} from 'react';
-import { useLocation, useNavigate } from '@rspress/core/runtime';
+import { useEffect, useMemo, useState } from 'react';
+import { useLocation } from '@rspress/core/runtime';
 import {
   resources,
   type ExamKey,
   type ResourceItem,
   type ResourceStatus,
 } from '../data/resources';
-
-type ExamFilter = ExamKey | 'all';
-type StatusFilter = ResourceStatus | 'all';
-
-const examOptions: Array<{ value: ExamFilter; label: string }> = [
-  { value: 'all', label: '全部考试' },
-  { value: 'kaoyan', label: '考研' },
-  { value: 'gongkao', label: '考公' },
-  { value: 'kaobian', label: '考编' },
-  { value: 'teacher', label: '教师资格证' },
-  { value: 'cet', label: '英语四六级' },
-  { value: 'other', label: '其他考试' },
-];
-
-const statusOptions: Array<{ value: StatusFilter; label: string }> = [
-  { value: 'all', label: '全部状态' },
-  { value: 'active', label: '链接可用' },
-  { value: 'review', label: '待重新验证' },
-  { value: 'expired', label: '已失效' },
-];
 
 const statusLabels: Record<ResourceStatus, string> = {
   active: '链接可用',
@@ -67,172 +40,6 @@ const examDescriptions: Record<ExamKey, string> = {
   other: '医考、面试及其他考试资料',
 };
 
-interface FilterOption<T extends string> {
-  value: T;
-  label: string;
-}
-
-interface FilterSelectProps<T extends string> {
-  label: string;
-  value: T;
-  options: ReadonlyArray<FilterOption<T>>;
-  onChange: (value: T) => void;
-}
-
-function FilterSelect<T extends string>({
-  label,
-  value,
-  options,
-  onChange,
-}: FilterSelectProps<T>) {
-  const [isOpen, setIsOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-  const optionRefs = useRef<Array<HTMLButtonElement | null>>([]);
-  const baseId = useId();
-  const labelId = `${baseId}-label`;
-  const valueId = `${baseId}-value`;
-  const listId = `${baseId}-list`;
-  const selectedIndex = Math.max(
-    0,
-    options.findIndex((option) => option.value === value),
-  );
-  const selectedOption = options[selectedIndex];
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const closeOnOutsideClick = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('pointerdown', closeOnOutsideClick);
-    return () =>
-      document.removeEventListener('pointerdown', closeOnOutsideClick);
-  }, [isOpen]);
-
-  const focusOption = (index: number) => {
-    window.requestAnimationFrame(() => optionRefs.current[index]?.focus());
-  };
-
-  const openAndFocus = (index: number) => {
-    setIsOpen(true);
-    focusOption(index);
-  };
-
-  const handleTriggerKeyDown = (
-    event: ReactKeyboardEvent<HTMLButtonElement>,
-  ) => {
-    if (event.key === 'ArrowDown') {
-      event.preventDefault();
-      openAndFocus(selectedIndex);
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      openAndFocus(options.length - 1);
-    } else if (event.key === 'Escape') {
-      setIsOpen(false);
-    }
-  };
-
-  const handleOptionKeyDown = (
-    event: ReactKeyboardEvent<HTMLButtonElement>,
-    index: number,
-  ) => {
-    const lastIndex = options.length - 1;
-
-    if (event.key === 'ArrowDown') {
-      event.preventDefault();
-      focusOption(index === lastIndex ? 0 : index + 1);
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      focusOption(index === 0 ? lastIndex : index - 1);
-    } else if (event.key === 'Home') {
-      event.preventDefault();
-      focusOption(0);
-    } else if (event.key === 'End') {
-      event.preventDefault();
-      focusOption(lastIndex);
-    } else if (event.key === 'Escape') {
-      event.preventDefault();
-      setIsOpen(false);
-      triggerRef.current?.focus();
-    } else if (event.key === 'Tab') {
-      setIsOpen(false);
-    }
-  };
-
-  const selectOption = (option: FilterOption<T>) => {
-    onChange(option.value);
-    setIsOpen(false);
-    triggerRef.current?.focus();
-  };
-
-  return (
-    <div
-      className={`resource-field resource-select${isOpen ? ' resource-select--open' : ''}`}
-      ref={rootRef}
-    >
-      <span id={labelId}>{label}</span>
-      <button
-        ref={triggerRef}
-        type="button"
-        className="resource-select__trigger"
-        aria-labelledby={`${labelId} ${valueId}`}
-        aria-haspopup="listbox"
-        aria-expanded={isOpen}
-        aria-controls={listId}
-        onClick={() => setIsOpen((open) => !open)}
-        onKeyDown={handleTriggerKeyDown}
-      >
-        <span id={valueId}>{selectedOption.label}</span>
-        <svg
-          className="resource-select__chevron"
-          viewBox="0 0 20 20"
-          aria-hidden="true"
-        >
-          <path d="m5.75 7.75 4.25 4.5 4.25-4.5" />
-        </svg>
-      </button>
-
-      {isOpen ? (
-        <ul
-          id={listId}
-          className="resource-select__menu"
-          role="listbox"
-          aria-labelledby={labelId}
-        >
-          {options.map((option, index) => {
-            const isSelected = option.value === value;
-
-            return (
-              <li key={option.value} role="presentation">
-                <button
-                  ref={(element) => {
-                    optionRefs.current[index] = element;
-                  }}
-                  type="button"
-                  className="resource-select__option"
-                  role="option"
-                  aria-selected={isSelected}
-                  onClick={() => selectOption(option)}
-                  onKeyDown={(event) => handleOptionKeyDown(event, index)}
-                >
-                  <span>{option.label}</span>
-                  <svg viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="m5.2 10.2 3 3.1 6.7-7" />
-                  </svg>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      ) : null}
-    </div>
-  );
-}
-
 function includesKeyword(resource: ResourceItem, keyword: string) {
   const searchableText = [
     resource.title,
@@ -256,7 +63,7 @@ interface ResourceRowProps {
 
 function ResourceRow({ resource, copiedId, onCopyCode }: ResourceRowProps) {
   return (
-    <article className="resource-row">
+    <article className="resource-row" id={resource.id} tabIndex={-1}>
       <div className="resource-row__main">
         <div className="resource-row__meta">
           <span>{resource.subject}</span>
@@ -307,51 +114,48 @@ function ResourceRow({ resource, copiedId, onCopyCode }: ResourceRowProps) {
 
 export function ResourceExplorer() {
   const [keyword, setKeyword] = useState('');
-  const [exam, setExam] = useState<ExamFilter>('all');
-  const [status, setStatus] = useState<StatusFilter>('all');
+  const [searchDraft, setSearchDraft] = useState('');
+  const [activeCategory, setActiveCategory] = useState<ExamKey>('kaoyan');
+  const [pendingTarget, setPendingTarget] = useState<string | null>(null);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const location = useLocation();
-  const navigate = useNavigate();
 
-  /**
-   * URL ?exam= 与筛选器保持双向一致：
-   * - 导航下拉点「考研资料」等项时，是同路由 query-only 导航，组件不重挂载；
-   *   旧实现只在挂载时读一次参数，筛选器就停在旧值（点了没反应）。
-   *   这里监听 location.search，query 一变就同步（无参数时回到「全部」）。
-   * - 页内下拉改选时反向写回 URL（replace 不产生历史记录），
-   *   URL 始终反映当前筛选，之后点导航项才不会撞上旧 query。
-   */
   useEffect(() => {
     const requestedExam = new URLSearchParams(location.search).get('exam');
-    setExam(
-      examOptions.some((option) => option.value === requestedExam)
-        ? (requestedExam as ExamFilter)
-        : 'all',
-    );
-  }, [location.search]);
+    if (location.hash || !examKeys.includes(requestedExam as ExamKey)) return;
 
-  const handleExamChange = (value: ExamFilter) => {
-    setExam(value);
-    const params = new URLSearchParams(location.search);
-    if (value === 'all') {
-      params.delete('exam');
-    } else {
-      params.set('exam', value);
-    }
-    const query = params.toString();
-    navigate(`${location.pathname}${query ? `?${query}` : ''}`, {
-      replace: true,
+    const examKey = requestedExam as ExamKey;
+    setActiveCategory(examKey);
+    const frame = window.requestAnimationFrame(() => {
+      document
+        .getElementById(`resource-group-${examKey}`)
+        ?.scrollIntoView({ block: 'start' });
     });
-  };
+    return () => window.cancelAnimationFrame(frame);
+  }, [location.hash, location.search]);
+
+  useEffect(() => {
+    const targetId = decodeURIComponent(location.hash.slice(1));
+    const targetResource = resources.find(
+      (resource) => resource.id === targetId,
+    );
+    if (targetResource) {
+      setActiveCategory(targetResource.exam);
+      return;
+    }
+
+    const targetExam = examKeys.find(
+      (examKey) => targetId === `resource-group-${examKey}`,
+    );
+    if (targetExam) setActiveCategory(targetExam);
+  }, [location.hash]);
 
   const filteredResources = useMemo(
     () =>
       resources
-        .filter((resource) => exam === 'all' || resource.exam === exam)
-        .filter((resource) => status === 'all' || resource.status === status)
         .filter((resource) => !keyword || includesKeyword(resource, keyword))
         .sort((left, right) => right.verifiedAt.localeCompare(left.verifiedAt)),
-    [exam, keyword, status],
+    [keyword],
   );
 
   const resourceGroups = useMemo(
@@ -369,6 +173,76 @@ export function ResourceExplorer() {
     [filteredResources],
   );
 
+  const directoryGroups = useMemo(
+    () =>
+      examKeys.map((examKey) => ({
+        key: examKey,
+        label: examLabels[examKey],
+        items: resources
+          .filter((resource) => resource.exam === examKey)
+          .sort((left, right) =>
+            right.verifiedAt.localeCompare(left.verifiedAt),
+          ),
+      })),
+    [],
+  );
+  const activeGroup = directoryGroups.find(
+    (group) => group.key === activeCategory,
+  );
+  const activeSubjects = useMemo(() => {
+    const subjects = new Map<
+      string,
+      { label: string; firstResourceId: string; count: number }
+    >();
+
+    for (const resource of activeGroup?.items ?? []) {
+      const existing = subjects.get(resource.subject);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        subjects.set(resource.subject, {
+          label: resource.subject,
+          firstResourceId: resource.id,
+          count: 1,
+        });
+      }
+    }
+
+    return [...subjects.values()];
+  }, [activeGroup]);
+
+  const clearSearch = () => {
+    setSearchDraft('');
+    setKeyword('');
+  };
+
+  const applySearch = () => {
+    const nextKeyword = searchDraft.trim();
+    setKeyword(nextKeyword);
+    const firstMatch = resources.find((resource) =>
+      includesKeyword(resource, nextKeyword),
+    );
+    if (nextKeyword && firstMatch) setActiveCategory(firstMatch.exam);
+  };
+
+  const navigateToDirectoryTarget = (targetId: string, examKey: ExamKey) => {
+    setActiveCategory(examKey);
+    clearSearch();
+    setPendingTarget(targetId);
+  };
+
+  useEffect(() => {
+    if (!pendingTarget) return;
+    const target = document.getElementById(pendingTarget);
+    if (!target) return;
+
+    if (window.location.hash !== `#${pendingTarget}`) {
+      window.location.hash = pendingTarget;
+    }
+    target.scrollIntoView({ block: 'start' });
+    setPendingTarget(null);
+  }, [pendingTarget, keyword]);
+
   const copyCode = async (resource: ResourceItem) => {
     if (!resource.code) return;
     await navigator.clipboard.writeText(resource.code);
@@ -377,83 +251,182 @@ export function ResourceExplorer() {
   };
 
   return (
-    <section className="resource-explorer rp-not-doc" aria-label="资料筛选">
-      <div className="resource-explorer__toolbar">
-        <label className="resource-field resource-field--search">
-          <span>关键词</span>
-          <input
-            type="search"
-            value={keyword}
-            onChange={(event) => setKeyword(event.target.value)}
-            placeholder="搜索资料名称、科目或标签"
-          />
-        </label>
-
-        <FilterSelect
-          label="考试类型"
-          value={exam}
-          options={examOptions}
-          onChange={handleExamChange}
-        />
-
-        <FilterSelect
-          label="链接状态"
-          value={status}
-          options={statusOptions}
-          onChange={setStatus}
-        />
-      </div>
-
+    <section
+      className="resource-explorer rp-not-doc"
+      aria-label="资料目录与搜索"
+    >
       <div className="resource-explorer__summary" aria-live="polite">
         <span>检索结果</span>
         <strong>{filteredResources.length} 份资料</strong>
       </div>
 
-      {filteredResources.length > 0 ? (
-        <div className="resource-list">
-          {resourceGroups.map((group, index) => (
-            <section
-              className="resource-group"
-              data-category={group.key}
-              key={group.key}
-            >
-              <header className="resource-group__header">
-                <div className="resource-group__marker" aria-hidden="true">
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <small>分类</small>
+      <div className="resource-layout resource-layout--indexed">
+        <nav className="resource-index" aria-label="资料目录">
+          <div className="resource-index__head">
+            <div>
+              <span>RESOURCE INDEX</span>
+              <strong>资料目录</strong>
+            </div>
+            <small>{examKeys.length} 大类</small>
+          </div>
+
+          <form
+            className="resource-index__search"
+            role="search"
+            onSubmit={(event) => {
+              event.preventDefault();
+              applySearch();
+            }}
+          >
+            <label htmlFor="resource-directory-search">搜索网盘资料</label>
+            <div className="resource-index__search-row">
+              <input
+                id="resource-directory-search"
+                type="search"
+                value={searchDraft}
+                onChange={(event) => setSearchDraft(event.target.value)}
+                placeholder="科目、名称或标签"
+              />
+              <button type="submit">搜索</button>
+            </div>
+            {keyword || searchDraft ? (
+              <button
+                className="resource-index__clear"
+                type="button"
+                onClick={clearSearch}
+              >
+                清除搜索
+              </button>
+            ) : null}
+            {keyword ? (
+              <p className="resource-index__search-hint">
+                点击目录可退出搜索并跳转到完整分类。
+              </p>
+            ) : null}
+          </form>
+
+          <div className="resource-index__label">考试分类</div>
+          <ol className="resource-index__categories">
+            {examKeys.map((examKey, index) => {
+              const group = directoryGroups.find(
+                (item) => item.key === examKey,
+              );
+              const content = (
+                <>
+                  <span className="resource-index__number">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span className="resource-index__category-name">
+                    {examLabels[examKey]}
+                  </span>
+                  <span className="resource-index__count">
+                    {group?.items.length ?? 0}
+                  </span>
+                </>
+              );
+
+              return (
+                <li key={examKey}>
+                  <a
+                    className={
+                      activeGroup?.key === examKey
+                        ? 'resource-index__category--active'
+                        : undefined
+                    }
+                    href={`#resource-group-${examKey}`}
+                    aria-current={
+                      activeGroup?.key === examKey ? 'location' : undefined
+                    }
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToDirectoryTarget(
+                        `resource-group-${examKey}`,
+                        examKey,
+                      );
+                    }}
+                  >
+                    {content}
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+
+          <div className="resource-index__subject-head">
+            <strong>{activeGroup?.label ?? '暂无匹配分类'} · 科目</strong>
+            <span>{activeSubjects.length}</span>
+          </div>
+          <ol className="resource-index__subjects">
+            {activeSubjects.map((subject) => (
+              <li key={subject.label}>
+                <a
+                  href={`#${subject.firstResourceId}`}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    navigateToDirectoryTarget(
+                      subject.firstResourceId,
+                      activeCategory,
+                    );
+                  }}
+                >
+                  <span>{subject.label}</span>
+                  {subject.count > 1 ? <small>{subject.count}</small> : null}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        {filteredResources.length > 0 ? (
+          <div className="resource-list">
+            {resourceGroups.map((group, index) => (
+              <section
+                className="resource-group"
+                data-category={group.key}
+                key={group.key}
+              >
+                <header
+                  className="resource-group__header"
+                  id={`resource-group-${group.key}`}
+                  tabIndex={-1}
+                >
+                  <div className="resource-group__marker" aria-hidden="true">
+                    <span>{String(index + 1).padStart(2, '0')}</span>
+                    <small>分类</small>
+                  </div>
+                  <div className="resource-group__heading">
+                    <span>RESOURCE CATEGORY</span>
+                    <h2>{group.label}</h2>
+                    <p>{group.description}</p>
+                  </div>
+                  <strong className="resource-group__count">
+                    {group.items.length} 份资料
+                  </strong>
+                </header>
+                <div className="resource-group__items">
+                  {group.items.map((resource) => (
+                    <ResourceRow
+                      key={resource.id}
+                      resource={resource}
+                      copiedId={copiedId}
+                      onCopyCode={copyCode}
+                    />
+                  ))}
                 </div>
-                <div className="resource-group__heading">
-                  <span>RESOURCE CATEGORY</span>
-                  <h2>{group.label}</h2>
-                  <p>{group.description}</p>
-                </div>
-                <strong className="resource-group__count">
-                  {group.items.length} 份资料
-                </strong>
-              </header>
-              <div className="resource-group__items">
-                {group.items.map((resource) => (
-                  <ResourceRow
-                    key={resource.id}
-                    resource={resource}
-                    copiedId={copiedId}
-                    onCopyCode={copyCode}
-                  />
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      ) : (
-        <div className="resource-empty">
-          <span>RESOURCE INDEX / EMPTY</span>
-          <h2>首批资料正在核验。</h2>
-          <p>
-            暂时不展示未经确认的链接。录入真实资料后，这里会自动支持搜索、分类和状态筛选。
-          </p>
-          <a href="/about/#资料收录原则">查看资料收录原则</a>
-        </div>
-      )}
+              </section>
+            ))}
+          </div>
+        ) : (
+          <div className="resource-empty">
+            <span>RESOURCE INDEX / EMPTY</span>
+            <h2>没有找到匹配的资料</h2>
+            <p>试试其他关键词，或清除搜索后浏览完整目录。</p>
+            <button type="button" onClick={clearSearch}>
+              清除搜索
+            </button>
+          </div>
+        )}
+      </div>
     </section>
   );
 }

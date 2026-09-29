@@ -36,6 +36,150 @@ const pendingReviewMeta = {
   'source' | 'rights' | 'updatedAt' | 'verifiedAt' | 'status'
 >;
 
+const pendingSvipMajorMeta = {
+  source: '用户提供的夸克网盘目录',
+  rights: '资料来源与公开分享授权待核验',
+  updatedAt: '2026-09-29',
+  verifiedAt: '2026-09-29',
+  status: 'review',
+} satisfies Pick<
+  ResourceItem,
+  'source' | 'rights' | 'updatedAt' | 'verifiedAt' | 'status'
+>;
+
+const svipMajorItems: Array<
+  [number: string, title: string, subject: string, url: string]
+> = [
+  [
+    '00',
+    '00.各专业后期陆续更新',
+    '专业课更新',
+    'https://pan.quark.cn/s/31fb2a7873f1',
+  ],
+  ['01', '01.2027 西综', '西综', 'https://pan.quark.cn/s/7cc5f18b9044'],
+  ['02', '02.2027 法硕', '法硕', 'https://pan.quark.cn/s/532a0deb8f1b'],
+  [
+    '03',
+    '03.2027 经济类联考',
+    '经济类联考',
+    'https://pan.quark.cn/s/d25ce459e965',
+  ],
+  [
+    '04',
+    '04.2027 管理类联考',
+    '管理类联考',
+    'https://pan.quark.cn/s/34a5ec30472f',
+  ],
+  ['05', '05.2027 计算机', '计算机', 'https://pan.quark.cn/s/ca78f2782d16'],
+  [
+    '06',
+    '06.2027 教育学（333+311）',
+    '教育学（333+311）',
+    'https://pan.quark.cn/s/60365472ead5',
+  ],
+  ['07', '07.2027 金融学', '金融学', 'https://pan.quark.cn/s/ddd1dd090c71'],
+  [
+    '08',
+    '08.2027 经济学+数字经济',
+    '经济学+数字经济',
+    'https://pan.quark.cn/s/00ae10262602',
+  ],
+  ['09', '09.2027 统计学', '统计学', 'https://pan.quark.cn/s/469654a9a60e'],
+  [
+    '10',
+    '10.2027 心理学（347+312）',
+    '心理学（347+312）',
+    'https://pan.quark.cn/s/53db1d40fa99',
+  ],
+  ['11', '11.2027 马克思', '马克思', 'https://pan.quark.cn/s/fa5a0d079ac7'],
+  ['12', '12.2027 历史学', '历史学', 'https://pan.quark.cn/s/5949994b1771'],
+  ['13', '13.2027 机械', '机械', 'https://pan.quark.cn/s/2da8bf52eff3'],
+  ['14', '14.2027 力学', '力学', 'https://pan.quark.cn/s/788b44ea2e85'],
+  ['15', '15.2027 电路', '电路', 'https://pan.quark.cn/s/2e2e5775dc8f'],
+  ['16', '16.2027 信号系统', '信号系统', 'https://pan.quark.cn/s/c22793f8973e'],
+  ['17', '17.2027 护理', '护理', 'https://pan.quark.cn/s/0a5be5b6b749'],
+  ['18', '18.2027 中医', '中医', 'https://pan.quark.cn/s/86dffa349069'],
+  ['19', '19.2027 药学', '药学', 'https://pan.quark.cn/s/ddaec3f10a82'],
+  ['20', '20.2027 口腔', '口腔', 'https://pan.quark.cn/s/537d68c92611'],
+  ['21', '21.2027 公共卫生', '公共卫生', 'https://pan.quark.cn/s/3933cd456861'],
+  ['22', '22.2027 新闻传播', '新闻传播', 'https://pan.quark.cn/s/d56524ae6392'],
+  ['23', '23.2027 社会工作', '社会工作', 'https://pan.quark.cn/s/eca4eab8ba26'],
+  ['24', '24.2027 翻译硕士', '翻译硕士', 'https://pan.quark.cn/s/d78ed6ed1acb'],
+  ['25', '25.2027 汉语国际', '汉语国际', 'https://pan.quark.cn/s/aa1d0d31ee77'],
+  ['26', '26.2027 国际商务', '国际商务', 'https://pan.quark.cn/s/8a00e0bb9251'],
+  ['27', '27.2027 日语', '日语', 'https://pan.quark.cn/s/303196736800'],
+  ['28', '28.2027 农学', '农学', 'https://pan.quark.cn/s/c99caa91f872'],
+  ['29', '29.2027 艺术类', '艺术类', 'https://pan.quark.cn/s/bb28d8fbe10b'],
+  ['30', '30.2027化工原理', '化工原理', 'https://pan.quark.cn/s/7a4b6f4b7229'],
+  [
+    '31',
+    '31.2027 电力系统分析',
+    '电力系统分析',
+    'https://pan.quark.cn/s/a619081db90d',
+  ],
+  ['32', '32.2027 自动控制', '自动控制', 'https://pan.quark.cn/s/4f6339dd77fa'],
+  ['33', '33.2027 物理化学', '物理化学', 'https://pan.quark.cn/s/167235c2be9c'],
+  ['34', '34.2027 电气电分', '电气电分', 'https://pan.quark.cn/s/3c658bc3da01'],
+  ['35', '35.2027 体育硕士', '体育硕士', 'https://pan.quark.cn/s/993afaf34d06'],
+  ['36', '36.2027 税务专硕', '税务专硕', 'https://pan.quark.cn/s/b9bedb2f073b'],
+  ['37', '37.2027 保险硕士', '保险硕士', 'https://pan.quark.cn/s/8a35a826523e'],
+  ['38', '38.2027 资产评估', '资产评估', 'https://pan.quark.cn/s/b6a2a35e510d'],
+  ['39', '39.2027 水力学', '水力学', 'https://pan.quark.cn/s/85ad459aa63c'],
+  [
+    '40',
+    '40.2027 中国语言文学',
+    '中国语言文学',
+    'https://pan.quark.cn/s/d74b2cca6924',
+  ],
+  ['41', '41.2027 传热学', '传热学', 'https://pan.quark.cn/s/788da9401bf6'],
+  [
+    '42',
+    '42.2027 工程热力学',
+    '工程热力学',
+    'https://pan.quark.cn/s/7fd2a4abf9e9',
+  ],
+  ['43', '43.2027 生物化学', '生物化学', 'https://pan.quark.cn/s/48e48500846a'],
+  [
+    '44',
+    '44.2027 细胞生物学',
+    '细胞生物学',
+    'https://pan.quark.cn/s/2f90a23da130',
+  ],
+  [
+    '45',
+    '45.2027 分子生物学',
+    '分子生物学',
+    'https://pan.quark.cn/s/b03365f5dfff',
+  ],
+  [
+    '46',
+    '46.2027 普通生物学',
+    '普通生物学',
+    'https://pan.quark.cn/s/87f547be78f8',
+  ],
+  ['47', '47.2027 微生物学', '微生物学', 'https://pan.quark.cn/s/1a7bc33d0762'],
+  ['48', '48.2027 通信原理', '通信原理', 'https://pan.quark.cn/s/9e01d81ef6a9'],
+  ['49', '49.2027 数电模电', '数电模电', 'https://pan.quark.cn/s/b77e12c434a3'],
+  ['50', '50.2027 运筹学', '运筹学', 'https://pan.quark.cn/s/270ebff0c1f1'],
+  ['51', '51.2027 北航工热', '北航工热', 'https://pan.quark.cn/s/9fcbacb7ac56'],
+];
+
+const svipMajorResources: ResourceItem[] = svipMajorItems.map(
+  ([number, title, subject, url]) => ({
+    ...pendingSvipMajorMeta,
+    id: `kaoyan-2027-svip-major-${number}`,
+    title,
+    description:
+      '2027 年考研专业课资料分享入口；课程内容、资料完整性、原始来源与公开传播授权待核验。',
+    exam: 'kaoyan',
+    subject,
+    year: '2027',
+    types: ['专业课', '课程资料'],
+    provider: '夸克网盘',
+    url,
+  }),
+);
+
 export const resources: ResourceItem[] = [
   {
     ...pendingReviewMeta,
@@ -179,6 +323,7 @@ export const resources: ResourceItem[] = [
     url: 'https://pan.baidu.com/s/1aDfQR1DQnMl4Jp-Y_OaDPg?pwd=6666',
     code: '6666',
   },
+  ...svipMajorResources,
   {
     ...pendingReviewMeta,
     id: 'gongkao-2026-quark-collection',
