@@ -67,7 +67,8 @@ let content = fs.readFileSync(updatesPath, 'utf-8');
 const startIdx = content.indexOf(START);
 const endIdx = content.indexOf(END);
 if (startIdx !== -1 && endIdx !== -1 && endIdx > startIdx) {
-  content = content.slice(0, startIdx) + block + content.slice(endIdx + END.length);
+  content =
+    content.slice(0, startIdx) + block + content.slice(endIdx + END.length);
 } else {
   console.log('updates.md 中未找到标记区块，未做修改');
   process.exit(1);

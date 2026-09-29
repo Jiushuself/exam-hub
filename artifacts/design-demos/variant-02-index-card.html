@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>资料卡变体 02 · 索引卡</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #f3f7f4;
+        --surface: #ffffff;
+        --ink: #14251f;
+        --muted: #5d6c66;
+        --line: #dbe4df;
+        --line-strong: #bfcfc7;
+        --rust: #b45f49;
+        --amber: #e4ae3e;
+        --serif: 'Noto Serif SC', 'Songti SC', SimSun, serif;
+        --sans: 'PingFang SC', 'Microsoft YaHei UI', sans-serif;
+        --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 84px 48px 68px;
+        background:
+          radial-gradient(
+            1100px 480px at 50% -12%,
+            color-mix(in srgb, var(--amber) 7%, transparent),
+            transparent
+          ),
+          var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+      }
+      .stage {
+        width: min(980px, 100%);
+      }
+      .variant {
+        margin-bottom: 22px;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+      }
+      .variant b {
+        color: var(--rust);
+      }
+
+      /* ── 索引卡 ── */
+      .index-card {
+        position: relative;
+        transform: rotate(-0.3deg);
+        border: 1.5px solid var(--line-strong);
+        border-radius: 6px 16px 14px 14px;
+        background:
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 31px,
+            color-mix(in srgb, var(--line) 82%, var(--surface)) 31px 32px
+          ),
+          var(--surface);
+        box-shadow: 0 24px 54px -30px rgba(20, 50, 40, 0.28);
+      }
+      .index-card::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 58px;
+        border-left: 1.5px solid
+          color-mix(in srgb, var(--rust) 36%, transparent);
+        content: '';
+      }
+      .index-card__tab {
+        position: absolute;
+        top: -31px;
+        left: 66px;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        padding: 0 18px;
+        border: 1.5px solid var(--line-strong);
+        border-bottom: 0;
+        border-radius: 10px 10px 0 0;
+        background: var(--amber);
+        box-shadow: 0 -8px 16px -10px rgba(80, 55, 13, 0.4);
+        color: #4a3207;
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+      }
+      .index-card__inner {
+        display: grid;
+        gap: 12px;
+        padding: 30px 42px 24px 88px;
+      }
+      .index-card__chip {
+        width: fit-content;
+        padding: 1px 6px;
+        background: linear-gradient(
+          to top,
+          color-mix(in srgb, var(--amber) 52%, transparent) 52%,
+          transparent 52%
+        );
+        color: var(--ink);
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.2em;
+      }
+      .index-card__inner h2 {
+        color: var(--ink);
+        font-family: var(--serif);
+        font-size: 31px;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        line-height: 1.25;
+      }
+      .index-card__msg {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 2px 10px;
+        font-size: 13.5px;
+        line-height: 1.7;
+      }
+      .index-card__msg strong {
+        color: var(--rust);
+        font-weight: 800;
+      }
+      .index-card__msg span {
+        color: var(--muted);
+      }
+      .index-card__steps {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 13px;
+        margin-top: 6px;
+        padding: 0;
+        list-style: none;
+      }
+      .index-card__steps li {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      .index-card__steps b {
+        display: grid;
+        width: 27px;
+        height: 27px;
+        place-items: center;
+        border: 1.5px solid var(--rust);
+        border-radius: 50%;
+        color: var(--rust);
+        font-family: var(--serif);
+        font-size: 14px;
+        font-weight: 900;
+      }
+      .index-card__steps span {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .index-card__steps i {
+        color: var(--rust);
+        font-family: var(--serif);
+        font-size: 16px;
+        font-style: normal;
+      }
+      .index-card__note {
+        margin-top: 4px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family: var(--serif);
+        font-size: 12px;
+        font-style: italic;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <p class="variant">VARIANT <b>02</b> —— 索引卡 / INDEX CARD</p>
+      <section class="index-card" aria-labelledby="t2-title">
+        <i class="index-card__tab" aria-hidden="true">资料室 · NO.03</i>
+        <div class="index-card__inner">
+          <span class="index-card__chip">手机转存提醒</span>
+          <h2 id="t2-title">请先转存，再观看</h2>
+          <p class="index-card__msg">
+            <strong>未转存直接播放通常只能试看 2 分钟</strong>
+            <span>请使用手机打开链接，通过对应网盘 App 保存到自己的网盘。</span>
+          </p>
+          <ol class="index-card__steps" aria-label="手机转存步骤">
+            <li><b>1</b><span>手机打开</span></li>
+            <i aria-hidden="true">→</i>
+            <li><b>2</b><span>保存到网盘</span></li>
+            <i aria-hidden="true">→</i>
+            <li><b>3</b><span>网盘内观看</span></li>
+          </ol>
+          <footer class="index-card__note">
+            资料状态、完整性及授权情况，请以各条资料说明为准。
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

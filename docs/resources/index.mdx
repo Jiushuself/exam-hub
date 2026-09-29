@@ -13,31 +13,77 @@ import { ResourceExplorer } from '../../theme/components/ResourceExplorer';
 这里集中展示网盘资料，不在知识文章中重复散落链接。每条资料都应标注来源、授权情况、网盘平台和最后验证日期。
 
 <aside className="resource-notice" aria-labelledby="resource-notice-title">
-  <div className="resource-notice__heading">
-    <span>手机转存提醒</span>
-    <strong id="resource-notice-title">请先转存，再观看</strong>
-  </div>
-  <div className="resource-notice__content">
-    <p className="resource-notice__message">
-      <strong>未转存直接播放通常只能试看 2 分钟</strong>
-      <span>请使用手机打开链接，通过对应网盘 App 保存到自己的网盘。</span>
+  <span className="resource-notice__badge">手机转存提醒</span>
+  <strong className="resource-notice__title" id="resource-notice-title">
+    {'请先转存，再观看'}
+  </strong>
+  <div className="resource-notice__message">
+    <p className="resource-notice__message-main">
+      {'未转存直接播放通常只能'}
+      <b>试看 2 分钟</b>
     </p>
-    <ol className="resource-notice__steps" aria-label="手机转存步骤">
-      <li>
-        <b>01</b>
-        <span>手机打开</span>
-      </li>
-      <li>
-        <b>02</b>
-        <span>保存到网盘</span>
-      </li>
-      <li>
-        <b>03</b>
-        <span>网盘内观看</span>
-      </li>
-    </ol>
-    <small>资料状态、完整性及授权情况，请以各条资料说明为准。</small>
+    <p className="resource-notice__message-sub">
+      {'请使用手机打开链接，通过对应网盘 App 保存到自己的网盘。'}
+    </p>
   </div>
+  <ol className="resource-notice__steps" aria-label="手机转存步骤">
+    <li className="resource-notice__step">
+      <i className="resource-notice__step-icon" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+          <path d="M11 18.5h2" />
+        </svg>
+      </i>
+      <span>手机打开</span>
+    </li>
+    <li className="resource-notice__step">
+      <i
+        className="resource-notice__step-icon resource-notice__step-icon--save"
+        aria-hidden="true"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <path d="m7 10 5 5 5-5" />
+          <path d="M12 15V3" />
+        </svg>
+      </i>
+      <span>保存到网盘</span>
+    </li>
+    <li className="resource-notice__step">
+      <i className="resource-notice__step-icon" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="12" r="9.5" />
+          <path d="m10 8.5 5 3.5-5 3.5z" fill="currentColor" stroke="none" />
+        </svg>
+      </i>
+      <span>网盘内观看</span>
+    </li>
+  </ol>
+  <footer className="resource-notice__foot">
+    <small>资料状态、完整性及授权情况，请以各条资料说明为准。</small>
+    <em>APP · 手机端</em>
+  </footer>
 </aside>
 
 <ResourceExplorer />
