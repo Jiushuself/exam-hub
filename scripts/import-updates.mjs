@@ -8,6 +8,20 @@ const updatesPath = path.join(__dirname, '..', 'docs', 'updates.md');
 const START = '<!-- UPDATES:AUTO:START -->';
 const END = '<!-- UPDATES:AUTO:END -->';
 
+function escapeHtml(value) {
+  return String(value ?? '').replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+      })[character],
+  );
+}
+
 const recordsPath = process.argv[2];
 if (!recordsPath || !fs.existsSync(recordsPath)) {
   console.log(`records 文件不存在: ${recordsPath}`);
@@ -36,7 +50,9 @@ if (entries.length === 0) {
     const time = (entry.last_time || '').slice(0, 16);
     const files = Array.isArray(entry.files) ? entry.files : [];
     lines.push(
-      `**${entry.taskname}** — ${time} 更新，新增 ${files.length} 个文件`,
+      '<div class="update-entry">',
+      '<details class="update-entry__details">',
+      `<summary><span class="update-entry__title"><strong>${escapeHtml(entry.taskname)}</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">${escapeHtml(time)} 更新 · 新增 ${files.length} 个文件</span></summary>`,
     );
     const treeText =
       typeof entry.tree_text === 'string' ? entry.tree_text.trim() : '';
@@ -54,14 +70,26 @@ if (entries.length === 0) {
       lines.push('');
       lines.push(`${names}${more}`);
     }
-    lines.push('');
+    const previewText = treeText
+      ? treeText.split(/\r?\n/).slice(0, 6).join('\n')
+      : files
+          .slice(0, 6)
+          .map((file) => file.name)
+          .join('\n') || '暂无新增文件明细';
+    lines.push(
+      '',
+      '</details>',
+      `<div class="update-entry__preview"><div class="update-entry__preview-text">${escapeHtml(previewText)}</div></div>`,
+      '</div>',
+      '',
+    );
   }
 }
 while (lines.length > 0 && lines[lines.length - 1] === '') {
   lines.pop();
 }
 
-const block = `${START}\n## 自动转存\n\n${lines.join('\n')}\n${END}`;
+const block = `${START}\n\n## 自动转存\n\n${lines.join('\n')}\n\n${END}`;
 
 let content = fs.readFileSync(updatesPath, 'utf-8');
 const startIdx = content.indexOf(START);

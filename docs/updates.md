@@ -1,6 +1,6 @@
 ---
 title: 最近更新
-description: 记录上岸知识库的内容新增、资料链接复核、分类调整和站点功能变化，帮助读者判断页面与资料的维护状态。
+description: 在统一高度的窗口中预览资料自动转存记录与站点更新，展开可查看完整文件明细、知识内容调整和功能变化，便于快速浏览维护进度。
 pageType: doc-wide
 sidebar: false
 outline: false
@@ -8,10 +8,15 @@ outline: false
 
 # 最近更新
 
+各条更新默认显示部分内容，预览窗口高度一致。点击标题展开完整内容，再次点击回到预览。
+
 <!-- UPDATES:AUTO:START -->
+
 ## 自动转存
 
-**28.2027 农学** — 2026-10-13 17:47 更新，新增 3 个文件
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>28.2027 农学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:47 更新 · 新增 3 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/28.2027 农学
@@ -24,7 +29,18 @@ outline: false
         └── 📁14 27考研历年真题讲解（四轮）
 ```
 
-**27.2027 日语** — 2026-10-13 17:44 更新，新增 1 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/28.2027 农学
+└── 📁03.27考研农学（1732阿奇）
+    └── 📁01 27考研315化学全程直播班
+        ├── 📁12 27考研历年模拟题讲解（三轮）
+        │   ├── 🎞️12 模拟题有机部分六、七.mp4
+        │   ├── 🎞️13 模拟题有机部分八、九.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>27.2027 日语</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:44 更新 · 新增 1 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/27.2027 日语
@@ -37,7 +53,18 @@ outline: false
             └── 🎞️18 22阅读-1（文章解析）.mp4
 ```
 
-**22.2027 新闻传播** — 2026-10-13 17:34 更新，新增 297 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/27.2027 日语
+├── 📁02.27考研（肖寒）
+│   └── 📁06 2027考研日语203真题详解课
+│       └── 📁03 2026年真题详解
+└── 📁03.27考研（褚进小鹅班）
+    └── 📁01 27考研日语直播系列课程</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>22.2027 新闻传播</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:34 更新 · 新增 297 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/22.2027 新闻传播
@@ -349,7 +376,18 @@ outline: false
                 └── 📄40 1009【专题15】媒介与经济：视听传播与流媒体品类 by 云河.pdf
 ```
 
-**20.2027 口腔** — 2026-10-13 17:22 更新，新增 810 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/22.2027 新闻传播
+├── 📁02.27考研（宝厂）
+│   └── 📁10 「拽上岸」热点专题答题课（9月-11月）
+│       ├── 🎞️14 第十四讲：网络中的舆论与舆情：从事件到公众.mp4
+│       ├── 🎞️15 第十五讲：新技术与传媒业：从5G到人工智能（上）.mp4
+│       ├── 🎞️16 第十六讲：新技术与传媒业：从5G到人工智能（下）.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>20.2027 口腔</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:22 更新 · 新增 810 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/20.2027 口腔
@@ -1168,7 +1206,18 @@ outline: false
         └── 🎵99 【牙体13】显微根尖外科(2).mp3
 ```
 
-**19.2027 药学** — 2026-10-13 17:20 更新，新增 15 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/20.2027 口腔
+└── 📁02.诚毅
+    ├── 📁13 27口腔黏膜病学
+    │   └── 🎞️05 27口腔黏膜病学5.mp4
+    └── 📁14 27口腔考研【主观带背】
+        ├── 🎵01 【牙体5】牙体修复术(2).mp3</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>19.2027 药学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:20 更新 · 新增 15 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/19.2027 药学
@@ -1200,7 +1249,18 @@ outline: false
         └── 🎞️[69]--第十五章 蛋白质的生物合成 1000题课后作业.mp4
 ```
 
-**18.2027 中医** — 2026-10-13 17:19 更新，新增 35 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/19.2027 药学
+├── 📁01.27考研（无崖四药）
+│   ├── 📁{17}--【27无崖】药物化学强化班
+│   │   ├── 🎞️[17.10]--第九课 其他药物专项-降血糖、骨质疏松症治疗药物及利尿药&amp;维生素.mp4
+│   │   └── 🎞️[17.11]--药物化学9月模考讲评.mp4
+│   ├── 📁{18}--【27无崖】药剂学强化班</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>18.2027 中医</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:19 更新 · 新增 35 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/18.2027 中医
@@ -1244,7 +1304,18 @@ outline: false
         └── 🎞️十一七天乐针灸下(1).mp4
 ```
 
-**17.2027 护理** — 2026-10-13 17:14 更新，新增 25 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/18.2027 中医
+└── 📁01.27考研（青医说）
+    ├── 📁34 大圣私塾
+    │   ├── 🎞️大圣私塾中基中诊串讲4（上）.mp4
+    │   ├── 🎞️大圣私塾中基中诊串讲4（下）.mp4
+    │   └── 🎞️大圣私塾中基中诊串讲5.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>17.2027 护理</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 17:14 更新 · 新增 25 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/17.2027 护理
@@ -1287,7 +1358,18 @@ outline: false
     └── 📁23.27护理综合【基础护理学考点精讲】，讲解护理综合基础护理学全部考点和重点 新
 ```
 
-**15.2027 电路** — 2026-10-13 16:44 更新，新增 2 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/17.2027 护理
+├── 📁01.27考研（夏天学姐）
+│   ├── 📁00.夏天学姐27年套卷带刷内容（公开课）
+│   ├── 📁00.夏天学姐27年套卷带刷内容（赠送课程）
+│   └── 📁04.27年考研一夏天学姐【选择题】刷题冲刺班
+├── 📁02.27考研（博傲）</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>15.2027 电路</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 16:44 更新 · 新增 2 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/15.2027 电路
@@ -1300,7 +1382,18 @@ outline: false
             └── 🎞️17 强化第16节：第7章 正弦稳态电路一.mp4
 ```
 
-**12.2027 历史学** — 2026-10-13 16:08 更新，新增 6 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/15.2027 电路
+└── 📁02.27考研（梦马）
+    └── 📁02 【27梦马电路】强化阶段课程包
+        ├── 📁00-16 强化第15节
+        ├── 📁00-17 强化第16节
+        └── 📁01 强化阶段课程讲解</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>12.2027 历史学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 16:08 更新 · 新增 6 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/12.2027 历史学
@@ -1316,7 +1409,18 @@ outline: false
         └── 🎞️127 【强化课】世界古代与中世纪史学史.mp4
 ```
 
-**11.2027 马克思** — 2026-10-13 16:06 更新，新增 2 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/12.2027 历史学
+├── 📁01.27考研（范无聊）
+│   └── 📁01 基础+强化课程
+│       ├── 🎞️321 冲刺班世界史3：世界中古史（上）.mp4
+│       ├── 🎞️322 冲刺班世界史3：世界中古史（上）（2）.mp4
+│       ├── 🎞️323 冲刺班世界史4：世界中古史（下）.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>11.2027 马克思</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 16:06 更新 · 新增 2 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/11.2027 马克思
@@ -1327,7 +1431,18 @@ outline: false
         └── 🎞️05.【新思想】Week4真题讲解.mp4
 ```
 
-**10.2027 心理学（347+312）** — 2026-10-13 16:05 更新，新增 2 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/11.2027 马克思
+└── 📁01.芝士
+    ├── 📁20.【毛中特】真题带练
+    │   └── 🎞️05.【毛中特】Week4真题讲解.mp4
+    └── 📁21.【新思想】真题带练
+        └── 🎞️05.【新思想】Week4真题讲解.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>10.2027 心理学（347+312）</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 16:05 更新 · 新增 2 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/10.2027 心理学（347+312）
@@ -1345,7 +1460,18 @@ outline: false
                 └── 🎞️08 真题训练2-阿夕老师-27测量拔高营.mp4
 ```
 
-**06.2027 教育学（333+311）** — 2026-10-13 15:46 更新，新增 24 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/10.2027 心理学（347+312）
+├── 📁01.27考研（心理学312）
+│   ├── 📁01.27考研（比邻）
+│   │   └── 📁22 择校大通关
+│   │       └── 🎞️05 择校大通关 5（完）-预报名及报名指导.mp4
+│   └── 📁02.27考研（晴天）</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>06.2027 教育学（333+311）</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 15:46 更新 · 新增 24 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/06.2027 教育学（333+311）
@@ -1390,7 +1516,18 @@ outline: false
                     └── 🎞️[6.2.2.34]--Day33-五育融合、教师素养.mp4
 ```
 
-**05.2027 计算机** — 2026-10-13 15:20 更新，新增 126 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/06.2027 教育学（333+311）
+├── 📁01.27考研（教育综合333）
+│   ├── 📁01.27考研（kc）
+│   │   └── 📁05.深化阶段9-10月
+│   │       └── 📁02.真题主观题讲解(9月10日更新)
+│   │           ├── 🎞️55.【必听题04】教原：2024年311真题-当代社会发展的新挑战材料.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>05.2027 计算机</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 15:20 更新 · 新增 126 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/05.2027 计算机
@@ -1538,7 +1675,18 @@ outline: false
         └── 📁操作系统冲刺
 ```
 
-**04.2027 管理类联考** — 2026-10-13 15:04 更新，新增 404 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/05.2027 计算机
+└── 📁01.2027计算机【王道】
+    ├── 📁04.27考研王道计算机【数据结构领学班】
+    │   ├── 📁14.【习题讲解】第七章 查找
+    │   │   ├── 🎞️[215]--数据结构7.2综合1-5.mp4
+    │   │   ├── 🎞️[216]--数据结构7.2综合6.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>04.2027 管理类联考</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 15:04 更新 · 新增 404 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/04.2027 管理类联考
@@ -2034,7 +2182,18 @@ outline: false
             └── 🎞️[4.4.9]--第8式-公倍数法.mp4
 ```
 
-**03.2027 经济类联考** — 2026-10-13 14:30 更新，新增 3 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/04.2027 管理类联考
+├── 📁00.全网择校模考讲解汇总
+│   ├── 📁李一平择校模考
+│   └── 📁鑫全择校模考
+├── 📁02.27考研（海绵）
+│   ├── 📁【2027海绵模考&amp;周测&amp;书包课&amp;其他】</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>03.2027 经济类联考</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 14:30 更新 · 新增 3 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/03.2027 经济类联考
@@ -2052,7 +2211,18 @@ outline: false
             └── 📁05.逻辑历年真题精选4-媛媛
 ```
 
-**01.2027 西综** — 2026-10-13 14:18 更新，新增 28 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/03.2027 经济类联考
+├── 📁01.2027年经综（周羊心）
+│   └── 📁05.21天真题带刷攻关训练
+│       ├── 🎞️11.21天真题带刷攻关训练（DAY11）.mp4
+│       ├── 🎞️12.21天真题带刷攻关训练（DAY12）.mp4
+│       └── 🎞️13.21天真题带刷攻关训练（DAY13）.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>01.2027 西综</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 14:18 更新 · 新增 28 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/01.2027 西综
@@ -2101,7 +2271,18 @@ outline: false
         └── 🎞️[10.36]--回放 10月12日丨病理06-呼吸系统疾病.mp4
 ```
 
-**03.2027 Svip数学** — 2026-10-13 13:22 更新，新增 32 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/01.2027 西综
+├── 📁02.27考研（天天师兄）
+│   ├── 📁00. 跟课笔记（小凯❤、小王、小阮、月落）
+│   │   └── 📁01、【小凯】跟课笔记
+│   │       └── 📁07.冲刺班
+│   │           ├── 📁05、2021年</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>03.2027 Svip数学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 13:22 更新 · 新增 32 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/03.2027 Svip数学
@@ -2188,7 +2369,18 @@ outline: false
         └── 📁{9}--7-3、反常积分计算
 ```
 
-**02.2027 Svip英语** — 2026-10-13 12:54 更新，新增 144 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/03.2027 Svip数学
+├── 📁02.2027有道【武忠祥 姜晓千 刘金峰】
+│   ├── 📁08.高数十七堂课
+│   │   ├── 🎞️09.专题九 方程根的存在性及个数.mp4
+│   │   └── 📁00.板书
+│   │       ├── 📄17堂课专题10（板书）.pdf</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>02.2027 Svip英语</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 12:54 更新 · 新增 144 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/02.2027 Svip英语
@@ -2422,7 +2614,18 @@ outline: false
                 └── 🎞️[2.2.6]--阅读提分集训—6 真题带练.mp4
 ```
 
-**01.2027 Svip政治** — 2026-10-13 12:23 更新，新增 57 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/02.2027 Svip英语
+├── 📁01.2027启航【唐迟 马天艺 乔迪 陈建斌】
+│   ├── 📁02.全程伴学-月度班会
+│   │   ├── 🎞️03.1月-VIP答疑班会.flv
+│   │   ├── 🎞️04.2月答疑班会.flv
+│   │   ├── 🎞️05.3月答疑班会.flv</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>01.2027 Svip政治</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-13 12:23 更新 · 新增 57 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/01.2027 Svip政治
@@ -2532,7 +2735,18 @@ outline: false
         └── 📁{7}--2019年真题试卷逐题讲解
 ```
 
-**29.2027 艺术类** — 2026-10-09 20:07 更新，新增 24 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip公共课/01.2027 Svip政治
+├── 📁01.2027肖秀荣
+│   └── 📁2027肖秀荣《背诵手册》带背课程
+├── 📁02.2027张修齐
+│   └── 📁{0}--资料
+│       └── 📁{1}--冲刺阶段-资料</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>29.2027 艺术类</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-09 20:07 更新 · 新增 24 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/29.2027 艺术类
@@ -2574,7 +2788,18 @@ outline: false
             └── 🎞️16 简答题_关系类-3.mp4
 ```
 
-**16.2027 信号系统** — 2026-10-09 19:23 更新，新增 5 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/29.2027 艺术类
+└── 📁03.强化阶段
+    ├── 📁01.中国美术史
+    │   ├── 📁01.重难点精析
+    │   │   ├── 🎞️32 专题四_工艺美术-3.mp4
+    │   │   ├── 🎞️33 专题四_工艺美术-4.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>16.2027 信号系统</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-09 19:23 更新 · 新增 5 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/16.2027 信号系统
@@ -2588,7 +2813,18 @@ outline: false
         └── 🎞️[21]--强化测试卷讲解.mp4
 ```
 
-**09.2027 统计学** — 2026-10-09 18:11 更新，新增 1 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/16.2027 信号系统
+└── 📁04.27考研（风中醉风）
+    ├── 📁01.基础课程
+    │   ├── 🎞️[27]--4.5 拉氏变换的应用—4.6 梅森公式.mp4
+    │   ├── 🎞️[28]--4.6 梅森公式—4.7 系统函数的分析.mp4
+    │   ├── 🎞️[52]--匹配滤波器.mp4</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>09.2027 统计学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-09 18:11 更新 · 新增 1 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/09.2027 统计学
@@ -2604,7 +2840,18 @@ outline: false
         └── 📁13 2027年10月数学三模考一
 ```
 
-**02.2027 法硕** — 2026-10-09 15:34 更新，新增 16 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/09.2027 统计学
+├── 📁01.27考研（索瑜）
+│   ├── 📁04 强化阶段-统计学
+│   │   └── 🎞️71 强化测试讲解-统计学.mp4
+│   └── 📁05 强化阶段-概率论与数理统计
+└── 📁03.27考研（卡方）</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>02.2027 法硕</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-09 15:34 更新 · 新增 16 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/02.2027 法硕
@@ -2637,7 +2884,18 @@ outline: false
         └── 📁20 2027主观题阶段—法理学
 ```
 
-**27考研类** — 2026-10-09 14:33 更新，新增 4 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/02.2027 法硕
+├── 📁01.27考研（众合）
+│   ├── 📁08.体系速记
+│   │   ├── 📁01.刑法
+│   │   │   └── 🎞️17.体系速记-刑法学17.mp4
+│   │   ├── 📁04.宪法学</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>27考研类</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-09 14:33 更新 · 新增 4 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/27考研无水印电子书汇总
@@ -2660,7 +2918,18 @@ outline: false
                     └── 📄【紧凑版】数一李林六套卷做题本.pdf
 ```
 
-**14.2027 力学** — 2026-10-05 17:03 更新，新增 1 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/27考研无水印电子书汇总
+└── 📁公共课
+    ├── 📁政治
+    │   ├── 📁01.徐涛
+    │   │   ├── 📁27徐涛《核心背诵笔记》
+    │   │   └── 📁27政治名师必背考点（肖腿徐）</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>14.2027 力学</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-10-05 17:03 更新 · 新增 1 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/14.2027 力学
@@ -2673,7 +2942,18 @@ outline: false
         └── 🎞️[22]--【专题十二】结构的稳定计算.mp4
 ```
 
-**49.2027 数电模电** — 2026-09-25 17:47 更新，新增 4 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/14.2027 力学
+├── 📁01.理论力学（瞌睡哥）
+│   └── 📁{3}--【理论力学】强化结课测
+├── 📁02.材料力学（瞌睡哥）
+│   └── 📁{3}--【材料力学】强化结课测
+└── 📁03.结构力学（瞌睡哥）</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>49.2027 数电模电</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-09-25 17:47 更新 · 新增 4 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/49.2027 数电模电
@@ -2685,7 +2965,18 @@ outline: false
         └── 🎞️专题8 多级放大电路-场效应管版  .sz
 ```
 
-**32.2027 自动控制** — 2026-09-25 17:03 更新，新增 255 个文件
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/49.2027 数电模电
+└── 📁02.27考研模电（水木观畴）
+    └── 📁03.27模电强化课
+        ├── 🎞️专题6 静态工作点稳点电路  .sz
+        ├── 🎞️专题7 场效应管放大电路分析计算  .sz
+        ├── 🎞️专题7 场效应管放大电路分析计算2  .sz</div></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>32.2027 自动控制</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">2026-09-25 17:03 更新 · 新增 255 个文件</span></summary>
 
 ```text
 /资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/32.2027 自动控制
@@ -3006,19 +3297,45 @@ outline: false
                 │   └── 📄(3.6)--27考研 7月92模考卷答案 真橙控制X伊莱亚(1).pdf
                 └── 📁04.27真橙 8月双科模考
 ```
+
+</details>
+<div class="update-entry__preview"><div class="update-entry__preview-text">/资料分享/2027考研资料大合集/2027考研资料【同步更新中】/01.渠道一/2027 Svip专业课/32.2027 自动控制
+└── 📁01.27考研（真诚）
+    ├── 📁00.书籍扫描
+    ├── 📁00.讲义
+    ├── 📁01.集训营班级
+    │   ├── 📁基础班</div></div>
+</div>
+
 <!-- UPDATES:AUTO:END -->
 
-## 2026-09-27
+## 站点更新
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>2026-09-27</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">站点更新 · 1 项调整</span></summary>
 
 - 改版资料库顶部的「手机转存提醒」卡片：换用借阅凭据式设计（票根撕线、「转存」印章、编号步骤线路图），并适配移动端纵向步骤条与暗色模式。
 
-## 2026-08-26
+</details>
+<div class="update-entry__preview"><ul><li>改版资料库顶部的「手机转存提醒」卡片：换用借阅凭据式设计（票根撕线、「转存」印章、编号步骤线路图），并适配移动端纵向步骤条与暗色模式。</li></ul></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>2026-08-26</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">站点更新 · 3 项调整</span></summary>
 
 - 新增计算机 408 站内知识库，按数据结构、计算机组成原理、操作系统和计算机网络分开展示。
 - 迁移 20 个可直接阅读的 Markdown 页面，保留章节原有公式、表格、列表和配图；704 个图片引用已本地化为 696 个静态资源。
 - 单独归档考研经验分享，并明确数据结构目录当前没有可直接阅读的 Markdown 章节；大体积 PDF/PPT 附件不复制进站点构建包。
 
-## 2026-08-25
+</details>
+<div class="update-entry__preview"><ul><li>新增计算机 408 站内知识库，按数据结构、计算机组成原理、操作系统和计算机网络分开展示。</li><li>迁移 20 个可直接阅读的 Markdown 页面，保留章节原有公式、表格、列表和配图；704 个图片引用已本地化为 696 个静态资源。</li><li>单独归档考研经验分享，并明确数据结构目录当前没有可直接阅读的 Markdown 章节；大体积 PDF/PPT 附件不复制进站点构建包。</li></ul></div>
+</div>
+
+<div class="update-entry">
+<details class="update-entry__details">
+<summary><span class="update-entry__title"><strong>2026-08-25</strong><span class="update-entry__toggle"><span class="update-entry__expand">展开全部</span><span class="update-entry__collapse">收起详情</span></span></span><span class="update-entry__meta">站点更新 · 10 项调整</span></summary>
 
 - 完成 146 篇考公知识页面整理，读者可以直接在站内连续学习。
 - 新增 34 份分级侧栏配置和逐页 SEO 描述。
@@ -3030,5 +3347,9 @@ outline: false
 - 创建考研计算机 408 与考公知识框架。
 - 创建支持考试类型、关键词和链接状态筛选的资料索引。
 - 建立资料来源、授权情况和最后验证日期字段。
+
+</details>
+<div class="update-entry__preview"><ul><li>完成 146 篇考公知识页面整理，读者可以直接在站内连续学习。</li><li>新增 34 份分级侧栏配置和逐页 SEO 描述。</li><li>将资料分析与判断推理的两个交互式思维导图迁移到本站静态资源路径。</li><li>完成 7 个考公模块、146 篇知识页面的内容盘点。</li><li>新增行测六大模块与申论的知识地图，并为每个主题提供站内阅读入口。</li><li>将政治理论中的 2024—2025 年材料标记为历史快照，避免误作 2026 年最新时政。</li><li>建立“知识库 + 资料库”双入口信息架构。</li><li>创建考研计算机 408 与考公知识框架。</li><li>创建支持考试类型、关键词和链接状态筛选的资料索引。</li><li>建立资料来源、授权情况和最后验证日期字段。</li></ul></div>
+</div>
 
 后续新增知识章节或完成一批资料复核时，会在这里记录具体变化。

@@ -72,6 +72,21 @@ export function Layout() {
   const { pathname } = useLocation();
 
   useLayoutEffect(() => {
+    // 搜索面板也监听全局 Enter，更新摘要只需执行浏览器原生折叠操作。
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (
+        event.key === 'Enter' &&
+        event.target instanceof Element &&
+        event.target.matches('details.update-entry__details > summary')
+      ) {
+        event.stopPropagation();
+      }
+    };
+    document.addEventListener('keydown', onKeyDown, true);
+    return () => document.removeEventListener('keydown', onKeyDown, true);
+  }, []);
+
+  useLayoutEffect(() => {
     const onClick = (event: MouseEvent) => {
       const target = event.target as Element | null;
       if (!target?.closest) {

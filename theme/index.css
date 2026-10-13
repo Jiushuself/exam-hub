@@ -1611,6 +1611,140 @@ html.dark .workspace__cta--primary:hover {
   color: #10201b !important;
 }
 
+/* 最近更新页：预览窗口保持等高，完整明细按条目独立展开。 */
+.rp-doc .update-entry {
+  min-width: 0;
+  margin: 12px 0;
+  padding: 0;
+  border: 1px solid var(--archive-line);
+  border-radius: 10px;
+  background: var(--archive-surface-raised);
+  cursor: auto;
+}
+
+.rp-doc .update-entry__details,
+.rp-doc .update-entry__details:hover {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: auto;
+}
+
+.rp-doc .update-entry__details > summary {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 16px;
+  padding: 16px 42px 16px 16px;
+  border-bottom: 1px solid var(--archive-line);
+  list-style: none;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.update-entry__details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.update-entry__details > summary::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--archive-muted);
+  border-bottom: 2px solid var(--archive-muted);
+  transform: rotate(-45deg);
+}
+
+.update-entry__details[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+.update-entry__details > summary:focus-visible {
+  outline: 3px solid var(--archive-green);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+.update-entry__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.update-entry__toggle {
+  flex-shrink: 0;
+  color: var(--archive-green);
+  font-size: 0.8rem;
+}
+
+.update-entry__collapse,
+.update-entry__details[open] .update-entry__expand,
+.update-entry__details[open] + .update-entry__preview {
+  display: none;
+}
+
+.update-entry__details[open] .update-entry__collapse {
+  display: inline;
+}
+
+.update-entry__meta {
+  align-self: center;
+  color: var(--archive-muted);
+  font-size: 0.85rem;
+}
+
+.rp-doc .update-entry__details > :not(summary) {
+  margin: 16px;
+}
+
+.update-entry__details pre {
+  max-height: 32rem;
+  overflow: auto;
+}
+
+.update-entry__preview {
+  position: relative;
+  box-sizing: border-box;
+  height: 176px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  background: var(--rp-code-block-bg);
+  color: var(--rp-code-block-color);
+}
+
+.update-entry__preview::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 28px;
+  background: linear-gradient(transparent, var(--rp-code-block-bg));
+  pointer-events: none;
+}
+
+.update-entry__preview-text {
+  padding: 16px;
+  font-family: var(--archive-mono);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+.rp-doc .update-entry__preview > ul {
+  margin: 16px;
+  padding-left: 20px;
+}
+
+@media (max-width: 640px) {
+  .rp-doc .update-entry__details > summary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ── 最近更新 ──
  * 也拆掉外框：左边是说明，右边是一条真正的时间线。
  * 没有卡片、没有底色，一条细线 + 圆点就够了。 */

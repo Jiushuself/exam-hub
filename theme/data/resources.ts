@@ -36,6 +36,12 @@ const pendingReviewMeta = {
   'source' | 'rights' | 'updatedAt' | 'verifiedAt' | 'status'
 >;
 
+const pendingGongkaoMeta = {
+  ...pendingReviewMeta,
+  updatedAt: '2026-10-13',
+  verifiedAt: '2026-10-13',
+};
+
 const pendingSvipMajorMeta = {
   source: '用户提供的夸克网盘目录',
   rights: '资料来源与公开分享授权待核验',
@@ -336,6 +342,57 @@ export const resources: ResourceItem[] = [
     types: ['资料合集', '课程资料'],
     provider: '夸克网盘',
     url: 'https://pan.quark.cn/s/a99acafb0fd9',
+  },
+  {
+    ...pendingGongkaoMeta,
+    id: 'gongkao-quark-national-provincial',
+    title: '国考省考',
+    description:
+      '用户提供的国考、省考综合资料分享入口，未注明适用年份，具体科目与内容待核验。',
+    exam: 'gongkao',
+    subject: '国考与省考',
+    types: ['资料合集', '综合资料'],
+    provider: '夸克网盘',
+    url: 'https://pan.quark.cn/s/68b5a3ceb144',
+  },
+  {
+    ...pendingGongkaoMeta,
+    id: 'gongkao-2027-quark-collection',
+    title: '2027 年国省考资料合集',
+    description:
+      '用户提供的 2027 年国考、省考资料合集分享入口，具体科目范围、内容完整性与更新情况待核验。',
+    exam: 'gongkao',
+    subject: '国考与省考',
+    year: '2027',
+    types: ['资料合集', '综合资料'],
+    provider: '夸克网盘',
+    url: 'https://pan.quark.cn/s/edaecc6aec85',
+  },
+  {
+    ...pendingGongkaoMeta,
+    id: 'gongkao-2026-quark-current-affairs',
+    title: '2026 年全年时政',
+    description:
+      '用户提供的“2026 年全年时政”资料分享入口，实际覆盖月份、内容完整性与更新进度待核验。',
+    exam: 'gongkao',
+    subject: '时事政治',
+    year: '2026',
+    types: ['时政资料', '年度汇总'],
+    provider: '夸克网盘',
+    url: 'https://pan.quark.cn/s/2e206f6e4d2a',
+  },
+  {
+    ...pendingGongkaoMeta,
+    id: 'gongkao-2027-quark-national-provincial',
+    title: '27 国省考',
+    description:
+      '用户提供的“27 国省考”资料分享入口，按名称归入 2027 年国考、省考备考资料，具体内容与适用范围待核验。',
+    exam: 'gongkao',
+    subject: '国考与省考',
+    year: '2027',
+    types: ['资料合集', '综合资料'],
+    provider: '夸克网盘',
+    url: 'https://pan.quark.cn/s/f479bab72ec7',
   },
   {
     ...pendingReviewMeta,
